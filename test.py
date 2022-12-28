@@ -1,6 +1,12 @@
 import PySimpleGUI as sg
 
-sg.theme('Dark Grey 13')
+sg.SetOptions(background_color='#9FB8AD',
+       text_element_background_color='#9FB8AD',
+       element_background_color='#9FB8AD',
+       scrollbar_color=None,
+       input_elements_background_color='#F7F3EC',
+       progress_meter_color = ('green', 'blue'),
+       button_color=('white','#475841'))
 
 layout = [[sg.Text('Filename')],
           [sg.Input(), sg.FileBrowse()],
