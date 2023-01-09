@@ -1,11 +1,25 @@
 import PySimpleGUI as sg
+import tools
 
-sg.theme('Dark Grey 13')
+def findMod():
+    """ ask for the wanted mod """
+    wantedMod = tools.askingForMod()
 
-layout = [[sg.Text('Filename')],
-          [sg.Input(), sg.FileBrowse()],
-          [sg.OK(), sg.Cancel()]]
+    """ retrieve all the mods """
+    potentialMods = tools.openModsFile()
 
-window = sg.Window('Get filename example', layout)
-event, values = window.read()
-window.close()
+    """ compare with the list """
+    resList = tools.comparePotentialWanted()
+
+    """ display the result & ask for response"""
+    tools.askForAction()
+
+def neededMods():
+    # TODO
+    return
+
+def mostNeededModSet():
+    # TODO
+    return
+
+findMod()
