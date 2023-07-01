@@ -4,6 +4,7 @@ The purpose of this file is to create the tools and function needed to manage mo
 
 from dataclasses import dataclass
 from enum import Enum
+import sqlite3
 
 """ Enum of the different mod shapes """
 
@@ -76,7 +77,7 @@ class Mod:
     shape: Shape
     set: Set
     prim: Primaries
-    secon: [Secondaries]
+    secon: list[Secondaries]
 
 
 """ 
@@ -88,7 +89,7 @@ ex : [CC,CD] [off,speed,def,CD,prot,pot] [ten,speed,pot,off,off]
 @dataclass
 class PotentialMod:
     _characterName: str
-    _potentialMods: [Mod]
+    _potentialMods: list[Mod]
 
     """
 
