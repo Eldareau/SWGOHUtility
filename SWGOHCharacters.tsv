@@ -1,240 +1,249 @@
-			http://swgoh.gg/				
-Power			Set	Primaries	Secondaries	URL	
-0-0-0	5	0-0-0				http://swgoh.gg/characters/0-0-0/	
-50r-t		50r-t				http://swgoh.gg/characters/50r-t/	
-aayla secura	3	aayla secura	CC,CD	off,speed,def,CD,prot,pot	ten,speed,pot,off,off	http://swgoh.gg/characters/aayla-secura/	
-admiral ackbar		admiral ackbar	speed,ten	off,CA,def,health,health,ten	ten,speed,health,health,prot	http://swgoh.gg/characters/admiral-ackbar/	
-admiral piett	8	admiral piett	speed,pot	off,speed,def,health,health,pot	speed,pot,ten,health,health	http://swgoh.gg/characters/admiral-piett/	
-admiral raddus	9	admiral raddus				http://swgoh.gg/characters/admiral-raddus/	
-ahsoka tano		ahsoka tano	CD,health	off,speed,def,CD,health,ten	health,health,ten,speed,CC	http://swgoh.gg/characters/ahsoka-tano/	
-ahsoka tano (fulcrum)		ahsoka tano (fulcrum)				http://swgoh.gg/characters/ahsoka-tano-fulcrum/	
-amilyn holdo	5	amilyn holdo				http://swgoh.gg/characters/amilyn-holdo/	
-arc trooper	8	arc trooper	CC,CD	off,speed,def,CD,prot,off	speed,CC,off,off,prot	http://swgoh.gg/characters/arc-trooper/	
-asajj ventress		asajj ventress	CD,pot	off,speed,def,CD,health,pot	speed,off,off,health,health	http://swgoh.gg/characters/asajj-ventress/	
-aurra sing	6	aurra sing	CC,CD	off,speed,def,CD,prot,pot	CC,off,off,speed,ten	http://swgoh.gg/characters/aurra-sing/	
-b1 battle droid		b1 battle droid	speed,pot	off,off,def,off,prot,pot	pot,off,off,speed,ten	http://swgoh.gg/characters/b1-battle-droid/	
-b2 super battle droid		b2 super battle droid	pot,health,health	off,health,def,health,health,pot	pot,health,health,def,def	http://swgoh.gg/characters/b2-super-battle-droid/	
-barriss offee		barriss offee	def,def,def	off,health,def,health,health,ten	health,health,speed,def,def	http://swgoh.gg/characters/barriss-offee/	
-bastila shan		bastila shan	health,off	off,speed,def,off,prot,prot	speed,health,health,off,off	http://swgoh.gg/characters/bastila-shan/	
-bastila shan (fallen)		bastila shan (fallen)				http://swgoh.gg/characters/bastila-shan-fallen/	
-baze malbus		baze malbus				http://swgoh.gg/characters/baze-malbus/	
-bb-8	7	bb-8	speed,pot	off,speed,def,CC,health,ten	ten,pot,speed,health,health	http://swgoh.gg/characters/bb-8/	
-ben solo		ben solo	CC/CD - off/pot			http://swgoh.gg/characters/ben-solo/	
-biggs darklighter	3	biggs darklighter	CC,CD	off,speed,def,CD,prot,ten	pot,ten,speed,off,off	http://swgoh.gg/characters/biggs-darklighter/	
-bistan	5	bistan				http://swgoh.gg/characters/bistan/	
-bo-katan kryze	5	bo-katan kryze	CC,CD	off,speed,def,CD,health,pot	pot,speed,CC,ten,health	http://swgoh.gg/characters/bo-katan-kryze/	
-boba fett	8	boba fett	pot,speed	off,speed,def,CD,prot,pot	CC,speed,off,pot,off	http://swgoh.gg/characters/boba-fett/	
-boba fett, scion of jango		boba fett, scion of jango				http://swgoh.gg/characters/boba-fett-scion-of-jango/	
-bodhi rook		bodhi rook	speed,def	off,speed,def,health,prot,pot	pot,ten,speed,health,health	http://swgoh.gg/characters/bodhi-rook/	
-bossk	5	bossk	health,ten,ten	off,speed,def,prot,prot,ten	prot,prot,ten,speed,def	http://swgoh.gg/characters/bossk/	
-boushh (leia organa)	5	boushh (leia organa)				http://swgoh.gg/characters/boushh-leia-organa/	
-bt-1	5	bt-1				http://swgoh.gg/characters/bt-1/	
-c-3po	7	c-3po	pot,pot,health	health,speed,def,prot,prot,pot	ten,speed,pot,prot,prot	http://swgoh.gg/characters/c-3po/	
-cad bane	5	cad bane	CC,CD	off,speed,def,CD,prot,pot	CC,speed,prot,prot,pot	http://swgoh.gg/characters/cad-bane/	
-canderous ordo		canderous ordo	off,pot	off,speed,def,off,health,pot	ten,speed,CC,off,off	http://swgoh.gg/characters/canderous-ordo/	
-captain han solo	3	captain han solo	CC,speed	off,speed,def,health,health,ten	ten,speed,health,health,def	http://swgoh.gg/characters/captain-han-solo/	
-captain phasma	5	captain phasma	speed,pot	off,speed,def,CD,prot,pot	pot,ten,speed,prot,prot	http://swgoh.gg/characters/captain-phasma/	
-cara dune		cara dune	def,def,def	off,CA,def,health,health,pot	pot,ten,speed,health,health	http://swgoh.gg/characters/cara-dune/	
-carth onasi		carth onasi	CD,health	off,speed,def,CD,prot,ten	pot,ten,speed,off,off	http://swgoh.gg/characters/carth-onasi/	
-cassian andor	8	cassian andor				http://swgoh.gg/characters/cassian-andor/	
-cc-2224 "cody"	5	cc-2224 "cody"	CC,speed	off,speed,def,prot,pot	pot,ten,speed,CC,prot	http://swgoh.gg/characters/cc-2224-cody/	
-chewbacca	6	chewbacca	CC,CD	health,speed,defense,CD,health,ten	speed,pot,ten,prot,prot	http://swgoh.gg/characters/chewbacca/	
-chief chirpa		chief chirpa	speed,health	off,speed,def,CC,health,ten	speed,ten,health,health,CC	http://swgoh.gg/characters/chief-chirpa/	
-chief nebit		chief nebit	ten,health,health	off,health,def,health,health,ten	ten,health,health,def,def	http://swgoh.gg/characters/chief-nebit/	
-chirrut îmwe		chirrut îmwe				http://swgoh.gg/characters/chirrut-imwe/	
-chopper		chopper	def,speed	off,speed,def,health,health,ten	health,health,ten,def,speed	http://swgoh.gg/characters/chopper/	
-clone sergeant - phase i	5	clone sergeant - phase i	CC,CD	off,speed,def,CD,prot,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/clone-sergeant-phase-i/	#REF!
-clone wars chewbacca		clone wars chewbacca				http://swgoh.gg/characters/clone-wars-chewbacca/	
-colonel starck	3	colonel starck	speed,pot	off,speed,def,health,health,pot	speed,ten,pot,health,health	http://swgoh.gg/characters/colonel-starck/	
-commander ahsoka tano		commander ahsoka tano	speed,health	off,speed,def,CD,prot,ten	ten,speed,CC,off,off	http://swgoh.gg/characters/commander-ahsoka-tano/	
-commander luke skywalker	3	commander luke skywalker	ten,off	off,speed,def,CD,prot,ten	speed,ten,pot,health,health	http://swgoh.gg/characters/commander-luke-skywalker/	
-coruscant underworld police		coruscant underworld police				http://swgoh.gg/characters/coruscant-underworld-police/	
-count dooku	8	count dooku	speed,pot	off,speed,def,prot,prot,pot	speed,pot,ten,off,off	http://swgoh.gg/characters/count-dooku/	
-ct-21-0408 "echo"	7	ct-21-0408 "echo"	CD,CC	off,off,def,CD,health,pot	speed,ten,off,off,CC	http://swgoh.gg/characters/ct-21-0408-echo/	
-ct-5555 "fives"		ct-5555 "fives"	health,health,health	off,speed,def,off,prot,prot	off,off,prot,speed,prot	http://swgoh.gg/characters/ct-5555-fives/	
-ct-7567 "rex"		ct-7567 "rex"	CC,speed	off,speed,def,CC,health,pot	CC,off,off,ten,speed	http://swgoh.gg/characters/ct-7567-rex/	
-dark trooper		dark trooper	off,def	off,speed,def,off,health,ten	off,off,ten,speed,def	http://swgoh.gg/characters/dark-trooper/	
-darth malak		darth malak				http://swgoh.gg/characters/darth-malak/	
-darth malgus		darth malgus				http://swgoh.gg/characters/darth-malgus/	
-darth maul	4	darth maul	CD,health	off,speed,def,CD,health,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/darth-maul/	
-darth nihilus		darth nihilus	speed,ten	off,speed,def,health,health,ten	pot,ten,speed,health,health	http://swgoh.gg/characters/darth-nihilus/	
-darth revan		darth revan				http://swgoh.gg/characters/darth-revan/	
-darth sidious	7	darth sidious	CD,pot	off,speed,def,CD,health,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/darth-sidious/	
-darth sion		darth sion	def,def,pot	off,speed,def,health,prot,pot	pot,speed,prot,prot,health	http://swgoh.gg/characters/darth-sion/	
-darth talon	5	darth talon				http://swgoh.gg/characters/darth-talon/	
-darth traya		darth traya	health,def,pot	off,health,def,health,health,pot	pot,ten,speed,health,health	http://swgoh.gg/characters/darth-traya/	
-darth vader	7	darth vader	CC,CD	off,speed,def,CD,health,pot	pot,off,speed,CC,off	http://swgoh.gg/characters/darth-vader/	
-dash rendar	7	dash rendar				http://swgoh.gg/characters/dash-rendar/	
-dathcha		dathcha	CC,CD	off,off,def,CD,prot,pot	pot,CC,CD,off,off,speed	http://swgoh.gg/characters/dathcha/	
-death trooper		death trooper	CC,CD	off,speed,def,CD,health,pot	speed,CC,pot,off,off	http://swgoh.gg/characters/death-trooper/	
-dengar	5	dengar	CC,ten,pot	off,speed,def,CC,prot,ten	speed,CC,pot,prot,prot	http://swgoh.gg/characters/dengar/	
-director krennic	4	director krennic	CC,CD	off,speed,def,CD,health,pot	pot,speed,CC,ten,health	http://swgoh.gg/characters/director-krennic/	
-doctor aphra		doctor aphra				http://swgoh.gg/characters/doctor-aphra/	
-droideka		droideka	off,health	off,health,def,health,health,ten	ten,health,off,health,off	http://swgoh.gg/characters/droideka/	
-echo	5	echo	speed,health	off,speed,def,prot,prot,pot	speed,ten,health,health,prot	http://swgoh.gg/characters/echo/	
-eeth koth		eeth koth	speed,pot	off,speed,def,CD,prot,pot	speed,pot,CC,prot,prot	http://swgoh.gg/characters/eeth-koth/	
-eighth brother	5	eighth brother				http://swgoh.gg/characters/eighth-brother/	
-embo	5	embo	CC,CD	off,speed,def,CD,prot,ten	CC,prot,prot,speed,ten	http://swgoh.gg/characters/embo/	
-emperor palpatine	7	emperor palpatine	speed,pot	off,speed,def,prot,prot,pot	pot,prot,prot,health,speed	http://swgoh.gg/characters/emperor-palpatine/	
-enfys nest		enfys nest	ten,ten,ten	off,CA,def,CD,health,ten	pot,ten,health,health,prot	http://swgoh.gg/characters/enfys-nest/	
-ewok elder		ewok elder	ten,health,health	off,speed,def,health,health,ten	speed,ten,health,health,CC	http://swgoh.gg/characters/ewok-elder/	
-ewok scout		ewok scout				http://swgoh.gg/characters/ewok-scout/	
-ezra bridger		ezra bridger	CC,CD	off,speed,def,CD,health,ten	off,off,ten,CC,speed	http://swgoh.gg/characters/ezra-bridger/	
-fennec shand	7	fennec shand	ten,ten,ten	off,CA,def,CD,health,ten	pot,ten,health,health,prot	http://swgoh.gg/characters/fennec-shand/	
-fifth brother	5	fifth brother				http://swgoh.gg/characters/fifth-brother/	
-finn	5	finn	speed,def	off,speed,def,health,health,pot	speed,pot,ten,health,health	http://swgoh.gg/characters/finn/	
-first order executioner	5	first order executioner	health,CC,health	off,speed,defense,CD,health,ten	ten,speed,health,health,CC	http://swgoh.gg/characters/first-order-executioner/	
-first order officer	5	first order officer	speed,pot	off,speed,def,CD,prot,ten	pot,speed,prot,prot,off	http://swgoh.gg/characters/first-order-officer/	
-first order sf tie pilot	3	first order sf tie pilot	CD,pot	off,speed,def,CD,prot,pot	ten,pot,speed,off,off	http://swgoh.gg/characters/first-order-sf-tie-pilot/	
-first order stormtrooper	5	first order stormtrooper	ten,def,def	off,health,def,health,health,pot	ten,health,health,speed,def	http://swgoh.gg/characters/first-order-stormtrooper/	
-first order tie pilot	3	first order tie pilot	CD,pot	off,speed,def,CD,prot,ten	ten,pot,off,off,speed	http://swgoh.gg/characters/first-order-tie-pilot/	
-gamorrean guard	3	gamorrean guard				http://swgoh.gg/characters/gamorrean-guard/	
-gar saxon		gar saxon	health,pot,ten	off,speed,def,CD,health,pot	off,speed,def,CD,health,pot	http://swgoh.gg/characters/gar-saxon/	
-garazeb "zeb" orrelios		garazeb "zeb" orrelios	pot,def,def	off,off,def,health,health,pot	off,off,health,health,speed	http://swgoh.gg/characters/garazeb-zeb-orrelios/	
-general grievous	7	general grievous	health,health,health	off,health,def,health,health,health	health,health,pot,def,speed	http://swgoh.gg/characters/general-grievous/	
-general hux	5	general hux	speed,ten	off,speed,def,prot,prot,prot	speed,ten,prot,prot,health	http://swgoh.gg/characters/general-hux/	
-general kenobi	8	general kenobi	health,health,def	off,speed,def,health,health,ten	health,health,ten,def,def	http://swgoh.gg/characters/general-kenobi/	
-general skywalker	8	general skywalker	CC,CD	off,speed,def,CD,prot,prot	prot,prot,speed,off,off	http://swgoh.gg/characters/general-skywalker/	
-general veers	3	general veers	speed,pot	off,speed,def,prot,prot,ten	speed,prot,prot,ten,pot	http://swgoh.gg/characters/general-veers/	
-geonosian brood alpha		geonosian brood alpha	speed,def	off,CA,def,def,prot,ten	ten,speed,def,def,prot	http://swgoh.gg/characters/geonosian-brood-alpha/	
-geonosian soldier		geonosian soldier	CD,CC	off,speed,def,CD,prot,ten	ten,CC,speed,def,def	http://swgoh.gg/characters/geonosian-soldier/	
-geonosian spy		geonosian spy	CC,CD	off,speed,def,CD,prot,ten	pot,CC,speed,off,off	http://swgoh.gg/characters/geonosian-spy/	
-grand admiral thrawn	6	grand admiral thrawn	speed,health	off,speed,def,health,prot,ten	speed,prot,prot,health,health	http://swgoh.gg/characters/grand-admiral-thrawn/	
-grand inquisitor		grand inquisitor				http://swgoh.gg/characters/grand-inquisitor/	
-grand master yoda	8	grand master yoda	speed,ten	off,speed,def,off,health,ten	pot,speed,ten,health,health	http://swgoh.gg/characters/grand-master-yoda/	
-grand moff tarkin	7	grand moff tarkin	pot,speed	off,speed,def,health,health,pot	speed,pot,health,health,ten	http://swgoh.gg/characters/grand-moff-tarkin/	
-greedo	6	greedo	CC,CD	off,speed,def,CD,prot,pot	speed,pot,ten,prot,prot	http://swgoh.gg/characters/greedo/	
-greef karga		greef karga	speed,health	off,speed,def,prot,prot,ten	speed,ten,prot,prot,health	http://swgoh.gg/characters/greef-karga/	
-han solo	8	han solo	health,CD	health,off,def,CD,health,pot	speed,off,off,pot,ten	http://swgoh.gg/characters/han-solo/	
-hera syndulla	5	hera syndulla	health,speed	off,speed,def,health,health,pot	speed,pot,health,health,def	http://swgoh.gg/characters/hera-syndulla/	
-hermit yoda	5	hermit yoda	speed,health	off,speed,def,health,health,ten	speed,health,health,ten,def	http://swgoh.gg/characters/hermit-yoda/	
-hk-47		hk-47				http://swgoh.gg/characters/hk-47/	
-hondo ohnaka	5	hondo ohnaka	speed,health	off,speed,def,health,health,ten	speed,pot,off,off,health	http://swgoh.gg/characters/hondo-ohnaka/	
-hoth rebel scout		hoth rebel scout	CC,CD	off,speed,def,CD,prot,pot	CC,speed,off,off,pot	http://swgoh.gg/characters/hoth-rebel-scout/	
-hoth rebel soldier		hoth rebel soldier	def,ten,pot	off,speed,def,health,health,ten	pot,speed,CC,health,health	http://swgoh.gg/characters/hoth-rebel-soldier/	
-hunter	5	hunter	CC,CD	off,speed,def,CD,prot,ten	CC,off,off,prot,prot	http://swgoh.gg/characters/hunter/	
-iden versio		iden versio				http://swgoh.gg/characters/iden-versio/	
-ig-100 magnaguard	5	ig-100 magnaguard	health,health,pot	off,health,def,health,health,pot	health,health,speed,pot,off	http://swgoh.gg/characters/ig-100-magnaguard/	
-ig-11		ig-11	health,health,pot	off,health,def,health,health,ten	pot,ten,speed,health,health	http://swgoh.gg/characters/ig-11/	
-ig-86 sentinel droid		ig-86 sentinel droid				http://swgoh.gg/characters/ig-86-sentinel-droid/	
-ig-88	5	ig-88	CD,CC	off,speed,def,CD,health,pot	speed,pot,ten,CC,health	http://swgoh.gg/characters/ig-88/	
-ima-gun di		ima-gun di	health,health,health	off,health,def,health,health,ten		http://swgoh.gg/characters/ima-gun-di/	
-imperial probe droid		imperial probe droid	pot,health,health	off,speed,def,health,health,pot	speed,pot,ten,health,health	http://swgoh.gg/characters/imperial-probe-droid/	
-imperial super commando		imperial super commando	CD,pot	off,speed,def,CD,health,pot	ten,speed,CC,off,off	http://swgoh.gg/characters/imperial-super-commando/	
-jabba the hutt		jabba the hutt				http://swgoh.gg/characters/jabba-the-hutt/	
-jango fett	7	jango fett	speed,pot	off,speed,def,CD,prot,pot	speed,pot,off,off,CC	http://swgoh.gg/characters/jango-fett/	
-jawa	3	jawa	CC,CD	off,off,def,CD,prot,pot	pot,CC,CD,off,off,speed	http://swgoh.gg/characters/jawa/	
-jawa engineer		jawa engineer	health,speed	off,speed,def,prot,prot,ten	speed,ten,prot,prot,def	http://swgoh.gg/characters/jawa-engineer/	
-jawa scavenger		jawa scavenger	def,def,def	off,speed,def,prot,prot,ten	prot,prot,CC,ten,def	http://swgoh.gg/characters/jawa-scavenger/	
-jedi consular		jedi consular	health,health,def	off,speed,def,health,health,ten	ten,speed,health,health,off	http://swgoh.gg/characters/jedi-consular/	
-jedi knight anakin	7	jedi knight anakin	health,CD	off,speed,def,CD,health,pot	pot,speed,CC,off,off	http://swgoh.gg/characters/jedi-knight-anakin/	
-jedi knight guardian		jedi knight guardian	def,def,def	off,CA,def,health,health,pot	pot,ten,def,def,health	http://swgoh.gg/characters/jedi-knight-guardian/	
-jedi knight luke skywalker	7	jedi knight luke skywalker	CD,CC	off,speed,def,prot,pot	pot,ten,speed,CC,prot	http://swgoh.gg/characters/jedi-knight-luke-skywalker/	
-jedi knight revan		jedi knight revan	speed,health	off,speed,def,CD,health,ten	ten,CC,speed,off,off	http://swgoh.gg/characters/jedi-knight-revan/	
-jedi master kenobi		jedi master kenobi	speed,health	off,speed,def,CD,health,ten	ten,pot,speed,health,health	http://swgoh.gg/characters/jedi-master-kenobi/	
-jedi master luke skywalker		jedi master luke skywalker	speed,health	off,speed,def,prot,prot,pot	ten,pot,speed,prot,prot	http://swgoh.gg/characters/jedi-master-luke-skywalker/	
-jolee bindo		jolee bindo	health,health,health	off,speed,def,health,health,health	speed,health,health,ten,def	http://swgoh.gg/characters/jolee-bindo/	
-juhani		juhani	CC,health,def	off,health,def,CC,prot,pot	pot,CC,health,health,def	http://swgoh.gg/characters/juhani/	
-jyn erso	5	jyn erso				http://swgoh.gg/characters/jyn-erso/	
-k-2so		k-2so				http://swgoh.gg/characters/k-2so/	
-kanan jarrus		kanan jarrus	def,def,def	off,health,def,health,health,ten	CC,health,health,def,def	http://swgoh.gg/characters/kanan-jarrus/	
-ki-adi-mundi		ki-adi-mundi	off,health	off,speed,def,off,health,pot	speed,ten,off,off,health	http://swgoh.gg/characters/ki-adi-mundi/	
-kit fisto		kit fisto	speed,health	off,speed,def,off,health,ten	speed,ten,off,off,health	http://swgoh.gg/characters/kit-fisto/	
-krrsantan	5	krrsantan				http://swgoh.gg/characters/krrsantan/	
-kuiil		kuiil	speed,health	off,speed,def,prot,pot	ten,pot,speed,prot,prot	http://swgoh.gg/characters/kuiil/	
-kyle katarn	5	kyle katarn				http://swgoh.gg/characters/kyle-katarn/	
-kylo ren	7	kylo ren				http://swgoh.gg/characters/kylo-ren/	
-kylo ren (unmasked)	7	kylo ren (unmasked)	def,def,def	off,health,def,health,health,health	health,health,def,def,ten	http://swgoh.gg/characters/kylo-ren-unmasked/	
-l3-37		l3-37	health,health,def	off,CA,def,CC,prot,pot	speed,ten,health,health,CC	http://swgoh.gg/characters/l3-37/	
-lando calrissian	5	lando calrissian	CC,CD	off,speed,def,CD,prot,ten	ten,speed,off,off,prot	http://swgoh.gg/characters/lando-calrissian/	
-lobot		lobot				http://swgoh.gg/characters/lobot/	
-logray		logray	pot,health,def	off,speed,def,health,health,pot	speed,pot,ten,health,CC	http://swgoh.gg/characters/logray/	
-lord vader		lord vader				http://swgoh.gg/characters/lord-vader/	
-luke skywalker (farmboy)		luke skywalker (farmboy)	CD,CC	off,speed,def,CD,prot,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/luke-skywalker-farmboy/	
-luminara unduli		luminara unduli	health,health,health	off,health,def,health,health,ten	health,health,speed,ten,pot	http://swgoh.gg/characters/luminara-unduli/	
-mace windu	3	mace windu	def,speed	off,speed,def,off,health,ten	ten,health,health,speed,off	http://swgoh.gg/characters/mace-windu/	
-magmatrooper		magmatrooper	health,pot,ten	off,speed,def,off,prot,ten	pot,off,off,health,health	http://swgoh.gg/characters/magmatrooper/	
-mara jade, the emperor's hand	5	mara jade, the emperor's hand	pot,speed			http://swgoh.gg/characters/mara-jade-the-emperors-hand/	
-maul		maul				http://swgoh.gg/characters/maul/	
-mission vao		mission vao	CD,CC	off,speed,def,CD,prot,pot	ten,speed,CC,off,off	http://swgoh.gg/characters/mission-vao/	
-mob enforcer	3	mob enforcer				http://swgoh.gg/characters/mob-enforcer/	
-moff gideon		moff gideon	speed,health	off,speed,def,health,health,pot	speed,pot,ten,health,health	http://swgoh.gg/characters/moff-gideon/	
-mon mothma	5	mon mothma	def,ten,health	off,speed,def,prot,health,ten	health,health,speed,ten,pro	http://swgoh.gg/characters/mon-mothma/	
-mother talzin		mother talzin	speed,health	off,speed,def,health,health,pot	speed,pot,health,health,ten	http://swgoh.gg/characters/mother-talzin/	
-nightsister acolyte		nightsister acolyte	CC,CD	off,speed,def,CD,health,ten	speed,ten,off,off,health	http://swgoh.gg/characters/nightsister-acolyte/	
-nightsister initiate		nightsister initiate	off,health	off,speed,def,off,health,pot	speed,pot,off,off,health	http://swgoh.gg/characters/nightsister-initiate/	
-nightsister spirit		nightsister spirit				http://swgoh.gg/characters/nightsister-spirit/	
-nightsister zombie		nightsister zombie	speed,health	off,speed,def,health,health,ten	speed,health,health,ten,pot	http://swgoh.gg/characters/nightsister-zombie/	
-ninth sister	5	ninth sister				http://swgoh.gg/characters/ninth-sister/	
-nute gunray	7	nute gunray	pot,speed	off,speed,def,prot,prot,pot	speed,pot,ten,prot,prot	http://swgoh.gg/characters/nute-gunray/	
-obi-wan kenobi (old ben)	5	obi-wan kenobi (old ben)	def,def,pot	off,CA,def,health,prot,ten	pot,ten,health,health,def	http://swgoh.gg/characters/obi-wan-kenobi-old-ben/	
-old daka		old daka	speed,health	off,speed,def,health,health,health	speed,pot,health,health,def	http://swgoh.gg/characters/old-daka/	
-omega		omega				http://swgoh.gg/characters/omega/	
-padmé amidala	8	padmé amidala	health,health,ten	off,speed,def,health,health,ten	pot,speed,health,health,def	http://swgoh.gg/characters/padme-amidala/	
-pao		pao				http://swgoh.gg/characters/pao/	
-paploo		paploo	ten,health,def	off,health,def,health,prot,ten	speed,ten,CC,health,health	http://swgoh.gg/characters/paploo/	
-plo koon		plo koon	pot,ten,def	off,speed,def,health,health,pot	pot,ten,speed,def,def	http://swgoh.gg/characters/plo-koon/	
-poe dameron	5	poe dameron	speed,pot	off,speed,def,prot,prot,ten	pot,ten,speed,prot,prot	http://swgoh.gg/characters/poe-dameron/	
-poggle the lesser		poggle the lesser	speed,pot	off,speed,def,def,prot,pot	speed,ten,pot,def,def	http://swgoh.gg/characters/poggle-the-lesser/	
-princess leia	3	princess leia	CC,CD	off,speed,def,CD,prot,ten	ten,speed,off,off,prot	http://swgoh.gg/characters/princess-leia/	
-qi'ra		qi'ra	CC,CD	off,speed,def,CD,prot,pot	ten,CC,off,off,speed	http://swgoh.gg/characters/qira/	
-qui-gon jinn	3	qui-gon jinn	speed,pot	off,speed,def,off,health,pot	speed,off,off,pot,ten	http://swgoh.gg/characters/qui-gon-jinn/	
-r2-d2	7	r2-d2				http://swgoh.gg/characters/r2-d2/	
-range trooper		range trooper	off,health	off,speed,def,off,health,ten	speed,ten,off,off,CC	http://swgoh.gg/characters/range-trooper/	
-rebel officer leia organa	3	rebel officer leia organa	CC,pot,ten	off,speed,def,CD,prot,ten	pot,ten,speed,off,off	http://swgoh.gg/characters/rebel-officer-leia-organa/	
-resistance hero finn	5	resistance hero finn	speed,ten	off,speed,def,health,ten	ten,speed,health,health,prot	http://swgoh.gg/characters/resistance-hero-finn/	
-resistance hero poe	5	resistance hero poe	pot,off	off,speed,def,off,health,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/resistance-hero-poe/	
-resistance pilot	3	resistance pilot	CD,ten	off,speed,def,CD,prot,pot	ten,speed,CC,off,off	http://swgoh.gg/characters/resistance-pilot/	
-resistance trooper	5	resistance trooper				http://swgoh.gg/characters/resistance-trooper/	
-rey		rey	health,speed	off,speed,def,off,health,ten	health,health,speed,off,off	http://swgoh.gg/characters/rey/	
-rey (jedi training)	7	rey (jedi training)	def,CD	off,speed,def,CD,health,pot	ten,speed,pot,CC,health	http://swgoh.gg/characters/rey-jedi-training/	
-rey (scavenger)	7	rey (scavenger)	ten,off	off,speed,def,off,prot,ten	ten,off,off,speed,prot	http://swgoh.gg/characters/rey-scavenger/	
-rose tico	5	rose tico				http://swgoh.gg/characters/rose-tico/	
-royal guard	3	royal guard	def,def,pot	off,CA,def,health,health,ten	health,health,def,def,pot	http://swgoh.gg/characters/royal-guard/	
-sabine wren		sabine wren	CC,CD	off,speed,def,CD,health,pot	ten,pot,speed,off,off	http://swgoh.gg/characters/sabine-wren/	
-sana starros		sana starros				http://swgoh.gg/characters/sana-starros/	
-savage opress		savage opress				http://swgoh.gg/characters/savage-opress/	
-scarif rebel pathfinder	5	scarif rebel pathfinder				http://swgoh.gg/characters/scarif-rebel-pathfinder/	
-second sister	5	second sister				http://swgoh.gg/characters/second-sister/	
-seventh sister	7	seventh sister				http://swgoh.gg/characters/seventh-sister/	
-shaak ti		shaak ti	speed,health	off,speed,def,health,health,ten	speed,ten,health,health,off	http://swgoh.gg/characters/shaak-ti/	
-shoretrooper		shoretrooper	speed,health	off,speed,def,health,prot,ten	health,health,prot,speed,prot	http://swgoh.gg/characters/shoretrooper/	
-sith assassin		sith assassin	CC,CD	off,speed,def,CD,health,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/sith-assassin/	
-sith empire trooper		sith empire trooper	def,def,def	off,CA,def,health,health,ten	ten,pot,health,health,prot	http://swgoh.gg/characters/sith-empire-trooper/	
-sith eternal emperor	7	sith eternal emperor	speed,def	off,speed,def,prot,prot,prot	prot,prot,speed,def,def	http://swgoh.gg/characters/sith-eternal-emperor/	
-sith marauder	5	sith marauder				http://swgoh.gg/characters/sith-marauder/	
-sith trooper	5	sith trooper	CD,ten	off,speed,def,CD,prot,off	ten,speed,off,off,prot	http://swgoh.gg/characters/sith-trooper/	
-skiff guard (lando calrissian)		skiff guard (lando calrissian)				http://swgoh.gg/characters/skiff-guard-lando-calrissian/	
-snowtrooper		snowtrooper	CC,CD	off,speed,def,CD,prot,pot	speed,CC,ten,off,off	http://swgoh.gg/characters/snowtrooper/	
-starkiller		starkiller				http://swgoh.gg/characters/starkiller/	
-stormtrooper		stormtrooper	health,health,def	off,CA,def,def,health,ten	ten,health,health,prot,prot	http://swgoh.gg/characters/stormtrooper/	
-stormtrooper han		stormtrooper han	def,def,def	off,CA,def,health,health,ten	ten,speed,health,health,def	http://swgoh.gg/characters/stormtrooper-han/	
-sun fac		sun fac	health,health,def	off,health,def,def,health,ten	ten,pot,health,health,def	http://swgoh.gg/characters/sun-fac/	
-supreme leader kylo ren		supreme leader kylo ren	CD,pot	off,speed,def,CD,health,ten	pot,ten,speed,off,off	http://swgoh.gg/characters/supreme-leader-kylo-ren/	
-t3-m4		t3-m4	CC,CD	off,speed,def,CD,prot,pot	pot,ten,CC,speed,off	http://swgoh.gg/characters/t3-m4/	
-talia	5	talia				http://swgoh.gg/characters/talia/	
-tech		tech	health,speed	off,speed,def,health,health,pot	speed,ten,health,health,prot	http://swgoh.gg/characters/tech/	
-teebo		teebo	speed,pot	off,speed,def,health,health,pot	speed,pot,health,health,CC	http://swgoh.gg/characters/teebo/	
-the armorer		the armorer	speed,def	off,speed,def,health,health,ten	speed,ten,health,health,def	http://swgoh.gg/characters/the-armorer/	
-the mandalorian		the mandalorian	CC,CD	off,speed,def,CD,prot,ten	CC,off,off,speed,ten	http://swgoh.gg/characters/the-mandalorian/	
-the mandalorian (beskar armor)	5	the mandalorian (beskar armor)	off,ten	off,off,def,off,prot,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/the-mandalorian-beskar-armor/	
-third sister	5	third sister	ten,off	off,speed,def,CD,prot,off	pot,ten,speed,off,off	http://swgoh.gg/characters/third-sister/	
-threepio & chewie	5	threepio & chewie				http://swgoh.gg/characters/threepio-&-chewie/	
-tie fighter pilot		tie fighter pilot				http://swgoh.gg/characters/tie-fighter-pilot/	
-tusken raider		tusken raider	off,pot	off,speed,def,off,health,pot	pot,speed,off%,off+,ten	http://swgoh.gg/characters/tusken-raider/	
-tusken shaman	4	tusken shaman				http://swgoh.gg/characters/tusken-shaman/	
-ugnaught		ugnaught	def,def,pot	off,speed,def,prot,prot,pot	pot,ten,speed,prot,prot	http://swgoh.gg/characters/ugnaught/	
-urorrur'r'r	3	urorrur'r'r				http://swgoh.gg/characters/urorrurrr/	
-vandor chewbacca	3	vandor chewbacca	ten,health,health	off,speed,def,health,health,ten	speed,ten,health,health,CC	http://swgoh.gg/characters/vandor-chewbacca/	
-veteran smuggler chewbacca		veteran smuggler chewbacca	CD,health	off,off,def,CD,health,pot	ten,pot,off,off,prot	http://swgoh.gg/characters/veteran-smuggler-chewbacca/	
-veteran smuggler han solo	3	veteran smuggler han solo	CD,health	off,off,def,CD,health,pot	ten,pot,off,off,prot	http://swgoh.gg/characters/veteran-smuggler-han-solo/	
-visas marr	7	visas marr	health,health,ten	off,CA,def,health,health,ten	ten,speed,health,health,prot	http://swgoh.gg/characters/visas-marr/	
-wampa	3	wampa				http://swgoh.gg/characters/wampa/	
-wat tambor		wat tambor	speed,health	off,speed,def,health,health,ten	pot,ten,speed,health,health	http://swgoh.gg/characters/wat-tambor/	
-wedge antilles	5	wedge antilles	CC,CD	off,speed,def,CD,prot,pot	pot,ten,speed,off,off	http://swgoh.gg/characters/wedge-antilles/	
-wicket		wicket	CD,CC	off,speed,def,CD,prot,ten	CC,speed,health,health,ten	http://swgoh.gg/characters/wicket/	
-wrecker		wrecker	def,pot,def	off,CA,def,prot,health,pot	health,health,prot,prot,ten	http://swgoh.gg/characters/wrecker/	
-young han solo		young han solo	CD,ten	off,speed,def,CD,prot,off	pot,CC,speed,health,off,off	http://swgoh.gg/characters/young-han-solo/	
-young lando calrissian	7	young lando calrissian	CC,CD	off,off,def,CD,off,pot	pot,CC,CD,off,off,speed	http://swgoh.gg/characters/young-lando-calrissian/	
-zaalbar		zaalbar	def,def,pot	off,CA,def,health,health,ten	pot,ten,CC,health,health	http://swgoh.gg/characters/zaalbar/	
-zam wesell		zam wesell	speed,pot	off,speed,def,prot,prot,pot	speed,pot,prot,prot,off	http://swgoh.gg/characters/zam-wesell/	
+name	relic	sets	primaries	secondaries
+0-0-0	7			
+50r-t				
+aayla secura	7	CC,CD	off,speed,def,CD,prot,pot	ten,speed,pot,off,off
+admiral ackbar		speed,ten	off,CA,def,health,health,ten	ten,speed,health,health,prot
+admiral piett	8	speed,pot	off,speed,def,health,health,pot	speed,pot,ten,health,health
+admiral raddus	9			
+admiral trench				
+ahsoka tano		CD,health	off,speed,def,CD,health,ten	health,health,ten,speed,CC
+ahsoka tano (fulcrum)				
+amilyn holdo	5			
+arc trooper	8	CC,CD	off,speed,def,CD,prot,off	speed,CC,off,off,prot
+asajj ventress	7	CD,pot	off,speed,def,CD,health,pot	speed,off,off,health,health
+aurra sing	7	CC,CD	off,speed,def,CD,prot,pot	CC,off,off,speed,ten
+b1 battle droid		speed,pot	off,off,def,off,prot,pot	pot,off,off,speed,ten
+b2 super battle droid		pot,health,health	off,health,def,health,health,pot	pot,health,health,def,def
+barriss offee		def,def,def	off,health,def,health,health,ten	health,health,speed,def,def
+bastila shan		health,off	off,speed,def,off,prot,prot	speed,health,health,off,off
+bastila shan (fallen)				
+baze malbus				
+bb-8	7	speed,pot	off,speed,def,CC,health,ten	ten,pot,speed,health,health
+ben solo		off,pot		
+biggs darklighter	3	CC,CD	off,speed,def,CD,prot,ten	pot,ten,speed,off,off
+bistan	5			
+bo-katan kryze	7	CC,CD	off,speed,def,CD,health,pot	pot,speed,CC,ten,health
+boba fett	8	pot,speed	off,speed,def,CD,prot,pot	CC,speed,off,pot,off
+boba fett, scion of jango				
+bodhi rook		speed,def	off,speed,def,health,prot,pot	pot,ten,speed,health,health
+bossk	5	health,ten,ten	off,speed,def,prot,prot,ten	prot,prot,ten,speed,def
+boushh (leia organa)	5			
+bt-1	7			
+c-3po	7	pot,pot,health	health,speed,def,prot,prot,pot	ten,speed,pot,prot,prot
+cad bane	7	CC,CD	off,speed,def,CD,prot,pot	CC,speed,prot,prot,pot
+cal kestis				
+canderous ordo	7	off,pot	off,speed,def,off,health,pot	ten,speed,CC,off,off
+captain han solo	3	CC,speed	off,speed,def,health,health,ten	ten,speed,health,health,def
+captain phasma	7	speed,pot	off,speed,def,CD,prot,pot	pot,ten,speed,prot,prot
+captain rex				
+cara dune		def,def,def	off,CA,def,health,health,pot	pot,ten,speed,health,health
+carth onasi		CD,health	off,speed,def,CD,prot,ten	pot,ten,speed,off,off
+cassian andor	8			
+cc-2224 "cody"	5	CC,speed	off,speed,def,prot,pot	pot,ten,speed,CC,prot
+cere junda				
+chewbacca	6	CC,CD	health,speed,defense,CD,health,ten	speed,pot,ten,prot,prot
+chief chirpa		speed,health	off,speed,def,CC,health,ten	speed,ten,health,health,CC
+chief nebit		ten,health,health	off,health,def,health,health,ten	ten,health,health,def,def
+chirrut îmwe				
+chopper		def,speed	off,speed,def,health,health,ten	health,health,ten,def,speed
+clone sergeant - phase i	5	CC,CD	off,speed,def,CD,prot,pot	pot,ten,speed,off,off
+clone wars chewbacca				
+colonel starck	3	speed,pot	off,speed,def,health,health,pot	speed,ten,pot,health,health
+commander ahsoka tano		speed,health	off,speed,def,CD,prot,ten	ten,speed,CC,off,off
+commander luke skywalker	7	ten,off	off,speed,def,CD,prot,ten	speed,ten,pot,health,health
+coruscant underworld police				
+count dooku	8	speed,pot	off,speed,def,prot,prot,pot	speed,pot,ten,off,off
+ct-21-0408 "echo"	7	CD,CC	off,off,def,CD,health,pot	speed,ten,off,off,CC
+ct-5555 "fives"		health,health,health	off,speed,def,off,prot,prot	off,off,prot,speed,prot
+ct-7567 "rex"		CC,speed	off,speed,def,CC,health,pot	CC,off,off,ten,speed
+dark trooper		off,def	off,speed,def,off,health,ten	off,off,ten,speed,def
+darth malak				
+darth malgus	8			
+darth maul	4	CD,health	off,speed,def,CD,health,pot	pot,ten,speed,off,off
+darth nihilus		speed,ten	off,speed,def,health,health,ten	pot,ten,speed,health,health
+darth revan				
+darth sidious	7	CD,pot	off,speed,def,CD,health,pot	pot,ten,speed,off,off
+darth sion		def,def,pot	off,speed,def,health,prot,pot	pot,speed,prot,prot,health
+darth talon	5			
+darth traya		health,def,pot	off,health,def,health,health,pot	pot,ten,speed,health,health
+darth vader	7	CC,CD	off,speed,def,CD,health,pot	pot,off,speed,CC,off
+dash rendar	7			
+dathcha		CC,CD	off,off,def,CD,prot,pot	pot,CC,CD,off,off,speed
+death trooper		CC,CD	off,speed,def,CD,health,pot	speed,CC,pot,off,off
+dengar	5	CC,ten,pot	off,speed,def,CC,prot,ten	speed,CC,pot,prot,prot
+director krennic	4	CC,CD	off,speed,def,CD,health,pot	pot,speed,CC,ten,health
+doctor aphra	7			
+droideka	7	off,health	off,health,def,health,health,ten	ten,health,off,health,off
+echo	5	speed,health	off,speed,def,prot,prot,pot	speed,ten,health,health,prot
+eeth koth		speed,pot	off,speed,def,CD,prot,pot	speed,pot,CC,prot,prot
+eighth brother	7			
+embo	7	CC,CD	off,speed,def,CD,prot,ten	CC,prot,prot,speed,ten
+emperor palpatine	7	speed,pot	off,speed,def,prot,prot,pot	pot,prot,prot,health,speed
+enfys nest		ten,ten,ten	off,CA,def,CD,health,ten	pot,ten,health,health,prot
+ewok elder		ten,health,health	off,speed,def,health,health,ten	speed,ten,health,health,CC
+ewok scout				
+ezra bridger	7	CC,CD	off,speed,def,CD,health,ten	off,off,ten,CC,speed
+fennec shand	7	ten,ten,ten	off,CA,def,CD,health,ten	pot,ten,health,health,prot
+fifth brother	7			
+finn	7	speed,def	off,speed,def,health,health,pot	speed,pot,ten,health,health
+first order executioner	7	health,CC,health	off,speed,defense,CD,health,ten	ten,speed,health,health,CC
+first order officer	5	speed,pot	off,speed,def,CD,prot,ten	pot,speed,prot,prot,off
+first order sf tie pilot	3	CD,pot	off,speed,def,CD,prot,pot	ten,pot,speed,off,off
+first order stormtrooper	7	ten,def,def	off,health,def,health,health,pot	ten,health,health,speed,def
+first order tie pilot	3	CD,pot	off,speed,def,CD,prot,ten	ten,pot,off,off,speed
+gamorrean guard	3			
+gar saxon		health,pot,ten	off,speed,def,CD,health,pot	off,speed,def,CD,health,pot
+garazeb "zeb" orrelios		pot,def,def	off,off,def,health,health,pot	off,off,health,health,speed
+general grievous	7	health,health,health	off,health,def,health,health,health	health,health,pot,def,speed
+general hux	7	speed,ten	off,speed,def,prot,prot,prot	speed,ten,prot,prot,health
+general kenobi	8	health,health,def	off,speed,def,health,health,ten	health,health,ten,def,def
+general skywalker	8	CC,CD	off,speed,def,CD,prot,prot	prot,prot,speed,off,off
+general veers	3	speed,pot	off,speed,def,prot,prot,ten	speed,prot,prot,ten,pot
+geonosian brood alpha		speed,def	off,CA,def,def,prot,ten	ten,speed,def,def,prot
+geonosian soldier		CD,CC	off,speed,def,CD,prot,ten	ten,CC,speed,def,def
+geonosian spy		CC,CD	off,speed,def,CD,prot,ten	pot,CC,speed,off,off
+grand admiral thrawn	6	speed,health	off,speed,def,health,prot,ten	speed,prot,prot,health,health
+grand inquisitor	7			
+grand master yoda	8	speed,ten	off,speed,def,off,health,ten	pot,speed,ten,health,health
+grand moff tarkin	7	pot,speed	off,speed,def,health,health,pot	speed,pot,health,health,ten
+greedo	7	CC,CD	off,speed,def,CD,prot,pot	speed,pot,ten,prot,prot
+greef karga		speed,health	off,speed,def,prot,prot,ten	speed,ten,prot,prot,health
+han solo	8	health,CD	health,off,def,CD,health,pot	speed,off,off,pot,ten
+hera syndulla	5	health,speed	off,speed,def,health,health,pot	speed,pot,health,health,def
+hermit yoda	5	speed,health	off,speed,def,health,health,ten	speed,health,health,ten,def
+hk-47	7			
+hondo ohnaka	7	speed,health	off,speed,def,health,health,ten	speed,pot,off,off,health
+hoth rebel scout		CC,CD	off,speed,def,CD,prot,pot	CC,speed,off,off,pot
+hoth rebel soldier		def,ten,pot	off,speed,def,health,health,ten	pot,speed,CC,health,health
+hunter	5	CC,CD	off,speed,def,CD,prot,ten	CC,off,off,prot,prot
+iden versio				
+ig-100 magnaguard	5	health,health,pot	off,health,def,health,health,pot	health,health,speed,pot,off
+ig-11		health,health,pot	off,health,def,health,health,ten	pot,ten,speed,health,health
+ig-86 sentinel droid	7			
+ig-88	7	CD,CC	off,speed,def,CD,health,pot	speed,pot,ten,CC,health
+ima-gun di		health,health,health	off,health,def,health,health,ten	
+imperial probe droid	7	pot,health,health	off,speed,def,health,health,pot	speed,pot,ten,health,health
+imperial super commando		CD,pot	off,speed,def,CD,health,pot	ten,speed,CC,off,off
+jabba the hutt	9			
+jango fett	7	speed,pot	off,speed,def,CD,prot,pot	speed,pot,off,off,CC
+jawa	3	CC,CD	off,off,def,CD,prot,pot	pot,CC,CD,off,off,speed
+jawa engineer		health,speed	off,speed,def,prot,prot,ten	speed,ten,prot,prot,def
+jawa scavenger		def,def,def	off,speed,def,prot,prot,ten	prot,prot,CC,ten,def
+jedi consular		health,health,def	off,speed,def,health,health,ten	ten,speed,health,health,off
+jedi knight anakin	7	health,CD	off,speed,def,CD,health,pot	pot,speed,CC,off,off
+jedi knight guardian		def,def,def	off,CA,def,health,health,pot	pot,ten,def,def,health
+jedi knight luke skywalker	7	CD,CC	off,speed,def,prot,pot	pot,ten,speed,CC,prot
+jedi knight revan		speed,health	off,speed,def,CD,health,ten	ten,CC,speed,off,off
+jedi master kenobi	9	speed,health	off,speed,def,CD,health,ten	ten,pot,speed,health,health
+jedi master luke skywalker	9	speed,health	off,speed,def,prot,prot,pot	ten,pot,speed,prot,prot
+jolee bindo		health,health,health	off,speed,def,health,health,health	speed,health,health,ten,def
+juhani		CC,health,def	off,health,def,CC,prot,pot	pot,CC,health,health,def
+jyn erso	5			
+k-2so				
+kanan jarrus		def,def,def	off,health,def,health,health,ten	CC,health,health,def,def
+ki-adi-mundi		off,health	off,speed,def,off,health,pot	speed,ten,off,off,health
+kit fisto		speed,health	off,speed,def,off,health,ten	speed,ten,off,off,health
+krrsantan	7			
+kuiil		speed,health	off,speed,def,prot,pot	ten,pot,speed,prot,prot
+kyle katarn	5			
+kylo ren	7			
+kylo ren (unmasked)	7	def,def,def	off,health,def,health,health,health	health,health,def,def,ten
+l3-37		health,health,def	off,CA,def,CC,prot,pot	speed,ten,health,health,CC
+lando calrissian	5	CC,CD	off,speed,def,CD,prot,ten	ten,speed,off,off,prot
+lobot				
+logray		pot,health,def	off,speed,def,health,health,pot	speed,pot,ten,health,CC
+lord vader	9			
+luke skywalker (farmboy)		CD,CC	off,speed,def,CD,prot,pot	pot,ten,speed,off,off
+luminara unduli		health,health,health	off,health,def,health,health,ten	health,health,speed,ten,pot
+mace windu	3	def,speed	off,speed,def,off,health,ten	ten,health,health,speed,off
+magmatrooper		health,pot,ten	off,speed,def,off,prot,ten	pot,off,off,health,health
+mara jade, the emperor's hand	5	pot,speed		
+maul				
+merrin				
+mission vao		CD,CC	off,speed,def,CD,prot,pot	ten,speed,CC,off,off
+mob enforcer	7			
+moff gideon		speed,health	off,speed,def,health,health,pot	speed,pot,ten,health,health
+mon mothma	7	def,ten,health	off,speed,def,prot,health,ten	health,health,speed,ten,pro
+mother talzin	7	speed,health	off,speed,def,health,health,pot	speed,pot,health,health,ten
+nightsister acolyte	7	CC,CD	off,speed,def,CD,health,ten	speed,ten,off,off,health
+nightsister initiate		off,health	off,speed,def,off,health,pot	speed,pot,off,off,health
+nightsister spirit				
+nightsister zombie		speed,health	off,speed,def,health,health,ten	speed,health,health,ten,pot
+ninth sister	7			
+nute gunray	7	pot,speed	off,speed,def,prot,prot,pot	speed,pot,ten,prot,prot
+obi-wan kenobi (old ben)	7	def,def,pot	off,CA,def,health,prot,ten	pot,ten,health,health,def
+old daka		speed,health	off,speed,def,health,health,health	speed,pot,health,health,def
+omega				
+padmé amidala	8	health,health,ten	off,speed,def,health,health,ten	pot,speed,health,health,def
+pao				
+paploo		ten,health,def	off,health,def,health,prot,ten	speed,ten,CC,health,health
+plo koon		pot,ten,def	off,speed,def,health,health,pot	pot,ten,speed,def,def
+poe dameron	5	speed,pot	off,speed,def,prot,prot,ten	pot,ten,speed,prot,prot
+poggle the lesser		speed,pot	off,speed,def,def,prot,pot	speed,ten,pot,def,def
+princess leia	3	CC,CD	off,speed,def,CD,prot,ten	ten,speed,off,off,prot
+qi'ra		CC,CD	off,speed,def,CD,prot,pot	ten,CC,off,off,speed
+qui-gon jinn	3	speed,pot	off,speed,def,off,health,pot	speed,off,off,pot,ten
+r2-d2	7			
+range trooper		off,health	off,speed,def,off,health,ten	speed,ten,off,off,CC
+rebel officer leia organa	3	CC,pot,ten	off,speed,def,CD,prot,ten	pot,ten,speed,off,off
+resistance hero finn	5	speed,ten	off,speed,def,health,ten	ten,speed,health,health,prot
+resistance hero poe	5	pot,off	off,speed,def,off,health,pot	pot,ten,speed,off,off
+resistance pilot	3	CD,ten	off,speed,def,CD,prot,pot	ten,speed,CC,off,off
+resistance trooper	7			
+rey	9	health,speed	off,speed,def,off,health,ten	health,health,speed,off,off
+rey (jedi training)	7	def,CD	off,speed,def,CD,health,pot	ten,speed,pot,CC,health
+rey (scavenger)	7	ten,off	off,speed,def,off,prot,ten	ten,off,off,speed,prot
+rose tico	5			
+royal guard	3	def,def,pot	off,CA,def,health,health,ten	health,health,def,def,pot
+sabine wren		CC,CD	off,speed,def,CD,health,pot	ten,pot,speed,off,off
+sana starros				
+savage opress				
+saw gerrera				
+scarif rebel pathfinder	5			
+second sister	7			
+seventh sister	7			
+shaak ti		speed,health	off,speed,def,health,health,ten	speed,ten,health,health,off
+shoretrooper		speed,health	off,speed,def,health,prot,ten	health,health,prot,speed,prot
+sith assassin		CC,CD	off,speed,def,CD,health,pot	pot,ten,speed,off,off
+sith empire trooper	7	def,def,def	off,CA,def,health,health,ten	ten,pot,health,health,prot
+sith eternal emperor	9	speed,def	off,speed,def,prot,prot,prot	prot,prot,speed,def,def
+sith marauder	5			
+sith trooper	7	CD,ten	off,speed,def,CD,prot,off	ten,speed,off,off,prot
+skiff guard (lando calrissian)	7			
+snowtrooper		CC,CD	off,speed,def,CD,prot,pot	speed,CC,ten,off,off
+starkiller				
+stormtrooper		health,health,def	off,CA,def,def,health,ten	ten,health,health,prot,prot
+stormtrooper han		def,def,def	off,CA,def,health,health,ten	ten,speed,health,health,def
+sun fac		health,health,def	off,health,def,def,health,ten	ten,pot,health,health,def
+supreme leader kylo ren	9	CD,pot	off,speed,def,CD,health,ten	pot,ten,speed,off,off
+t3-m4		CC,CD	off,speed,def,CD,prot,pot	pot,ten,CC,speed,off
+talia	5			
+tarfful				
+tech		health,speed	off,speed,def,health,health,pot	speed,ten,health,health,prot
+teebo		speed,pot	off,speed,def,health,health,pot	speed,pot,health,health,CC
+the armorer		speed,def	off,speed,def,health,health,ten	speed,ten,health,health,def
+the mandalorian		CC,CD	off,speed,def,CD,prot,ten	CC,off,off,speed,ten
+the mandalorian (beskar armor)	7	off,ten	off,off,def,off,prot,pot	pot,ten,speed,off,off
+third sister	7	ten,off	off,speed,def,CD,prot,off	pot,ten,speed,off,off
+threepio & chewie	5			
+tie fighter pilot	7			
+tusken chieftain				
+tusken raider		off,pot	off,speed,def,off,health,pot	pot,speed,off%,off+,ten
+tusken shaman	4			
+tusken warrior				
+ugnaught		def,def,pot	off,speed,def,prot,prot,pot	pot,ten,speed,prot,prot
+urorrur'r'r	3			
+vandor chewbacca	3	ten,health,health	off,speed,def,health,health,ten	speed,ten,health,health,CC
+veteran smuggler chewbacca		CD,health	off,off,def,CD,health,pot	ten,pot,off,off,prot
+veteran smuggler han solo	7	CD,health	off,off,def,CD,health,pot	ten,pot,off,off,prot
+visas marr	7	health,health,ten	off,CA,def,health,health,ten	ten,speed,health,health,prot
+wampa	3			
+wat tambor		speed,health	off,speed,def,health,health,ten	pot,ten,speed,health,health
+wedge antilles	7	CC,CD	off,speed,def,CD,prot,pot	pot,ten,speed,off,off
+wicket		CD,CC	off,speed,def,CD,prot,ten	CC,speed,health,health,ten
+wrecker		def,pot,def	off,CA,def,prot,health,pot	health,health,prot,prot,ten
+young han solo		CD,ten	off,speed,def,CD,prot,off	pot,CC,speed,health,off,off
+young lando calrissian	7	CC,CD	off,off,def,CD,off,pot	pot,CC,CD,off,off,speed
+zaalbar		def,def,pot	off,CA,def,health,health,ten	pot,ten,CC,health,health
+zam wesell		speed,pot	off,speed,def,prot,prot,pot	speed,pot,prot,prot,off
+zorii bliss				
