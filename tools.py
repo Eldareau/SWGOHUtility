@@ -5,22 +5,9 @@ The purpose of this file is to create the tools and function needed to manage mo
 from dataclasses import dataclass
 from enum import Enum
 import sqlite3
-
-""" Enum of the different mod shapes """
-
-
-class Shape(Enum):
-    SQUARE = 1
-    ARROW = 2
-    RHOMBUS = 3
-    TRIANGLE = 4
-    CIRCLE = 5
-    CROSS = 6
-
+import collections
 
 """ Enum of the different mod sets """
-
-
 class Set(Enum):
     HP = 1
     DEF = 2
@@ -31,10 +18,16 @@ class Set(Enum):
     POT = 7
     SPEED = 8
 
+""" Enum of the different mod shapes """
+class Shape(Enum):
+    SQUARE = 1
+    ARROW = 2
+    RHOMBUS = 3
+    TRIANGLE = 4
+    CIRCLE = 5
+    CROSS = 6
 
 """ Enum of the different mod primaries stats """
-
-
 class Primaries(Enum):
     ACC = 1
     CA = 2
@@ -50,8 +43,6 @@ class Primaries(Enum):
 
 
 """ Enum of the different mod secondaries stats """
-
-
 class Secondaries(Enum):
     CC = 1
     DEFF = 2  # def+
@@ -70,8 +61,6 @@ class Secondaries(Enum):
 """ 
 Class Mod 
 """
-
-
 @dataclass
 class Mod:
     shape: Shape
@@ -84,24 +73,13 @@ class Mod:
 Class Potential Mod 
 ex : [CC,CD] [off,speed,def,CD,prot,pot] [ten,speed,pot,off,off]
 """
-
-
 @dataclass
 class PotentialMod:
     _characterName: str
     _potentialMods: list[Mod]
 
     """
-
-
-
-
     TODO : trouver un moyen de construire les mods et de valider le fait qu'ils ont été trouvés
-
-
-
-
-
     """
 
     def __init__(self, name, set, primaries, secondaries):
@@ -125,8 +103,6 @@ class PotentialMod:
 """
 Open the SWGOHCharacters file containing the list of all the characters along their mods
 """
-
-
 def openModsFile():
     with open("SWGOHCharacters.tsv", "r") as f:
         potentialMods = []
@@ -143,8 +119,6 @@ def openModsFile():
 """
 Search for the wanted mod in the potentialMods list
 """
-
-
 def comparePotentialWanted(potentialMods, wantedMod):
     resList = []
     for mod in potentialMods:
@@ -158,8 +132,6 @@ Ask the user for the mod he have
 
 TODO : Filtrer les statistiques possibles en fonction de la forme et la statistique primaire
 """
-
-
 def askingForMod():
     nbSecondaries = 0
     secondaries = []
@@ -206,3 +178,14 @@ def askingForMod():
 def askForAction(resList):
     print(resList)
     return
+
+"""
+Give the duplicates elements and their position in list.
+IN : List
+OUT : Dict
+"""
+def list_duplicates(seq):
+    tally = collections.defaultdict(list)
+    for i,item in enumerate(seq):
+        tally[item].append(i)
+    return ((key,locs) for key,locs in tally.items() if len(locs)>1)
