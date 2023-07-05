@@ -61,6 +61,7 @@ def refractorTSV(name):
     os.remove(dummy_name)
     return
 
-# dataBaseManagement.recreateDB()
+dataBaseManagement.DBGenerator()
 # findMod()
-refractorTSV('SWGOHCharacters.tsv')
+# refractorTSV('SWGOHCharacters.tsv')
+print("Done.")
