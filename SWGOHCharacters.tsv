@@ -39,7 +39,7 @@ captain rex
 cara dune		defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,potency%	potency%,tenacity%,speed,health%,health
 carth onasi		criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,tenacity%,speed,offense%,offense
 cassian andor	8			
-"criticalchance-2224 ""cody"""	5	criticalchance,speed	offense%,speed,defense%,protection%,potency%	potency%,tenacity%,speed,criticalchance%,protection
+cc-2224 "cody"	5	criticalchance,speed	offense%,speed,defense%,protection%,potency%	potency%,tenacity%,speed,criticalchance%,protection
 cere junda				
 chewbacca	6	criticalchance,criticaldamage	health%,speed,defense%,criticaldamage%,health%,tenacity%	speed,potency%,tenacity%,protection%,protection
 chief chirpa		speed,health	offense%,speed,defense%,criticalchance%,health%,tenacity%	speed,tenacity%,health%,health,criticalchance%
@@ -53,9 +53,9 @@ commander ahsoka tano		speed,health	offense%,speed,defense%,criticaldamage%,prot
 commander luke skywalker	7	tenacity,offense	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,potency%,health%,health
 coruscant underworld police				
 count dooku	8	speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,tenacity%,offense%,offense
-"ct-21-0408 ""echo"""	7	criticaldamage,criticalchance	offense%,offense%,defense%,criticaldamage%,health%,potency%	speed,tenacity%,offense%,offense,criticalchance%
-"ct-5555 ""fives"""		health,health,health	offense%,speed,defense%,offense%,protection%,protection%	offense%,offense,protection%,speed,protection
-"ct-7567 ""rex"""		criticalchance,speed	offense%,speed,defense%,criticalchance%,health%,potency%	criticalchance%,offense%,offense,tenacity%,speed
+ct-21-0408 "echo"	7	criticaldamage,criticalchance	offense%,offense%,defense%,criticaldamage%,health%,potency%	speed,tenacity%,offense%,offense,criticalchance%
+ct-5555 "fives"		health,health,health	offense%,speed,defense%,offense%,protection%,protection%	offense%,offense,protection%,speed,protection
+ct-7567 "rex"		criticalchance,speed	offense%,speed,defense%,criticalchance%,health%,potency%	criticalchance%,offense%,offense,tenacity%,speed
 dark trooper		offense,defense	offense%,speed,defense%,offense%,health%,tenacity%	offense%,offense,tenacity%,speed,defense
 darth malak				
 darth malgus	8			
@@ -68,7 +68,7 @@ darth talon	5
 darth traya		health,defense,potency	offense%,health%,defense%,health%,health%,potency%	potency%,tenacity%,speed,health%,health
 darth vader	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,offense%,speed,criticalchance%,offense
 dash rendar	7			
-dathcha		criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,criticaldamage,offense%,offense,speed
+dathcha		criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,offense%,offense,speed
 death trooper		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,criticalchance%,potency%,offense%,offense
 dengar	5	criticalchance,tenacity,potency	offense%,speed,defense%,criticalchance%,protection%,tenacity%	speed,criticalchance%,potency%,protection%,protection
 director krennic	4	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,speed,criticalchance%,tenacity%,health
@@ -92,8 +92,8 @@ first order sf tie pilot	3	criticaldamage,potency	offense%,speed,defense%,critic
 first order stormtrooper	7	tenacity,defense,defense	offense%,health%,defense%,health%,health%,potency%	tenacity%,health%,health,speed,defense
 first order tie pilot	3	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,potency%,offense%,offense,speed
 gamorrean guard	3			
-gar saxon		health,potency,tenacity	offense%,speed,defense%,criticaldamage%,health%,potency%	offense,speed,defense,criticaldamage,health,potency%
-"garazeb ""zeb"" orrelios"		potency,defense,defense	offense%,offense%,defense%,health%,health%,potency%	offense%,offense,health%,health,speed
+gar saxon		health,potency,tenacity	offense%,speed,defense%,criticaldamage%,health%,potency%	offense,speed,defense,health,potency%
+garazeb "zeb" orrelios		potency,defense,defense	offense%,offense%,defense%,health%,health%,potency%	offense%,offense,health%,health,speed
 general grievous	7	health,health,health	offense%,health%,defense%,health%,health%,health%	health%,health,potency%,defense,speed
 general hux	7	speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,health
 general kenobi	8	health,health,defense	offense%,speed,defense%,health%,health%,tenacity%	health%,health,tenacity%,defense%,defense
@@ -126,11 +126,12 @@ imperial probe droid	7	potency,health,health	offense%,speed,defense%,health%,hea
 imperial super commando		criticaldamage,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	tenacity%,speed,criticalchance%,offense%,offense
 jabba the hutt	9			
 jango fett	7	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,offense%,offense,criticalchance%
-jawa	3	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,criticaldamage,offense%,offense,speed
+jawa	3	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,offense%,offense,speed
 jawa engineer		health,speed	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,protection%,protection,defense
 jawa scavenger		defense,defense,defense	offense%,speed,defense%,protection%,protection%,tenacity%	protection%,protection,criticalchance%,tenacity%,defense
 jedi consular		health,health,defense	offense%,speed,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,offense
 jedi knight anakin	7	health,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,speed,criticalchance%,offense%,offense
+jedi knight cal kestis				
 jedi knight guardian		defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,potency%	potency%,tenacity%,defense%,defense,health
 jedi knight luke skywalker	7	criticaldamage,criticalchance	offense%,speed,defense%,protection%,potency%	potency%,tenacity%,speed,criticalchance%,protection
 jedi knight revan		speed,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	tenacity%,criticalchance%,speed,offense%,offense
@@ -163,7 +164,7 @@ merrin
 mission vao		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,speed,criticalchance%,offense%,offense
 mob enforcer	7			
 moff gideon		speed,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health%,health
-mon mothma	7	defense,tenacity,health	offense%,speed,defense%,protection%,health%,tenacity%	health%,health,speed,tenacity%,pro
+mon mothma	7	defense,tenacity,health	offense%,speed,defense%,protection%,health%,tenacity%	health%,health,speed,tenacity%,protection%
 mother talzin	7	speed,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,tenacity%
 nightsister acolyte	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,tenacity%	speed,tenacity%,offense%,offense,health
 nightsister initiate		offense,health	offense%,speed,defense%,offense%,health%,potency%	speed,potency%,offense%,offense,health
@@ -228,7 +229,7 @@ third sister	7	tenacity,offense	offense%,speed,defense%,criticaldamage%,protecti
 threepio & chewie	5			
 tie fighter pilot	7			
 tusken chieftain				
-tusken raider		offense,potency	offense%,speed,defense%,offense%,health%,potency%	potency%,speed,offense%,offense+,tenacity%
+tusken raider		offense,potency	offense%,speed,defense%,offense%,health%,potency%	potency%,speed,offense%,offense,tenacity%
 tusken shaman	4			
 tusken warrior				
 ugnaught		defense,defense,potency	offense%,speed,defense%,protection%,protection%,potency%	potency%,tenacity%,speed,protection%,protection
@@ -243,7 +244,7 @@ wedge antilles	7	criticalchance,criticaldamage	offense%,speed,defense%,criticald
 wicket		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,speed,health%,health,tenacity%
 wrecker		defense,potency,defense	offense%,criticalavoidance%,defense%,protection%,health%,potency%	health%,health,protection%,protection,tenacity%
 young han solo		criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,criticalchance%,speed,health,offense%,offense
-young lando calrissian	7	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,offense%,potency%	potency%,criticalchance%,criticaldamage,offense%,offense,speed
+young lando calrissian	7	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,offense%,potency%	potency%,criticalchance%,offense%,offense,speed
 zaalbar		defense,defense,potency	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	potency%,tenacity%,criticalchance%,health%,health
 zam wesell		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,offense
 zorii bliss				

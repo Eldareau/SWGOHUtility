@@ -1,5 +1,6 @@
 import csv, sqlite3
 import tools
+import modConst
 
 def DBGenerator():
     con = sqlite3.connect("swgoh.db")
@@ -92,7 +93,9 @@ def DBGenerator():
                                 del secondaries[secondary_iter]
                                 break
                             secondary_iter += 1
-                        # print((set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
+                        print((set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
+                        # ordering the secondaries (order defined in tools.py)
+                        secondaries = tools.sort_secondaries(secondaries)
                         cur.execute("INSERT OR IGNORE INTO mods (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4) VALUES (?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
                         cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
                         mod_id = cur.fetchall()[0][0]
@@ -103,6 +106,32 @@ def DBGenerator():
                         # print((character_id, mod_id, number_needed))
                         cur.execute("INSERT OR REPLACE INTO modForCharacter (Character_id, Mod_id, Number) VALUES (?, ?, ?)", (character_id, mod_id, number_needed))
                         primary_iter += 1
+    con.commit()
+    con.close()
+    return 0
+
+"""
+Search the mod in database and return a list of character that might want it
+"""
+def searchForMod(wantedMod):
+    resList = []
+    con = sqlite3.connect("swgoh.db")
+    cur = con.cursor()
+    wantedMod.secondaries = tools.sort_secondaries(wantedMod.secondaries)
+    print(wantedMod)
+    print(modConst.potentialShape.index(wantedMod.shape)+1)
+    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, modConst.potentialShape.index(wantedMod.shape)+1, wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3]))
+    mod_id = cur.fetchall()[0][0]
+    con.close()
+    return resList
+
+"""
+Add new character to database
+"""
+def addCharacterToDB():
+    con = sqlite3.connect("swgoh.db")
+    cur = con.cursor()
+    cur.execute("INSERT INTO secondaries (Name) VALUES ('criticalchance%');")
     con.commit()
     con.close()
     return 0

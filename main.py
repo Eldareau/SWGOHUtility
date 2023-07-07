@@ -13,14 +13,12 @@ def findMod():
     """ ask for the wanted mod """
     wantedMod = tools.askingForMod()
 
-    """ retrieve all the mods """
-    potentialMods = tools.openModsFile()
+    """ retrieve the list of character that want the wanted mod """
+    characterList = dataBaseManagement.searchForMod(wantedMod)
 
-    """ compare with the list """
-    resList = tools.comparePotentialWanted(potentialMods, wantedMod)
+    """ display the result & ask for response """
 
-    """ display the result & ask for response"""
-    tools.askForAction(resList)
+    tools.askForAction(characterList)
 
 def neededMods():
     # TODO
@@ -61,7 +59,7 @@ def refractorTSV(name):
     os.remove(dummy_name)
     return
 
-dataBaseManagement.DBGenerator()
-# findMod()
+# dataBaseManagement.DBGenerator()
+findMod()
 # refractorTSV('SWGOHCharacters.tsv')
 print("Done.")
