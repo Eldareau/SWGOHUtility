@@ -255,12 +255,13 @@ def askForAction(resList):
         while not_a_valid_number(answer, len(resList)):
             print("Please select a number between 0 and " + str(len(resList)))
             answer = input()
-        if int(answer) == 0:
+        answer = int(answer)
+        if answer == 0:
             print("You chose 0 : nothing to do")
             res = 0
         else:
-            print("You chose : " + str(answer) + ", we are updating the database")
-            res = int(answer)
+            print("You chose : " + str(resList[answer-1]) + ", we are updating the database")
+            res = answer
     else:
         print("No one would want this Mod, you can sell it")
         res = 0
@@ -311,8 +312,6 @@ def update_tsv(mod, charactersName):
     with open(name,'r') as swgohRead:
         reader = csv.DictReader(swgohRead, delimiter="\t")
         header = next(reader)
-        print(header)
-        input()
         with open(dummy_name, 'w', newline='') as swgohWrite:
             writer = csv.DictWriter(swgohWrite, list(header.keys()), delimiter="\t")
             writer.writerow(header)
