@@ -359,8 +359,7 @@ def refractor_tsv(name):
 
 def findMod():
     """ ask for the wanted mod """
-    # wantedMod = askingForMod()
-    wantedMod = Mod("speed", "square", "offense%", ["health%", "health", "potency%", "speed"])
+    wantedMod = askingForMod()
 
     """ retrieve the list of character that want the wanted mod """
     charactersNameList = searchForMod(wantedMod)
