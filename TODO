@@ -6,3 +6,4 @@ Make the errror when choosing an already chosen secondary or the primary statist
 
 LOW
 Make every fonction be my_function instead of myFunction
+Create a __string__ method for the Mod class
