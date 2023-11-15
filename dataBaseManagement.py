@@ -1,6 +1,6 @@
 import csv, sqlite3
 import tools
-import modConst
+import constants
 
 def DBGenerator():
     con = sqlite3.connect("swgoh.db")
@@ -119,9 +119,9 @@ def searchForMod(wantedMod):
     cur = con.cursor()
     wantedMod.secondaries = tools.sort_secondaries(wantedMod.secondaries)
     print(wantedMod)
-    print(modConst.potentialShape.index(wantedMod.shape)+1)
-    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, modConst.potentialShape.index(wantedMod.shape)+1, wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3]))
-    mod_id = cur.fetchall()[0][0]
+    print(constants.potentialShape.index(wantedMod.shape)+1)
+    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape)+1, wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3]))
+    mod_id = cur.fetchall()[0]
     con.close()
     return resList
 
