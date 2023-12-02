@@ -2,13 +2,11 @@
 The purpose of this file is to combine all of the elemente to create the perfect tool to manage mods in SWGOH
 """
 
-# import PySimpleGUI as sg
 import tools
 import integrity
-import dataBaseManagement
-import csv
-import os
+import findMod
 
-tools.findMod()
+# findMod.findMod()
+tools.DBGenerator()
 
 print("The End.")
