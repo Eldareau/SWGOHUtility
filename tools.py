@@ -300,30 +300,26 @@ def not_a_valid_number(value, threshold):
 Update the tsv file
 """
 def update_tsv(mod, charactersName):
-    print(mod)
-    print(charactersName)
     # retrieve shape name from shape id
-    modNb = constants.potentialShape.index(mod.shape)+1
+    modNb = constants.potentialShape.index(mod.shape)
     name = constants.tsvFileName
     print("This part is critical please do not leave until the end")
-    dummy_name = name[1:]
+    temp_name = name[1:]
 
     # open tsv
-    with open(name,'r') as swgohRead:
+    with open(name,'r') as swgohRead, open(temp_name, 'w', newline='') as swgohWrite:
         reader = csv.DictReader(swgohRead, delimiter="\t")
-        header = next(reader)
-        with open(dummy_name, 'w', newline='') as swgohWrite:
-            writer = csv.DictWriter(swgohWrite, list(header.keys()), delimiter="\t")
-            writer.writerow(header)
-            for row in reader:
-                if row['name'] == charactersName:
-                    done = row['done'].split(",")
-                    done[modNb] = mod.set
-                    row['done'] = ",".join(done)
-                writer.writerow(row)
+        writer = csv.DictWriter(swgohWrite, reader.fieldnames, delimiter="\t")
+        writer.writeheader()
+        for row in reader:
+            if row['name'] == charactersName:
+                done = row['done'].split(",")
+                done[modNb] = mod.set
+                row['done'] = ",".join(done)
+            writer.writerow(row)
 
     os.remove(name)
-    os.rename(dummy_name, name)
+    os.rename(temp_name, name)
     return 0
 
 """
@@ -359,6 +355,7 @@ def refractor_tsv(name):
 
 def findMod():
     """ ask for the wanted mod """
+    # wantedMod = Mod("speed", "square", "offense%", ["health%", "health", "potency%", "speed"])
     wantedMod = askingForMod()
 
     """ retrieve the list of character that want the wanted mod """
