@@ -1,249 +1,261 @@
 name	relic	sets	primaries	secondaries	done
-50r-t					0,0,0,0,0,0
-aayla secura	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,speed,potency%,offense%,offense	0,0,0,0,0,0
-admiral ackbar		speed,tenacity	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,protection	0,0,0,0,0,0
-admiral piett	8	speed,potency	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health%,health	0,0,0,0,0,0
-admiral raddus	9				0,0,0,0,0,0
-admiral trench					0,0,0,0,0,0
-ahsoka tano		criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	health%,health,tenacity%,speed,criticalchance%	0,0,0,0,0,0
-ahsoka tano (fulcrum)					0,0,0,0,0,0
-amilyn holdo	5				0,0,0,0,0,0
-arc trooper	8	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,protection	0,0,0,0,0,0
-asajj ventress	7	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,offense%,offense,health%,health	0,0,0,0,0,0
-aurra sing	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	criticalchance%,offense%,offense,speed,tenacity%	0,0,0,0,0,0
-b1 battle droid		speed,potency	offense%,offense%,defense%,offense%,protection%,potency%	potency%,offense%,offense,speed,tenacity%	0,0,0,0,0,0
-b2 super battle droid		potency,health,health	offense%,health%,defense%,health%,health%,potency%	potency%,health%,health,defense%,defense	0,0,0,0,0,0
-barriss offee		defense,defense,defense	offense%,health%,defense%,health%,health%,tenacity%	health%,health,speed,defense%,defense	0,0,0,0,0,0
-bastila shan		health,offense	offense%,speed,defense%,offense%,protection%,protection%	speed,health%,health,offense%,offense	0,0,0,0,0,0
-bastila shan (fallen)					0,0,0,0,0,0
-baze malbus					0,0,0,0,0,0
-bb-8	7	speed,potency	offense%,speed,defense%,criticalchance%,health%,tenacity%	tenacity%,potency%,speed,health%,health	0,0,0,0,0,0
-ben solo		offense,potency			0,0,0,0,0,0
-biggs darklighter	3	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-bistan	5				0,0,0,0,0,0
-bo-katan kryze	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,speed,criticalchance%,tenacity%,health	0,0,0,0,0,0
-boba fett	8	potency,speed	offense%,speed,defense%,criticaldamage%,protection%,potency%	criticalchance%,speed,offense%,potency%,offense	0,0,0,0,0,0
-boba fett, scion of jango					0,0,0,0,0,0
-bodhi rook		speed,defense	offense%,speed,defense%,health%,protection%,potency%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-bossk	5	health,tenacity,tenacity	offense%,speed,defense%,protection%,protection%,tenacity%	protection%,protection,tenacity%,speed,defense	0,0,0,0,0,0
-boushh (leia organa)	5				0,0,0,0,0,0
-bt-1	7				0,0,0,0,0,0
-c-3po	7	potency,potency,health	health%,speed,defense%,protection%,protection%,potency%	tenacity%,speed,potency%,protection%,protection	0,0,0,0,0,0
-cad bane	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	criticalchance%,speed,protection%,protection,potency%	0,0,0,0,0,0
-cal kestis					0,0,0,0,0,0
-canderous ordo	7	offense,potency	offense%,speed,defense%,offense%,health%,potency%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-captain han solo	3	criticalchance,speed	offense%,speed,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,defense	0,0,0,0,0,0
+0-0-0	7	speed,potency	offense%,speed,defense%,offense%,protection%,potency%	speed,potency%,protection%,protection,tenacity%	0,0,0,0,0,0
+50r-t	5	health,speed	offense%,speed,defense%,health%,health%,health%	speed,tenacity%,health%,health,-	0,0,0,0,0,0
+aayla secura	7	criticalchance,criticalchance,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,speed,potency%,criticalchance%,-	0,0,0,0,0,0
+admiral ackbar	3	speed,tenacity	offense%,speed,defense%,protection%,protection%,tenacity%	tenacity%,speed,protection%,protection,-	0,0,0,0,0,0
+admiral piett	8	speed,potency	offense%,speed,defense%,offense%,protection%,potency%	speed,potency%,protection%,protection,tenacity%	0,0,0,0,0,0
+admiral raddus	9	speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+admiral trench		speed,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,tenacity%	0,0,0,0,0,0
+ahsoka tano		criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	health%,health,tenacity%,speed,offense%	0,0,0,0,0,0
+ahsoka tano (fulcrum)		health,offense	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+amilyn holdo	5	health,health,health	offense%,criticalavoidance%,defense%,protection%,protection%,tenacity%	speed,protection%,protection,health%,health	0,0,0,0,0,0
+arc trooper	8	criticalchance,offense	offense%,speed,defense%,offense%,protection%,offense%	speed,criticalchance%,offense%,offense,protection%	0,0,0,0,0,0
+asajj ventress	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,offense%,offense,health%,health	0,0,0,0,0,0
+aurra sing	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%offense%	criticalchance%,offense%,offense,speed,-	0,0,0,0,0,0
+b1 battle droid		speed,potency	offense%,speed,defense%,offense%,protection%,offense%	potency%,offense%,offense,speed,-	0,0,0,0,0,0
+b2 super battle droid		potency,tenacity,tenacity	offense%,protection%,defense%,protection%,protection%,potency%	potency%,protection%,protection%,tenacity%,-	0,0,0,0,0,0
+barriss offee		health,health,health	offense%,speed,defense%,health%,health%,tenacity%	speed,health%,health,tenacity,-	0,0,0,0,0,0
+bastila shan	7	speed,potency	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,potency%,protection%,protection	0,0,0,0,0,0
+bastila shan (fallen)		speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,offense%,offense,health%,health	0,0,0,0,0,0
+baze malbus		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	health%,tenacity%,protection%,protection,health	0,0,0,0,0,0
+bb-8	7	speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	tenacity%,potency%,speed,protection%,protection	0,0,0,0,0,0
+ben solo		offense,potency	offense%,speed,defense%,offense%,health%,offense%	speed,offense%,offense,potency%,-	0,0,0,0,0,0
+biggs darklighter	3	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	tenacity%,speed,offense%,offense,-	0,0,0,0,0,0
+bistan	5	potency,potency,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,speed,criticalchance%,tenacity%,-	0,0,0,0,0,0
+bo-katan (mand'alor)		offense,health	offense%,offense%,defense%,offense%,health%,offense%	speed,offense%,health%,offense,health	0,0,0,0,0,0
+bo-katan kryze	7	potency,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%%,potency%	potency%,speed,criticalchance%,tenacity%,-	0,0,0,0,0,0
+boba fett	8	potency,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	criticalchance%,speed,offense%,potency%,offense	0,0,0,0,0,0
+boba fett, scion of jango	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,potency%,tenacity%	0,0,0,0,0,0
+bodhi rook		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	potency%,tenacity%,speed,-,-	0,0,0,0,0,0
+bossk	5	speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	protection%,protection,tenacity%,speed,defense	0,0,0,0,0,0
+boushh (leia organa)	5	speed,potency	offense%,speed,defense%,offense%,health%,offense%	potency%,offense%,offense,speed,-	0,0,0,0,0,0
+bt-1	7	critical,chance	offense%,speed,defense%,offense%,protection%,offense%	potency%,offense%,offense,speed,-	0,0,0,0,0,0
+c-3po	7	potency,speed	offense%,speed,defense%,protection%,protection%,potency%	tenacity%,speed,potency%,protection%,protection	0,0,0,0,0,0
+cad bane	7	potency,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,protection%,offense%,potency%,offense	0,0,0,0,0,0
+cal kestis		health,health,potency	offense%,health%,defense%,health%,health%,health%	speed,health%,health,tenacity,-	0,0,0,0,0,0
+canderous ordo	7	offense,tenacity	offense%,speed,defense%,offense%,protection%,offense%	potency%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
+captain drogan	7	critical,chance	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,potency%,criticalchance%,offense%,offense	0,0,0,0,0,0
+captain han solo	5	health,speed	offense%,speed,defense%,health%,health%,health%	criticalchance%,speed,health%,health,tenacity%	0,0,0,0,0,0
 captain phasma	7	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,tenacity%,speed,protection%,protection	0,0,0,0,0,0
-captain rex					0,0,0,0,0,0
-cara dune		defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,potency%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-carth onasi		criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-cassian andor	8				0,0,0,0,0,0
-"cc-2224 ""cody"""	5	criticalchance,speed	offense%,speed,defense%,protection%,potency%	potency%,tenacity%,speed,criticalchance%,protection	0,0,0,0,0,0
-cere junda					0,0,0,0,0,0
-chewbacca	6	criticalchance,criticaldamage	health%,speed,defense%,criticaldamage%,health%,tenacity%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
-chief chirpa		speed,health	offense%,speed,defense%,criticalchance%,health%,tenacity%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
-chief nebit		tenacity,health,health	offense%,health%,defense%,health%,health%,tenacity%	tenacity%,health%,health,defense%,defense	0,0,0,0,0,0
-chirrut îmwe					0,0,0,0,0,0
-chopper		defense,speed	offense%,speed,defense%,health%,health%,tenacity%	health%,health,tenacity%,defense,speed	0,0,0,0,0,0
-clone sergeant - phase i	5	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-clone wars chewbacca					0,0,0,0,0,0
-colonel starck	3	speed,potency	offense%,speed,defense%,health%,health%,potency%	speed,tenacity%,potency%,health%,health	0,0,0,0,0,0
-commander ahsoka tano		speed,health	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-commander luke skywalker	7	tenacity,offense	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,potency%,health%,health	0,0,0,0,0,0
-coruscant underworld police					0,0,0,0,0,0
-count dooku	8	speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,tenacity%,offense%,offense	0,0,0,0,0,0
-"ct-21-0408 ""echo"""	7	criticaldamage,criticalchance	offense%,offense%,defense%,criticaldamage%,health%,potency%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
-"ct-5555 ""fives"""		health,health,health	offense%,speed,defense%,offense%,protection%,protection%	offense%,offense,protection%,speed,protection	0,0,0,0,0,0
-"ct-7567 ""rex"""		criticalchance,speed	offense%,speed,defense%,criticalchance%,health%,potency%	criticalchance%,offense%,offense,tenacity%,speed	0,0,0,0,0,0
-dark trooper		offense,defense	offense%,speed,defense%,offense%,health%,tenacity%	offense%,offense,tenacity%,speed,defense	0,0,0,0,0,0
-darth malak					0,0,0,0,0,0
-darth malgus	8				0,0,0,0,0,0
-darth maul	4	criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-darth nihilus		speed,tenacity	offense%,speed,defense%,health%,health%,tenacity%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-darth revan					0,0,0,0,0,0
-darth sidious	7	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-darth sion		defense,defense,potency	offense%,speed,defense%,health%,protection%,potency%	potency%,speed,protection%,protection,health	0,0,0,0,0,0
-darth talon	5				0,0,0,0,0,0
-darth traya		health,defense,potency	offense%,health%,defense%,health%,health%,potency%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-darth vader	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,offense%,speed,criticalchance%,offense	0,0,0,0,0,0
-dash rendar	7				0,0,0,0,0,0
-dathcha		criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,offense%,offense,speed	0,0,0,0,0,0
-death trooper		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,criticalchance%,potency%,offense%,offense	0,0,0,0,0,0
-dengar	5	criticalchance,tenacity,potency	offense%,speed,defense%,criticalchance%,protection%,tenacity%	speed,criticalchance%,potency%,protection%,protection	0,0,0,0,0,0
-director krennic	4	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,speed,criticalchance%,tenacity%,health	0,0,0,0,0,0
-doctor aphra	7				0,0,0,0,0,0
-droideka	7	offense,health	offense%,health%,defense%,health%,health%,tenacity%	tenacity%,health%,offense%,health,offense	0,0,0,0,0,0
-echo	5	speed,health	offense%,speed,defense%,protection%,protection%,potency%	speed,tenacity%,health%,health,protection	0,0,0,0,0,0
-eeth koth		speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,criticalchance%,protection%,protection	0,0,0,0,0,0
-eighth brother	7				0,0,0,0,0,0
-embo	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,protection%,protection,speed,tenacity%	0,0,0,0,0,0
-emperor palpatine	7	speed,potency	offense%,speed,defense%,protection%,protection%,potency%	potency%,protection%,protection,health,speed	0,0,0,0,0,0
-enfys nest		tenacity,tenacity,tenacity	offense%,criticalavoidance%,defense%,criticaldamage%,health%,tenacity%	potency%,tenacity%,health%,health,protection	0,0,0,0,0,0
-ewok elder		tenacity,health,health	offense%,speed,defense%,health%,health%,tenacity%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
-ewok scout					0,0,0,0,0,0
-ezra bridger	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,tenacity%	offense%,offense,tenacity%,criticalchance%,speed	0,0,0,0,0,0
-fennec shand	7	tenacity,tenacity,tenacity	offense%,criticalavoidance%,defense%,criticaldamage%,health%,tenacity%	potency%,tenacity%,health%,health,protection	0,0,0,0,0,0
-fifth brother	7				0,0,0,0,0,0
-finn	7	speed,defense	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health%,health	0,0,0,0,0,0
-first order executioner	7	health,criticalchance,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	tenacity%,speed,health%,health,criticalchance%	0,0,0,0,0,0
-first order officer	5	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,speed,protection%,protection,offense	0,0,0,0,0,0
-first order sf tie pilot	3	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,potency%,speed,offense%,offense	0,0,0,0,0,0
-first order stormtrooper	7	tenacity,defense,defense	offense%,health%,defense%,health%,health%,potency%	tenacity%,health%,health,speed,defense	0,0,0,0,0,0
-first order tie pilot	3	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,potency%,offense%,offense,speed	0,0,0,0,0,0
-gamorrean guard	3				0,0,0,0,0,0
-gar saxon		health,potency,tenacity	offense%,speed,defense%,criticaldamage%,health%,potency%	offense,speed,defense,health,potency%	0,0,0,0,0,0
-"garazeb ""zeb"" orrelios"		potency,defense,defense	offense%,offense%,defense%,health%,health%,potency%	offense%,offense,health%,health,speed	0,0,0,0,0,0
-general grievous	7	health,health,health	offense%,health%,defense%,health%,health%,health%	health%,health,potency%,defense,speed	0,0,0,0,0,0
-general hux	7	speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,health	0,0,0,0,0,0
-general kenobi	8	health,health,defense	offense%,speed,defense%,health%,health%,tenacity%	health%,health,tenacity%,defense%,defense	0,0,0,0,0,0
-general skywalker	8	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,protection%	protection%,protection,speed,offense%,offense	0,0,0,0,0,0
-general veers	3	speed,potency	offense%,speed,defense%,protection%,protection%,tenacity%	speed,protection%,protection,tenacity%,potency%	0,0,0,0,0,0
-geonosian brood alpha		speed,defense	offense%,criticalavoidance%,defense%,defense%,protection%,tenacity%	tenacity%,speed,defense%,defense,protection	0,0,0,0,0,0
-geonosian soldier		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,criticalchance%,speed,defense%,defense	0,0,0,0,0,0
-geonosian spy		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,criticalchance%,speed,offense%,offense	0,0,0,0,0,0
-grand admiral thrawn	6	speed,health	offense%,speed,defense%,health%,protection%,tenacity%	speed,protection%,protection,health%,health	0,0,0,0,0,0
-grand inquisitor	7				0,0,0,0,0,0
-grand master yoda	8	speed,tenacity	offense%,speed,defense%,offense%,health%,tenacity%	potency%,speed,tenacity%,health%,health	0,0,0,0,0,0
-grand moff tarkin	7	potency,speed	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,tenacity%	0,0,0,0,0,0
-greedo	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
-greef karga		speed,health	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,protection%,protection,health	0,0,0,0,0,0
-han solo	8	health,criticaldamage	health%,offense%,defense%,criticaldamage%,health%,potency%	speed,offense%,offense,potency%,tenacity%	0,0,0,0,0,0
-hera syndulla	5	health,speed	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,defense	0,0,0,0,0,0
-hermit yoda	5	speed,health	offense%,speed,defense%,health%,health%,tenacity%	speed,health%,health,tenacity%,defense	0,0,0,0,0,0
-hk-47	7				0,0,0,0,0,0
-hondo ohnaka	7	speed,health	offense%,speed,defense%,health%,health%,tenacity%	speed,potency%,offense%,offense,health	0,0,0,0,0,0
-hoth rebel scout		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	criticalchance%,speed,offense%,offense,potency%	0,0,0,0,0,0
-hoth rebel soldier		defense,tenacity,potency	offense%,speed,defense%,health%,health%,tenacity%	potency%,speed,criticalchance%,health%,health	0,0,0,0,0,0
-hunter	5	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,offense%,offense,protection%,protection	0,0,0,0,0,0
-iden versio					0,0,0,0,0,0
-ig-100 magnaguard	5	health,health,potency	offense%,health%,defense%,health%,health%,potency%	health%,health,speed,potency%,offense	0,0,0,0,0,0
-ig-11		health,health,potency	offense%,health%,defense%,health%,health%,tenacity%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-ig-86 sentinel droid	7				0,0,0,0,0,0
-ig-88	7	criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,potency%,tenacity%,criticalchance%,health	0,0,0,0,0,0
-ima-gun di		health,health,health	offense%,health%,defense%,health%,health%,tenacity%		0,0,0,0,0,0
-imperial probe droid	7	potency,health,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health%,health	0,0,0,0,0,0
-imperial super commando		criticaldamage,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-jabba the hutt	9				0,0,0,0,0,0
-jango fett	7	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
-jawa	3	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,protection%,potency%	potency%,criticalchance%,offense%,offense,speed	0,0,0,0,0,0
-jawa engineer		health,speed	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,protection%,protection,defense	0,0,0,0,0,0
-jawa scavenger		defense,defense,defense	offense%,speed,defense%,protection%,protection%,tenacity%	protection%,protection,criticalchance%,tenacity%,defense	0,0,0,0,0,0
-jedi consular		health,health,defense	offense%,speed,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,offense	0,0,0,0,0,0
-jedi knight anakin	7	health,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-jedi knight cal kestis					0,0,0,0,0,0
-jedi knight guardian		defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,potency%	potency%,tenacity%,defense%,defense,health	0,0,0,0,0,0
-jedi knight luke skywalker	7	criticaldamage,criticalchance	offense%,speed,defense%,protection%,potency%	potency%,tenacity%,speed,criticalchance%,protection	0,0,0,0,0,0
-jedi knight revan		speed,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	tenacity%,criticalchance%,speed,offense%,offense	0,0,0,0,0,0
-jedi master kenobi	9	speed,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	tenacity%,potency%,speed,health%,health	0,0,0,0,0,0
-jedi master luke skywalker	9	speed,health	offense%,speed,defense%,protection%,protection%,potency%	tenacity%,potency%,speed,protection%,protection	0,0,0,0,0,0
-jolee bindo		health,health,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,tenacity%,defense	0,0,0,0,0,0
-juhani		criticalchance,health,defense	offense%,health%,defense%,criticalchance%,protection%,potency%	potency%,criticalchance%,health%,health,defense	0,0,0,0,0,0
-jyn erso	5				0,0,0,0,0,0
-k-2so					0,0,0,0,0,0
-kanan jarrus		defense,defense,defense	offense%,health%,defense%,health%,health%,tenacity%	criticalchance%,health%,health,defense%,defense	0,0,0,0,0,0
-ki-adi-mundi		offense,health	offense%,speed,defense%,offense%,health%,potency%	speed,tenacity%,offense%,offense,health	0,0,0,0,0,0
-kit fisto		speed,health	offense%,speed,defense%,offense%,health%,tenacity%	speed,tenacity%,offense%,offense,health	0,0,0,0,0,0
-krrsantan	7				0,0,0,0,0,0
-kuiil		speed,health	offense%,speed,defense%,protection%,potency%	tenacity%,potency%,speed,protection%,protection	0,0,0,0,0,0
-kyle katarn	5				0,0,0,0,0,0
-kylo ren	7				0,0,0,0,0,0
-kylo ren (unmasked)	7	defense,defense,defense	offense%,health%,defense%,health%,health%,health%	health%,health,defense%,defense,tenacity%	0,0,0,0,0,0
-l3-37		health,health,defense	offense%,criticalavoidance%,defense%,criticalchance%,protection%,potency%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
-lando calrissian	5	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,speed,offense%,offense,protection	0,0,0,0,0,0
-lobot					0,0,0,0,0,0
-logray		potency,health,defense	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health,criticalchance%	0,0,0,0,0,0
-lord vader	9				0,0,0,0,0,0
-luke skywalker (farmboy)		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-luminara unduli		health,health,health	offense%,health%,defense%,health%,health%,tenacity%	health%,health,speed,tenacity%,potency%	0,0,0,0,0,0
-mace windu	3	defense,speed	offense%,speed,defense%,offense%,health%,tenacity%	tenacity%,health%,health,speed,offense	0,0,0,0,0,0
-magmatrooper		health,potency,tenacity	offense%,speed,defense%,offense%,protection%,tenacity%	potency%,offense%,offense,health%,health	0,0,0,0,0,0
-mara jade, the emperor's hand	5	potency,speed			0,0,0,0,0,0
-maul					0,0,0,0,0,0
-merrin					0,0,0,0,0,0
-mission vao		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-mob enforcer	7				0,0,0,0,0,0
-moff gideon		speed,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,tenacity%,health%,health	0,0,0,0,0,0
-mon mothma	7	defense,tenacity,health	offense%,speed,defense%,protection%,health%,tenacity%	health%,health,speed,tenacity%,protection%	0,0,0,0,0,0
-mother talzin	7	speed,health	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,tenacity%	0,0,0,0,0,0
-nightsister acolyte	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,tenacity%	speed,tenacity%,offense%,offense,health	0,0,0,0,0,0
-nightsister initiate		offense,health	offense%,speed,defense%,offense%,health%,potency%	speed,potency%,offense%,offense,health	0,0,0,0,0,0
-nightsister spirit					0,0,0,0,0,0
-nightsister zombie		speed,health	offense%,speed,defense%,health%,health%,tenacity%	speed,health%,health,tenacity%,potency%	0,0,0,0,0,0
-ninth sister	7				0,0,0,0,0,0
-nute gunray	7	potency,speed	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
-obi-wan kenobi (old ben)	7	defense,defense,potency	offense%,criticalavoidance%,defense%,health%,protection%,tenacity%	potency%,tenacity%,health%,health,defense	0,0,0,0,0,0
-old daka		speed,health	offense%,speed,defense%,health%,health%,health%	speed,potency%,health%,health,defense	0,0,0,0,0,0
-omega					0,0,0,0,0,0
-padmé amidala	8	health,speed	offense%,speed,defense%,health%,health%,tenacity%	potency%,speed,health%,health,defense	0,0,0,0,0,0
-pao					0,0,0,0,0,0
-paploo		tenacity,health,defense	offense%,health%,defense%,health%,protection%,tenacity%	speed,tenacity%,criticalchance%,health%,health	0,0,0,0,0,0
-plo koon		potency,tenacity,defense	offense%,speed,defense%,health%,health%,potency%	potency%,tenacity%,speed,defense%,defense	0,0,0,0,0,0
-poe dameron	5	speed,potency	offense%,speed,defense%,protection%,protection%,tenacity%	potency%,tenacity%,speed,protection%,protection	0,0,0,0,0,0
-poggle the lesser		speed,potency	offense%,speed,defense%,defense%,protection%,potency%	speed,tenacity%,potency%,defense%,defense	0,0,0,0,0,0
-princess leia	3	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	tenacity%,speed,offense%,offense,protection	0,0,0,0,0,0
-qi'ra		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,criticalchance%,offense%,offense,speed	0,0,0,0,0,0
-qui-gon jinn	3	speed,potency	offense%,speed,defense%,offense%,health%,potency%	speed,offense%,offense,potency%,tenacity%	0,0,0,0,0,0
-r2-d2	7				0,0,0,0,0,0
-range trooper		offense,health	offense%,speed,defense%,offense%,health%,tenacity%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
-rebel officer leia organa	3	criticalchance,potency,tenacity	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-resistance hero finn	5	speed,tenacity	offense%,speed,defense%,health%,tenacity%	tenacity%,speed,health%,health,protection	0,0,0,0,0,0
-resistance hero poe	5	potency,offense	offense%,speed,defense%,offense%,health%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-resistance pilot	3	criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,potency%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
-resistance trooper	7				0,0,0,0,0,0
-rey	9	health,speed	offense%,speed,defense%,offense%,health%,tenacity%	health%,health,speed,offense%,offense	0,0,0,0,0,0
-rey (jedi training)	7	defense,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	tenacity%,speed,potency%,criticalchance%,health	0,0,0,0,0,0
-rey (scavenger)	7	tenacity,offense	offense%,speed,defense%,offense%,protection%,tenacity%	tenacity%,offense%,offense,speed,protection	0,0,0,0,0,0
-rose tico	5				0,0,0,0,0,0
-royal guard	3	defense,defense,potency	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	health%,health,defense%,defense,potency%	0,0,0,0,0,0
-sabine wren		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	tenacity%,potency%,speed,offense%,offense	0,0,0,0,0,0
-sana starros					0,0,0,0,0,0
-savage opress					0,0,0,0,0,0
-saw gerrera					0,0,0,0,0,0
-scarif rebel pathfinder	5				0,0,0,0,0,0
-second sister	7				0,0,0,0,0,0
-seventh sister	7				0,0,0,0,0,0
-shaak ti		speed,health	offense%,speed,defense%,health%,health%,tenacity%	speed,tenacity%,health%,health,offense	0,0,0,0,0,0
-shoretrooper		speed,health	offense%,speed,defense%,health%,protection%,tenacity%	health%,health,protection%,speed,protection	0,0,0,0,0,0
-sith assassin		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-sith empire trooper	7	defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	tenacity%,potency%,health%,health,protection	0,0,0,0,0,0
-sith eternal emperor	9	speed,defense	offense%,speed,defense%,protection%,protection%,protection%	protection%,protection,speed,defense%,defense	0,0,0,0,0,0
-sith marauder	5				0,0,0,0,0,0
-sith trooper	7	criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	tenacity%,speed,offense%,offense,protection	0,0,0,0,0,0
-skiff guard (lando calrissian)	7				0,0,0,0,0,0
-snowtrooper		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,criticalchance%,tenacity%,offense%,offense	0,0,0,0,0,0
-starkiller					0,0,0,0,0,0
-stormtrooper		health,health,defense	offense%,criticalavoidance%,defense%,defense%,health%,tenacity%	tenacity%,health%,health,protection%,protection	0,0,0,0,0,0
-stormtrooper han		defense,defense,defense	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,defense	0,0,0,0,0,0
-sun fac		health,health,defense	offense%,health%,defense%,defense%,health%,tenacity%	tenacity%,potency%,health%,health,defense	0,0,0,0,0,0
-supreme leader kylo ren	9	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,health%,tenacity%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-t3-m4		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,tenacity%,criticalchance%,speed,offense	0,0,0,0,0,0
-talia	5				0,0,0,0,0,0
-tarfful					0,0,0,0,0,0
-tech		health,speed	offense%,speed,defense%,health%,health%,potency%	speed,tenacity%,health%,health,protection	0,0,0,0,0,0
-teebo		speed,potency	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,criticalchance%	0,0,0,0,0,0
-the armorer		speed,defense	offense%,speed,defense%,health%,health%,tenacity%	speed,tenacity%,health%,health,defense	0,0,0,0,0,0
-the mandalorian		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,offense%,offense,speed,tenacity%	0,0,0,0,0,0
-the mandalorian (beskar armor)	7	offense,tenacity	offense%,offense%,defense%,offense%,protection%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-third sister	7	tenacity,offense	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-threepio & chewie	5				0,0,0,0,0,0
-tie fighter pilot	7				0,0,0,0,0,0
-tusken chieftain					0,0,0,0,0,0
-tusken raider		offense,potency	offense%,speed,defense%,offense%,health%,potency%	potency%,speed,offense%,offense,tenacity%	0,0,0,0,0,0
-tusken shaman	4				0,0,0,0,0,0
-tusken warrior					0,0,0,0,0,0
-ugnaught		defense,defense,potency	offense%,speed,defense%,protection%,protection%,potency%	potency%,tenacity%,speed,protection%,protection	0,0,0,0,0,0
-urorrur'r'r	3				0,0,0,0,0,0
-vandor chewbacca	3	tenacity,health,health	offense%,speed,defense%,health%,health%,tenacity%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
-veteran smuggler chewbacca		criticaldamage,health	offense%,offense%,defense%,criticaldamage%,health%,potency%	tenacity%,potency%,offense%,offense,protection	0,0,0,0,0,0
-veteran smuggler han solo	7	criticaldamage,health	offense%,offense%,defense%,criticaldamage%,health%,potency%	tenacity%,potency%,offense%,offense,protection	0,0,0,0,0,0
-visas marr	7	health,health,tenacity	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,protection	0,0,0,0,0,0
-wampa	3				0,0,0,0,0,0
-wat tambor		speed,health	offense%,speed,defense%,health%,health%,tenacity%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
-wedge antilles	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
-wicket		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,speed,health%,health,tenacity%	0,0,0,0,0,0
-wrecker		defense,potency,defense	offense%,criticalavoidance%,defense%,protection%,health%,potency%	health%,health,protection%,protection,tenacity%	0,0,0,0,0,0
-young han solo		criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,criticalchance%,speed,health,offense%,offense	0,0,0,0,0,0
-young lando calrissian	7	criticalchance,criticaldamage	offense%,offense%,defense%,criticaldamage%,offense%,potency%	potency%,criticalchance%,offense%,offense,speed	0,0,0,0,0,0
-zaalbar		defense,defense,potency	offense%,criticalavoidance%,defense%,health%,health%,tenacity%	potency%,tenacity%,criticalchance%,health%,health	0,0,0,0,0,0
-zam wesell		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,offense	0,0,0,0,0,0
-zorii bliss					0,0,0,0,0,0
+captain rex	7	speed,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,tenacity%,speed,criticalchance%,health%	0,0,0,0,0,0
+cara dune		health,health,tenacity	offense%,speed,defense%,health%,health%,potency%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
+carth onasi		criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,tenacity%,speed,criticalchance%,offense%	0,0,0,0,0,0
+cassian andor	8	offense,potency	offense%,speed,defense%,offense%,protection%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
+cc-2224 "cody"	5	criticalchance,speed	offense%,speed,defense%,criticalchance%,protection%,protection%	potency%,tenacity%,speed,criticalchance%,-	0,0,0,0,0,0
+cere junda		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	speed,health%,health,tenacity,-	0,0,0,0,0,0
+chewbacca	6	tenacity,tenacity,tenacity	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+chief chirpa	3	speed,health	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,health%,criticalchance%,protection%	0,0,0,0,0,0
+chief nebit		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	speed,protection%,protection,-,-	0,0,0,0,0,0
+chirrut îmwe		speed,health	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,health%,health,-	0,0,0,0,0,0
+chopper		health,speed	offense%,speed,defense%,protection%,protection%,tenacity%	health%,health,tenacity%,speed,-	0,0,0,0,0,0
+clone sergeant - phase i	5	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
+clone wars chewbacca		defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,health%,health,-	0,0,0,0,0,0
+colonel starck	3	speed,health	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,criticalchance%,health%,health	0,0,0,0,0,0
+commander ahsoka tano		speed,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,offense,health%	0,0,0,0,0,0
+commander luke skywalker	7	offense,tenacity	offense%,speed,defense%,offense%,protection%,offense%	speed,tenacity%,potency%,offense%,offense	0,0,0,0,0,0
+coruscant underworld police		speed,potency	offense%,speed,defense%,criticalchance%,health%,potency%	speed,potency%,tenacity%,-,-	0,0,0,0,0,0
+count dooku	8	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
+ct-21-0408 "echo"	7	criticaldamage,criticalchance	offense%,offense%,defense%,criticaldamage%,health%,offense%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
+ct-5555 "fives"		defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	speed,protection,offense%protection%,offense	0,0,0,0,0,0
+ct-7567 "rex"		health,speed	offense%,speed,defense%,health%,health%,tenacity%	speed,health%,health,tenacity%,-	0,0,0,0,0,0
+dark trooper		offense,health	offense%,offense%,defense%,offense%,protection%,offense%	offense%,offense,tenacity%,speed,-	0,0,0,0,0,0
+dark trooper moff gideon		speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,tenacity%,-	0,0,0,0,0,0
+darth bane					0,0,0,0,0,0
+darth malak	9	defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,protection,protection%,defense%,defense	0,0,0,0,0,0
+darth malgus	8	health,health,health	offense%,health%,defense%,health%,health%,health%	speed,health,health%,offense%,offense	0,0,0,0,0,0
+darth maul	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
+darth nihilus		speed,health	offense%,speed,defense%,health%,health%,tenacity%	tenacity%,speed,health%,health,potency%	0,0,0,0,0,0
+darth revan	9	speed,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,offense%,offense,potency,health%	0,0,0,0,0,0
+darth sidious	7	speed,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	potency%,criticalchance%,speed,offense%,offense	0,0,0,0,0,0
+darth sion		health,defense,potency	offense%,speed,defense%,health%,protection%,protection%	speed,protection%,protection,health%,health	0,0,0,0,0,0
+darth talon	5	offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+darth traya		health,speed	offense%,speed,defense%,health%,health%,health%	potency%,tenacity%,speed,health%,health	0,0,0,0,0,0
+darth vader	7	potency,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
+dash rendar	7	health,speed	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,offense%,offense,potency,health%	0,0,0,0,0,0
+dathcha		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	speed,potency%,health%,protection%,-	0,0,0,0,0,0
+death trooper		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,criticalchance%,potency%,offense%,offense	0,0,0,0,0,0
+dengar	5	criticalchance,speed	offense%,speed,defense%,criticalchance%,protection%,potency%	speed,criticalchance%,potency%,protection%,tenacity%	0,0,0,0,0,0
+director krennic	4	criticalchance,speed	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,potency%,criticalchance%,-,-	0,0,0,0,0,0
+doctor aphra	7	potency,potency,potency	offense%,speed,defense%,offense%,protection%,potency%	speed,potency%,criticalchance%,-,-	0,0,0,0,0,0
+droideka	7	offense,tenacity	offense%,offense%,defense%,protection%,offense%,offense%	tenacity%,protection%,offense%,offense,protection	0,0,0,0,0,0
+echo	5	speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,tenacity%,protection%,protection,potency%	0,0,0,0,0,0
+eeth koth		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,criticalchance%,-,-	0,0,0,0,0,0
+eighth brother	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,criticalchance%,offense%,offense	0,0,0,0,0,0
+embo	7	criticalchance,criticaldamage	offense%,speed,defense%,protection%,protection%,protection%	protection%,protection,speed,tenacity%,-	0,0,0,0,0,0
+emperor palpatine	7	speed,potency	offense%,speed,defense%,protection%,protection%,protection%	speed,potency%,protection%,protection,-	0,0,0,0,0,0
+enfys nest		tenacity,tenacity,tenacity	offense%,health%,defense%,criticaldamage%,health%,tenacity%	potency%,tenacity%,health%,health,-	0,0,0,0,0,0
+ewok elder		speed,health	offense%,speed,defense%,health%,health%,tenacity%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
+ewok scout		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+ezra bridger	7	criticalchance,offense	offense%,speed,defense%,criticaldamage%,protection%,offense%	offense%,offense,tenacity%,speed,criticalchance%	0,0,0,0,0,0
+fennec shand	7	health,offense	offense%,speed,defense%,offense%,protection%,offense%	speed,offense%,offense,tenacity%,-	0,0,0,0,0,0
+fifth brother	7	speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,potency,-	0,0,0,0,0,0
+finn	7	defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,potency%,health%,health,-	0,0,0,0,0,0
+first order executioner	7	health,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,offense%	tenacity%,speed,health%,health,criticalchance%	0,0,0,0,0,0
+first order officer	5	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	potency%,speed,protection%,protection,-	0,0,0,0,0,0
+first order sf tie pilot	3	criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,speed,offense%,offense,criticalchance	0,0,0,0,0,0
+first order stormtrooper	7	defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	tenacity%,health%,health,speed,-	0,0,0,0,0,0
+first order tie pilot	3	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	offense%,offense,speed,health%,health	0,0,0,0,0,0
+gamorrean guard	3	health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	health%,health,speed,-,-	0,0,0,0,0,0
+gar saxon		offense,potency	offense%,speed,defense%,offense%,protection%,tenacity%	offense%,offense,speed,-,-	0,0,0,0,0,0
+garazeb "zeb" orrelios		health,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,potency%	criticalchance%,speed,protection%,protection,-	0,0,0,0,0,0
+general grievous	7	health,health,health	offense%,health%,defense%,criticaldamage%,health%,health%	health%,health,potency%,speed,criticalchance%	0,0,0,0,0,0
+general hux	7	speed,tenacity	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+general kenobi	8	health,health,defense	offense%,speed,defense%,health%,health%,health%	health%,health,tenacity%,speed,-	0,0,0,0,0,0
+general skywalker	8	defense,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,protection%	protection%,protection,speed,offense%,offense	0,0,0,0,0,0
+general veers	3	speed,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+geonosian brood alpha		speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	tenacity%,speed,protection%,protection,-	0,0,0,0,0,0
+geonosian soldier		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	criticalchance%,speed,offense%,offense,potency%	0,0,0,0,0,0
+geonosian spy		criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	criticalchance%,speed,offense%,offense,-	0,0,0,0,0,0
+grand admiral thrawn	6	speed,tenacity	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,tenacity%,-	0,0,0,0,0,0
+grand inquisitor	7	speed,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,potency%,-	0,0,0,0,0,0
+grand master yoda	8	speed,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,tenacity%,criticalchance%,offense%,offense	0,0,0,0,0,0
+grand moff tarkin	7	potency,speed	offense%,speed,defense%,health%,health%,potency%	speed,potency%,health%,health,-	0,0,0,0,0,0
+greedo	7	tenacity,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
+greef karga		speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,health%,health,-	0,0,0,0,0,0
+han solo	8	health,criticaldamage	health%,offense%,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,potency%,tenacity%	0,0,0,0,0,0
+hera syndulla	5	health,speed	offense%,speed,defense%,health%,health%,health%	speed,potency%,health%,health,-	0,0,0,0,0,0
+hermit yoda	5	speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,tenacity%,-	0,0,0,0,0,0
+hk-47	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+hondo ohnaka	7	speed,health	offense%,speed,defense%,criticaldamage%,health%,protection%	speed,tenacity%,offense%,potency%,health%	0,0,0,0,0,0
+hoth rebel scout		criticalchance,criticaldamage	offense%,speed,defense%,criticalchance%,protection%,tenacity%	criticalchance%,speed,offense%,offense,-	0,0,0,0,0,0
+hoth rebel soldier		health,health,health	offense%,speed,defense%,health%,health%,health%	speed,criticalchance%,health%,health,-	0,0,0,0,0,0
+hunter	5	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+iden versio		speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
+ig-100 magnaguard	5	defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	protection%,protection,tenacity%,potency%,-	0,0,0,0,0,0
+ig-11		health,health,health	offense%,health%,defense%,health%,health%,health%	potency%,speed,health%,health,tenacity%	0,0,0,0,0,0
+ig-12 & grogu		speed,health	offense%,speed,defense%,health%,health%,health%	potency%,speed,health%,health,tenacity%	0,0,0,0,0,0
+ig-86 sentinel droid	7	defense,criticaldamage	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,-,-	0,0,0,0,0,0
+ig-88	7	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,criticalchance%,offense%,offense	0,0,0,0,0,0
+ima-gun di		health,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,health%,health,-	0,0,0,0,0,0
+imperial probe droid	7	potency,speed	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,-	0,0,0,0,0,0
+imperial super commando		offense,tenacity	offense%,speed,defense%,offense%,protection%,potency%	speed,offense%,offense,potency,-	0,0,0,0,0,0
+jabba the hutt	9	health,speed	offense%,speed,defense%,health%,health%,health%	speed,health,health%,tenacity%,-	0,0,0,0,0,0
+jango fett	7	criticaldamage,potency	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
+jawa	3	health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	protection%,protection,health%,health,-	0,0,0,0,0,0
+jawa engineer		health,speed	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+jawa scavenger		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	speed,protection%,protection,health%,health	0,0,0,0,0,0
+jedi consular		health,health,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,offense%,-	0,0,0,0,0,0
+jedi knight anakin	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,offense%	potency%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
+jedi knight cal kestis		health,offense	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,offense%,criticalchance%,defense%,offense	0,0,0,0,0,0
+jedi knight guardian		health,health,health	offense%,speed,defense%,protection%,protection%,protection%	potency%,health%,health,criticalchance%,-	0,0,0,0,0,0
+jedi knight luke skywalker	7	criticalchance,offense	offense%,offense%,defense%,criticaldamage%,protection%,offense%	offense%,offense,criticalchance%,protection%,-	0,0,0,0,0,0
+jedi knight revan		speed,health	offense%,speed,defense%,health%,health%,health%	criticalchance%,speed,health%,health,offense%	0,0,0,0,0,0
+jedi master kenobi	9	speed,health	offense%,speed,defense%,criticaldamage%,health%,tenacity%	speed,health%,health,offense%,offense	0,0,0,0,0,0
+jedi master luke skywalker	9	speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,potency%,offense%	0,0,0,0,0,0
+jolee bindo		health,health,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,tenacity%,-	0,0,0,0,0,0
+juhani		defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	potency%,criticalchance%,protection%,protection,-	0,0,0,0,0,0
+jyn erso	5	health,speed	offense%,speed,defense%,criticalchance%,protection%,potency%	speed,criticalchance%,potency%,tenacity%,-	0,0,0,0,0,0
+k-2so		tenacity,tenacity,tenacity	offense%,protection%,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+kanan jarrus		defense,defense,defense	offense%,speed,defense%,health%,health%,health%	criticalchance%,health%,health,speed	0,0,0,0,0,0
+kelleran beq		speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,tenacity%,-	0,0,0,0,0,0
+ki-adi-mundi		offense,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+kit fisto		offense,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+krrsantan	7	tenacity,tenacity,tenacity	offense%,protection%,defense%,protection%,protection%,protection%	protection%,protection,tenacity%,-,-	0,0,0,0,0,0
+kuiil		speed,health	offense%,speed,defense%,protection%,protection%,potency%	potency%,speed,protection%,health%,offense%	0,0,0,0,0,0
+kyle katarn	5	speed,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,criticalchance%,tenacity%,health%	0,0,0,0,0,0
+kylo ren	7	offense,tenacity	offense%,offense%,defense%,offense%,protection%,offense%	speed,protection%,offense%,tenacity%,defense%	0,0,0,0,0,0
+kylo ren (unmasked)	7	defense,defense,defense	offense%,health%,defense%,health%,health%,health%	health%,health,defense%,tenacity%,defense	0,0,0,0,0,0
+l3-37		defense,defense,defense	offense%,criticalavoidance%,defense%,protection%,protection%,protection%	tenacity%,protection%,protection,-,-	0,0,0,0,0,0
+lando calrissian	5	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+leia organa	9	speed,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,-,-	0,0,0,0,0,0
+lobot	3	speed,health	offense%,speed,defense%protection%,protection%,tenacity%	speed,tenacity%,potency%,-,-	0,0,0,0,0,0
+logray		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,tenacity%,criticalchance%,-	0,0,0,0,0,0
+lord vader	9	speed,health	offense%,speed,defense%,criticaldamage%,protection%,protection%	speed,protection%,protection,potency%,health%	0,0,0,0,0,0
+luke skywalker (farmboy)		criticaldamage,defense	offense%,speed,defense%,criticaldamage%,protection%,offense%	potency%,tenacity%,speed,offense%,offense	0,0,0,0,0,0
+luminara unduli		speed,health	offense%,speed,defense%,health%,health%,health%	health%,health,speed,tenacity%,potency%	0,0,0,0,0,0
+mace windu	3	health,health,health	offense%,speed,defense%,health%,health%,potency%	tenacity%,health%,health,speed,-	0,0,0,0,0,0
+magmatrooper		potency,potency,tenacity	offense%,speed,defense%,protection%,protection%,potency%	potency%,offense%,offense,speed,tenacity%	0,0,0,0,0,0
+mara jade, the emperor's hand	5	potency,speed	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection%,-	0,0,0,0,0,0
+maul		offense,health	offense%,speed,defense%,protection%,protection%,protection%	speed,offense%,offense,protection%,protection	0,0,0,0,0,0
+merrin		offense,tenacity	offense%,offense%,defense%,health,health%,potency%	potency,tenacity,offense%,health%,offense	0,0,0,0,0,0
+mission vao		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	tenacity%,speed,criticalchance%,offense%,offense	0,0,0,0,0,0
+mob enforcer	3	speed,health	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,health%,protection%,-	0,0,0,0,0,0
+moff gideon		speed,health	offense%,speed,defense%,protection%,protection%,tenacity%	speed,potency%,tenacity%,health%,health	0,0,0,0,0,0
+mon mothma	7	speed,health	offense%,speed,defense%,protection%,protection%,tenacity%	speed,tenacity%,protection%,health%,protection	0,0,0,0,0,0
+mother talzin	7	offense,health	offense%,speed,defense%,offense%,health%,potency%	speed,potency%,health%,offense%,offense	0,0,0,0,0,0
+nightsister acolyte	7	criticalchance,criticaldamage	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
+nightsister initiate		offense,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
+nightsister spirit		offense,potency	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,potency%,offense%,offense,criticalchance%	0,0,0,0,0,0
+nightsister zombie		speed,defense	offense%,speed,defense%,health%,health%,health%	speed,health%,health,tenacity%,potency%	0,0,0,0,0,0
+ninth sister	7	defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	speed,protection%,protection,defense%,defense	0,0,0,0,0,0
+nute gunray	7	speed,health	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,tenacity%	0,0,0,0,0,0
+obi-wan kenobi (old ben)	7	speed,defense	offense%,speed,defense%,defense%,health%,potency%	speed,potency%,tenacity%,health%,protection%	0,0,0,0,0,0
+old daka		health,health,health	offense%,health,defense%,health%,health%,health%	speed,potency%,health%,health,tenacity%	0,0,0,0,0,0
+omega		offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,protection%,criticalchance%,offense%,offense	0,0,0,0,0,0
+padmé amidala	8	speed,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,potency%,-	0,0,0,0,0,0
+pao		offense,tenacity	offense%,offense%,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,tenacity%	0,0,0,0,0,0
+paploo		speed,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,criticalchance%,health%,health	0,0,0,0,0,0
+paz vizsla		defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%protection,defense%,defense	0,0,0,0,0,0
+plo koon		defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,defense%,-	0,0,0,0,0,0
+poe dameron	5	speed,tenacity	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,tenacity%,protection	0,0,0,0,0,0
+poggle the lesser		speed,health	offense%,speed,defense%,protection%,protection%,potency%	speed,tenacity%,potency%,protection%,protection	0,0,0,0,0,0
+princess kneesaa	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,tenacity%,-	0,0,0,0,0,0
+princess leia	3	criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,tenacity%,offense%,offense,health%	0,0,0,0,0,0
+qi'ra		speed,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,tenacity%,protection%,protection,offense%	0,0,0,0,0,0
+qui-gon jinn	3	speed,health	offense%,speed,defense%,offense%,protection%,offense%	speed,offense%,offense,protection%,protection	0,0,0,0,0,0
+r2-d2	8	health,health,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,offense%,offense	0,0,0,0,0,0
+range trooper		offense,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
+rebel officer leia organa	5	offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,offense%,offense,tenacity%	0,0,0,0,0,0
+resistance hero finn	5	speed,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,health%,offense	0,0,0,0,0,0
+resistance hero poe	5	offense,potency	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,offense%,criticalchance%,potency%,offense	0,0,0,0,0,0
+resistance pilot	3	offense,potency	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+resistance trooper	5	offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+rey	9	offense,health	offense%,offense%,defense%,offense%,health%,offense%	speed,health%,offense%,offense,health	0,0,0,0,0,0
+rey (jedi training)	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,potency%,criticalchance%,health%,health	0,0,0,0,0,0
+rey (scavenger)	7	criticaldamage,tenacity	offense%,speed,defense%,criticaldamage%,protection%,tenacity%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
+rose tico	5	speed,health	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,criticalchance%,-,-	0,0,0,0,0,0
+royal guard	3	defense,defense,defense	offense%,health%,defense%,health%,health%,health%	health%,health,defense%,defense,potency%	0,0,0,0,0,0
+sabine wren		criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,potency%	speed,potency%,offense%,health%,offense	0,0,0,0,0,0
+sana starros		speed,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,protection%,offense	0,0,0,0,0,0
+savage opress		defense,defense,defense	offense%,health%,defense%,health%,health%,health%	speed,health%,offense%,defense%,health	0,0,0,0,0,0
+saw gerrera		speed,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,potency%,-	0,0,0,0,0,0
+scarif rebel pathfinder	5	health,health,health	offense%,speed,defense%,protection%,protection%,protection%	speed,health%health,-,-	0,0,0,0,0,0
+scout trooper	7	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,potency%,protection%,offense%,protection	0,0,0,0,0,0
+second sister	7	offense,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,criticalchance%,potency%,offense	0,0,0,0,0,0
+seventh sister	7	speed,health	offense%,speed,defense%,protection%,protection%,tenacity%	speed,potency%,tenacity%,protection%,protection	0,0,0,0,0,0
+shaak ti		speed,health	offense%,speed,defense%,health%,health%,health%	speed,tenacity%,health%,offense%,health	0,0,0,0,0,0
+shoretrooper		health,health,health	offense%,protection%,defense%,protection%,protection%,protection%	health%,health,protection%,protection,speed	0,0,0,0,0,0
+sith assassin	5	speed,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,offense%,criticalchance%,offense	0,0,0,0,0,0
+sith empire trooper	7	defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	protection%,protection,health%,defense%,potency%	0,0,0,0,0,0
+sith eternal emperor	9	health,health,health	offense%,health%,defense%,health%,health%,health%	speed,health%,health,protection%,protection	0,0,0,0,0,0
+sith marauder	5	criticaldamage,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+sith trooper	7	offense,tenacity	offense%,offense%,defense%,criticaldamage%,protection%,offense%	speed,tenacity%,offense%,offense,criticalchance%	0,0,0,0,0,0
+skiff guard (lando calrissian)	7	offense,criticalchance	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,health%,offense	0,0,0,0,0,0
+snowtrooper		criticaldamage,criticalchance	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+starkiller		offense,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,health%,health,offense%,tenacity%	0,0,0,0,0,0
+stormtrooper		defense,defense,defense	offense%,protection%,defense%,protection%,protection%,protection%	speed,potency%,health%,protection%,offense%	0,0,0,0,0,0
+stormtrooper han		defense,defense,defense	offense%,speed,defense%,health%,health%,health%	speed,health%,health,defense%,defense	0,0,0,0,0,0
+sun fac		defense,defense,defense	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,potency%,protection%,defense%	0,0,0,0,0,0
+supreme leader kylo ren	9	speed,health	offense%,speed,defense%,criticaldamage%,health%,offense%	speed,offense%,offense,potency%,health%	0,0,0,0,0,0
+t3-m4		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,criticalchance%,protection%,-	0,0,0,0,0,0
+talia	5	speed,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,offense%,-	0,0,0,0,0,0
+tarfful		defense,defense,defense	offense%,speed,defense%,defense%,health%,defense%	speed,defense%,defense,offense%,health%	0,0,0,0,0,0
+taron malicos		offense,health	offense%,offense%,defense%,criticaldamage%,health%,offense%	speed,criticalchance%,offense%,offense,health%	0,0,0,0,0,0
+tech		speed,health	offense%,speed,defense%,offense%,health%,potency%	speed,tenacity%,health%,potency%,-	0,0,0,0,0,0
+teebo		potency,potency,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,-,-	0,0,0,0,0,0
+the armorer		speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,tenacity%,protection%,protection,-	0,0,0,0,0,0
+the mandalorian		criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,offense,-	0,0,0,0,0,0
+the mandalorian (beskar armor)	7	offense,health	offense%,speed,defense%,offense%,protection%,offense%	speed,offense%,offense,tenacity%,potency%	0,0,0,0,0,0
+third sister	7	offense,health	offense%,health%,defense%,criticaldamage%,health%,health%	speed,offense%,health%,criticalchance%,-	0,0,0,0,0,0
+threepio & chewie	7	offense,tenacity	offense%,offense%,defense%,criticaldamage%,protection%,offense%	speed,tenacity%,offense%,criticalchance%,potency%	0,0,0,0,0,0
+tie fighter pilot	7	speed,potency	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,potency%,criticalchance%,offense%,offense	0,0,0,0,0,0
+tusken chieftain		speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,defense%,tenacity%,health%	0,0,0,0,0,0
+tusken raider		offense,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,tenacity%,criticalchance%	0,0,0,0,0,0
+tusken shaman	4	speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,-	0,0,0,0,0,0
+tusken warrior		offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+ugnaught		speed,potency	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,criticalchance%,potency%,offense%,-	0,0,0,0,0,0
+urorrur'r'r	3	speed,health	offense%,speed,defense%,protection%,protection%,protection%	speed,protection%,protection,-,-	0,0,0,0,0,0
+vandor chewbacca	3	health,health,health	offense%,health%,defense%,health%,health%,health%	speed,tenacity%,health%,health,criticalchance%	0,0,0,0,0,0
+veteran smuggler chewbacca		criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,tenacity%,potency%,offense%,criticalchance%	0,0,0,0,0,0
+veteran smuggler han solo	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,potency%	speed,tenacity%,potency%,offense%,criticalchance%	0,0,0,0,0,0
+visas marr	7	speed,health	offense%,speed%,defense%,health%,health%,health%	speed,tenacity%,health%,health,-	0,0,0,0,0,0
+wampa	3	health,health,tenacity	offense%,health%,defense%,criticaldamage%,health%,tenacity%	speed,tenacity%,health%,offense%,health	0,0,0,0,0,0
+wat tambor		speed,health	offense%,speed,defense%,health%,health%,health%	speed,health%,health,tenacity%,potency%	0,0,0,0,0,0
+wedge antilles	7	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+wicket	3	criticaldamage,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,offense%,offense,criticalchance%,-	0,0,0,0,0,0
+wrecker		defense,defense,defense	offense%,speed%,defense%,protection%,protection%,protection%	speed,protection%,protection,potency%,health%	0,0,0,0,0,0
+young han solo		offense,tenacity	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,tenacity%,offense	0,0,0,0,0,0
+young lando calrissian	7	offense,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,offense%,tenacity%,offense	0,0,0,0,0,0
+zaalbar		defense,defense,defense	offense%,speed%,defense%,protection%,protection%,protection%	speed,potency%,criticalchance%,protection%,tenacity%	0,0,0,0,0,0
+zam wesell		speed,potency	offense%,speed,defense%,protection%,protection%,potency%	speed,potency%,protection%,protection,offense%	0,0,0,0,0,0
+zorii bliss		speed,health	offense%,speed,defense%,criticaldamage%,protection%,offense%	speed,criticalchance%,protection%,offense%,offense	0,0,0,0,0,0
