@@ -5,8 +5,9 @@ The purpose of this file is to combine all of the elemente to create the perfect
 import tools
 import integrity
 import findMod
+import dbGenerator
 
-# findMod.findMod()
-tools.DBGenerator()
+# findMod.findMod() #works fine
+dbGenerator.DBGenerator() #needs work
 
 print("The End.")

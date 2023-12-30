@@ -5,18 +5,18 @@ import csv
 import os
 
 def findMod():
-    """ ask for the wanted mod """
+    # ask for the wanted mod
     # wantedMod = Mod("speed", "square", "offense%", ["health%", "health", "potency%", "speed"])
     wantedMod = askingForMod()
 
-    """ retrieve the list of character that want the wanted mod """
+    # retrieve the list of character that want the wanted mod
     charactersNameList = searchForMod(wantedMod)
 
-    """ display the result & ask for response """
+    # display the result & ask for response
     updateDatabase = askForAction(charactersNameList)
 
     if updateDatabase > 0:
-        """ update the database depending on the wanted action """
+        # update the database depending on the wanted action
         update_tsv(wantedMod, charactersNameList[updateDatabase-1])
     elif updateDatabase == -1:
         print("Something went wrong ..")
