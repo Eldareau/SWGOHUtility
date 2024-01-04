@@ -1,5 +1,6 @@
 HIGH
 Create method to generate csv file from database
+Verify addCharToDB method
 
 MEDIUM
 Make the errror when choosing an already chosen secondary or the primary statistic clearer
