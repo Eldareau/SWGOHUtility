@@ -7,7 +7,8 @@ import integrity
 import findMod
 import dbGenerator
 
-# findMod.findMod() #works fine
-dbGenerator.DBGenerator() #needs work
+dbGenerator.DBGenerator() #works
+findMod.findMod() #works fine
+
 
 print("The End.")

@@ -22,7 +22,7 @@ def DBGenerator():
         generateBasicInformations()
 
         # add tsv file informations
-        addCharToDB()
+        addCharsAndModsToDB()
         
         print(constants.dataBaseName + " has been created succesfully.")
     
@@ -77,7 +77,7 @@ def generateBasicInformations():
     con.commit()
     con.close()
     
-def addCharToDB():
+def addCharsAndModsToDB():
     con = sqlite3.connect(constants.dataBaseName)
     cur = con.cursor()
 
@@ -105,11 +105,31 @@ def addCharToDB():
                         exist = cur.fetchall()[0][0]
                         if exist != 0:
                             print("Duplicate entry in database")
-                            input()
                         else:
                             cur.execute("INSERT OR REPLACE INTO modForCharacter (Character_id, Mod_id, Done) VALUES (?, ?, ?)", (character_id, mod_id, mod[4]!='0'))
                     else:
-                        ("Database isn't complete..")
-                        input()
+                        print("Database isn't complete..")
+    con.commit()
+    con.close()
+
+def update_DB(mod, charactersName):
+    con = sqlite3.connect(constants.dataBaseName)
+    cur = con.cursor()
+
+    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (mod.set, constants.potentialShape.index(mod.shape), mod.primary, mod.secondaries[0], mod.secondaries[1], mod.secondaries[2], mod.secondaries[3]))
+    mod_id = cur.fetchall()
+    cur.execute("SELECT Id FROM characters WHERE (Name)=(?)", (charactersName,))
+    character_id = cur.fetchall()
+    
+    if mod_id != [] and character_id != []:
+        mod_id = mod_id[0][0]
+        character_id = character_id[0][0]
+        cur.execute("UPDATE modForCharacter SET Done = 1 WHERE (Character_id, Mod_id)=(?, ?) RETURNING *", (character_id, 100000))
+        res = cur.fetchall()
+        print(charactersName)
+    else:
+        print("Impossible to find said character and mod..")
+        input()
+
     con.commit()
     con.close()

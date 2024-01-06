@@ -3,11 +3,12 @@ import tools
 import sqlite3
 import csv
 import os
+import dbGenerator
 
 def findMod():
     # ask for the wanted mod
-    # wantedMod = Mod("speed", "square", "offense%", ["health%", "health", "potency%", "speed"])
-    wantedMod = askingForMod()
+    #wantedMod = askingForMod()
+    wantedMod = tools.Mod("speed", "triangle", "protection%", ["speed", "protection", "tenacity%", "-"])
 
     # retrieve the list of character that want the wanted mod
     charactersNameList = searchForMod(wantedMod)
@@ -16,8 +17,9 @@ def findMod():
     updateDatabase = askForAction(charactersNameList)
 
     if updateDatabase > 0:
-        # update the database depending on the wanted action
+        # update the tsv file and database depending on the wanted action
         update_tsv(wantedMod, charactersNameList[updateDatabase-1])
+        dbGenerator.update_DB(wantedMod, charactersNameList[updateDatabase-1])
     elif updateDatabase == -1:
         print("Something went wrong ..")
 
@@ -129,7 +131,7 @@ def update_tsv(mod, charactersName):
         for row in reader:
             if row['name'] == charactersName:
                 done = row['done'].split(",")
-                done[modNb] = mod.set
+                done[modNb-1] = mod.set
                 row['done'] = ",".join(done)
             writer.writerow(row)
 

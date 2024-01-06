@@ -169,5 +169,5 @@ def createModsFromLine(sets, primaries, secondaries, done):
                 if secondary != primary and len(secondariesToKeep) < 4:
                     secondariesToKeep.append(secondary)
             secondariesToKeep = sort_secondaries(secondariesToKeep)
-            res.append([set, constants.potentialShape[idx],primary, secondariesToKeep, done[idx]])
+            res.append([set, constants.potentialShape[idx],primary, secondariesToKeep, done[idx]]) # CHANGE WITH tools.Mod TODO
     return removeDuplicateFromList(res)
