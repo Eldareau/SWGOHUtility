@@ -19,7 +19,7 @@ def DBGenerator():
     cur.execute("CREATE TABLE primaries (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE);")
     cur.execute("CREATE TABLE secondaries (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE);")
     cur.execute("CREATE TABLE characters (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE, Relic INTEGER);")
-    cur.execute("CREATE TABLE mods (Id INTEGER NOT NULL PRIMARY KEY, Shape INTEGER NOT NULL, Sets INTEGER NOT NULL, Primaries INTEGER NOT NULL, Secondary1 INTEGER NOT NULL, Secondary2 INTEGER NOT NULL, Secondary3 INTEGER NOT NULL, Secondary4 INTEGER NOT NULL, FOREIGN KEY (Shape) REFERENCES shapes(Id), FOREIGN KEY (Sets) REFERENCES sets(Id), FOREIGN KEY (Primaries) REFERENCES primaries(Id), FOREIGN KEY (Secondary1) REFERENCES secondaries(Id), FOREIGN KEY (Secondary2) REFERENCES secondaries(Id), FOREIGN KEY (Secondary3) REFERENCES secondaries(Id), FOREIGN KEY (Secondary4) REFERENCES secondaries(Id), UNIQUE(Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4));")
+    cur.execute("CREATE TABLE mods (Id INTEGER NOT NULL PRIMARY KEY, Shape INTEGER NOT NULL, Set INTEGER NOT NULL, Primary INTEGER NOT NULL, Secondary1 INTEGER NOT NULL, Secondary2 INTEGER NOT NULL, Secondary3 INTEGER NOT NULL, Secondary4 INTEGER NOT NULL, FOREIGN KEY (Shape) REFERENCES shapes(Id), FOREIGN KEY (Set) REFERENCES sets(Id), FOREIGN KEY (Primary) REFERENCES primaries(Id), FOREIGN KEY (Secondary1) REFERENCES secondaries(Id), FOREIGN KEY (Secondary2) REFERENCES secondaries(Id), FOREIGN KEY (Secondary3) REFERENCES secondaries(Id), FOREIGN KEY (Secondary4) REFERENCES secondaries(Id), UNIQUE(Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4));")
     cur.execute("CREATE TABLE modForCharacter (Character_id INTEGER NOT NULL, Mod_id INTEGER NOT NULL, Number INTEGER NOT NULL, FOREIGN KEY(Character_id) REFERENCES characters(Id) ON DELETE CASCADE, FOREIGN KEY(Mod_id) REFERENCES mods(Id) ON DELETE CASCADE, UNIQUE(Character_id, Mod_id));")
 
     cur.execute("INSERT INTO sets (Name) VALUES ('health');")
@@ -96,8 +96,8 @@ def DBGenerator():
                         print((set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
                         # ordering the secondaries (order defined in tools.py)
                         secondaries = tools.sort_secondaries(secondaries)
-                        cur.execute("INSERT OR IGNORE INTO mods (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4) VALUES (?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
-                        cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
+                        cur.execute("INSERT OR IGNORE INTO mods (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4) VALUES (?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
+                        cur.execute("SELECT Id FROM mods WHERE (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (set, primary_iter, primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
                         mod_id = cur.fetchall()[0][0]
                         cur.execute("SELECT COUNT(*) FROM modForCharacter WHERE Character_id=" + str(character_id) + " AND Mod_id=" + str(mod_id))
                         exist = cur.fetchall()[0][0]
@@ -109,21 +109,6 @@ def DBGenerator():
     con.commit()
     con.close()
     return 0
-
-"""
-Search the mod in database and return a list of character that might want it
-"""
-def searchForMod(wantedMod):
-    resList = []
-    con = sqlite3.connect("swgoh.db")
-    cur = con.cursor()
-    wantedMod.secondaries = tools.sort_secondaries(wantedMod.secondaries)
-    print(wantedMod)
-    print(constants.potentialShape.index(wantedMod.shape)+1)
-    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape)+1, wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3]))
-    mod_id = cur.fetchall()[0]
-    con.close()
-    return resList
 
 """
 Add new character to database

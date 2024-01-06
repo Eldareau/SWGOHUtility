@@ -49,7 +49,7 @@ def generateBasicInformations():
     cur.execute("CREATE TABLE shapes (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE);")
     cur.execute("CREATE TABLE primaries (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE);")
     cur.execute("CREATE TABLE secondaries (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE);")
-    cur.execute("CREATE TABLE mods (Id INTEGER NOT NULL PRIMARY KEY, Shape INTEGER NOT NULL, Sets INTEGER NOT NULL, Primaries INTEGER NOT NULL, Secondary1 INTEGER NOT NULL, Secondary2 INTEGER NOT NULL, Secondary3 INTEGER NOT NULL, Secondary4 INTEGER NOT NULL, FOREIGN KEY (Shape) REFERENCES shapes(Id), FOREIGN KEY (Sets) REFERENCES sets(Id), FOREIGN KEY (Primaries) REFERENCES primaries(Id), FOREIGN KEY (Secondary1) REFERENCES secondaries(Id), FOREIGN KEY (Secondary2) REFERENCES secondaries(Id), FOREIGN KEY (Secondary3) REFERENCES secondaries(Id), FOREIGN KEY (Secondary4) REFERENCES secondaries(Id), UNIQUE(Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4));")
+    cur.execute("CREATE TABLE mods (Id INTEGER NOT NULL PRIMARY KEY, Shape INTEGER NOT NULL, Set INTEGER NOT NULL, Primary INTEGER NOT NULL, Secondary1 INTEGER NOT NULL, Secondary2 INTEGER NOT NULL, Secondary3 INTEGER NOT NULL, Secondary4 INTEGER NOT NULL, FOREIGN KEY (Shape) REFERENCES shapes(Id), FOREIGN KEY (Set) REFERENCES sets(Id), FOREIGN KEY (Primary) REFERENCES primaries(Id), FOREIGN KEY (Secondary1) REFERENCES secondaries(Id), FOREIGN KEY (Secondary2) REFERENCES secondaries(Id), FOREIGN KEY (Secondary3) REFERENCES secondaries(Id), FOREIGN KEY (Secondary4) REFERENCES secondaries(Id), UNIQUE(Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4));")
     cur.execute("CREATE TABLE characters (Id INTEGER NOT NULL PRIMARY KEY, Name TEXT NOT NULL UNIQUE, Relic INTEGER);")
     cur.execute("CREATE TABLE modForCharacter (Character_id INTEGER NOT NULL, Mod_id INTEGER NOT NULL, Done BOOLEAN NOT NULL CHECK (Done IN (0, 1)), FOREIGN KEY(Character_id) REFERENCES characters(Id), FOREIGN KEY(Mod_id) REFERENCES mods(Id), UNIQUE(Character_id, Mod_id));")
 
@@ -72,7 +72,7 @@ def generateBasicInformations():
             for primary in constants.potentialPrimary[constants.potentialShape.index(shape)]:
                 for secondaries in tools.groupOfFourSecondaries(primary):
                     secondaries = tools.sort_secondaries(secondaries)
-                    cur.execute("INSERT INTO mods (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4) VALUES (?, ?, ?, ?, ?, ?, ?)", (set, constants.potentialShape.index(shape), primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
+                    cur.execute("INSERT INTO mods (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4) VALUES (?, ?, ?, ?, ?, ?, ?)", (set, constants.potentialShape.index(shape), primary, secondaries[0], secondaries[1], secondaries[2], secondaries[3]))
 
     con.commit()
     con.close()
@@ -96,7 +96,7 @@ def addCharsAndModsToDB():
                 mods = tools.createModsFromLine(sets, primaries, secondaries, done)
                 for mod in mods:
                     # we search for the mod in the database
-                    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (mod[0], constants.potentialShape.index(mod[1]), mod[2], mod[3][0], mod[3][1], mod[3][2], mod[3][3]))
+                    cur.execute("SELECT Id FROM mods WHERE (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (mod[0], constants.potentialShape.index(mod[1]), mod[2], mod[3][0], mod[3][1], mod[3][2], mod[3][3]))
                     mod_id = cur.fetchall()
                     if mod_id != []:
                         # if we found it
@@ -116,7 +116,7 @@ def update_DB(mod, charactersName):
     con = sqlite3.connect(constants.dataBaseName)
     cur = con.cursor()
 
-    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (mod.set, constants.potentialShape.index(mod.shape), mod.primary, mod.secondaries[0], mod.secondaries[1], mod.secondaries[2], mod.secondaries[3]))
+    cur.execute("SELECT Id FROM mods WHERE (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (mod.set, constants.potentialShape.index(mod.shape), mod.primary, mod.secondaries[0], mod.secondaries[1], mod.secondaries[2], mod.secondaries[3]))
     mod_id = cur.fetchall()
     cur.execute("SELECT Id FROM characters WHERE (Name)=(?)", (charactersName,))
     character_id = cur.fetchall()
@@ -124,12 +124,14 @@ def update_DB(mod, charactersName):
     if mod_id != [] and character_id != []:
         mod_id = mod_id[0][0]
         character_id = character_id[0][0]
-        cur.execute("UPDATE modForCharacter SET Done = 1 WHERE (Character_id, Mod_id)=(?, ?) RETURNING *", (character_id, 100000))
+        cur.execute("UPDATE modForCharacter SET Done = 1 WHERE (Character_id, Mod_id)=(?, ?) RETURNING *", (character_id, mod_id))
         res = cur.fetchall()
-        print(charactersName)
+        if res != []:
+            print(charactersName + "'s mod has been updated.")
+        else:
+            print("Something went wrong when searching for this character and mod combination in database.")
     else:
-        print("Impossible to find said character and mod..")
-        input()
+        print("Impossible to find said character and/or mod..")
 
     con.commit()
     con.close()

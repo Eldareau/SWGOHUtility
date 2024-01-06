@@ -60,11 +60,27 @@ def groupOfFourSecondaries(primary):
 Return the a list of mod sets sort by number of appearance
 """
 def mostWantedSet():
+    res = genSetDict()
     con = sqlite3.connect(constants.dataBaseName)
     cur = con.cursor()
-    cur.execute("SELECT Sets, COUNT(*) FROM mods GROUP BY Sets ORDER BY COUNT(*) DESC;")
-    mod_id = cur.fetchall()
-    print(mod_id)
+    cur.execute("SELECT Mod_id FROM modForCharacter WHERE Done=0")
+    mod_ids = cur.fetchall()
+    if mod_ids != []:
+        mod_ids = list_elements_in_tuple(mod_ids)
+        for mod_id in mod_ids:
+            cur.execute("SELECT Sets FROM mods WHERE (id)=(?)", mod_id[0])
+            set = cur.fetchall()
+            if set != []:
+                res[set[0][0]] += len(mod_id[1])
+            else:
+                print("We couldn't find this mod in database..")
+    else:
+        print("No more mods to find, you found them all !")
+    res = dict(sorted(res.items(), key=lambda x:x[1], reverse=True))
+    i = 1
+    for key,value in res.items():
+        print(str(i) + " : " + str(key) + " (" + str(value) + ")")
+        i += 1
 
 """
 Add new character to database
@@ -79,8 +95,11 @@ def addCharacterToDB():
 
 """
 Give the duplicates elements and their position in list.
-IN : List
+IN : List, seq element type
 OUT : Dict
+EX:
+list_duplicates([1, 2, 3, 1, 2, 1, 0, 2, 0, 4]) = [(1, [0, 3, 5]), (2, [1, 4, 7]), (0, [6, 8])]
+list_duplicates(["hello", "my", "hello", "hello", "my", "name", "is", "hello"]) = [('hello', [0, 2, 3, 7]) = [('hello', [0, 2, 3, 7]), ('my', [1, 4])]
 """
 def list_duplicates(seq, ignore=None):
     tally = collections.defaultdict(list)
@@ -88,6 +107,20 @@ def list_duplicates(seq, ignore=None):
         if item != ignore:
             tally[item].append(i)
     return list((key,locs) for key,locs in tally.items() if len(locs)>1)
+
+"""
+Give the elements and their position in list.
+IN : List
+OUT : Dict
+EX:
+list_elements_in_tuple([1, 2, 3, 1, 2, 1, 0, 2, 0, 4]) = [(1, [0, 3, 5]), (2, [1, 4, 7]), (3, [2]), (0, [6, 8]), (4, [9])]
+list_elements_in_tuple(["hello", "my", "hello", "hello", "my", "name", "is", "hello"]) = [('hello', [0, 2, 3, 7]), ('my', [1, 4]), ('name', [5]), ('is', [6])]
+"""
+def list_elements_in_tuple(seq):
+    tally = collections.defaultdict(list)
+    for i,item in enumerate(seq):
+        tally[item].append(i)
+    return list((key,locs) for key,locs in tally.items())
 
 """
 Sort the given secondaries array with enum order
@@ -171,3 +204,12 @@ def createModsFromLine(sets, primaries, secondaries, done):
             secondariesToKeep = sort_secondaries(secondariesToKeep)
             res.append([set, constants.potentialShape[idx],primary, secondariesToKeep, done[idx]]) # CHANGE WITH tools.Mod TODO
     return removeDuplicateFromList(res)
+
+"""
+Generate dictory with potentialSet as keys
+"""
+def genSetDict():
+    res = {}
+    for set in constants.potentialSet:
+        res[set] = 0
+    return res

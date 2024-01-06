@@ -7,8 +7,9 @@ import integrity
 import findMod
 import dbGenerator
 
-dbGenerator.DBGenerator() #works
-findMod.findMod() #works fine
+# dbGenerator.DBGenerator() #works fine
+# findMod.findMod() #works fine
+tools.mostWantedSet()
 
 
 print("The End.")

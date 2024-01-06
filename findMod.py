@@ -7,8 +7,8 @@ import dbGenerator
 
 def findMod():
     # ask for the wanted mod
-    #wantedMod = askingForMod()
-    wantedMod = tools.Mod("speed", "triangle", "protection%", ["speed", "protection", "tenacity%", "-"])
+    wantedMod = askingForMod()
+    # wantedMod = tools.Mod("speed", "triangle", "protection%", ["speed", "protection", "tenacity%", "-"])
 
     # retrieve the list of character that want the wanted mod
     charactersNameList = searchForMod(wantedMod)
@@ -76,10 +76,13 @@ def searchForMod(wantedMod):
     # sort secondaries for easier search in database
     wantedMod.secondaries = tools.sort_secondaries(wantedMod.secondaries)
     print("Looking for this Mod : " + wantedMod.set + ", " + wantedMod.shape + ", " + wantedMod.primary + ", " + str(wantedMod.secondaries))
-    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape)+1, wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3],))
-    mod_id = cur.fetchall()[0][0]
-    cur.execute("SELECT Character_id FROM modForCharacter WHERE (Mod_id)=(?)", (mod_id,))
+    cur.execute("SELECT Id FROM mods WHERE (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape), wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3],))
+    mod_id = cur.fetchall()
+    print(mod_id)
+    mod_id = mod_id[0][0]
+    cur.execute("SELECT * FROM modForCharacter WHERE Done=0 AND (Mod_id)=(?)", (mod_id,))
     char_ids = cur.fetchall()
+    print(char_ids)
     # iter through all the found characters
     for char_id in char_ids:
         cur.execute("SELECT Name FROM characters WHERE (Id)=(?)", (char_id[0],))
