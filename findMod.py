@@ -76,7 +76,7 @@ def searchForMod(wantedMod):
     # sort secondaries for easier search in database
     wantedMod.secondaries = tools.sort_secondaries(wantedMod.secondaries)
     print("Looking for this Mod : " + wantedMod.set + ", " + wantedMod.shape + ", " + wantedMod.primary + ", " + str(wantedMod.secondaries))
-    cur.execute("SELECT Id FROM mods WHERE (Set, Shape, Primary, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape), wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3],))
+    cur.execute("SELECT Id FROM mods WHERE (Sets, Shape, Primaries, Secondary1, Secondary2, Secondary3, Secondary4)=(?, ?, ?, ?, ?, ?, ?)", (wantedMod.set, constants.potentialShape.index(wantedMod.shape), wantedMod.primary, wantedMod.secondaries[0], wantedMod.secondaries[1], wantedMod.secondaries[2], wantedMod.secondaries[3]))
     mod_id = cur.fetchall()
     print(mod_id)
     mod_id = mod_id[0][0]
