@@ -1,0 +1,85 @@
+Health
+79,509
+Protection
+48,053
+Speed
+129
+Critical Damage
+168%
+Potency
+31%
+Tenacity
+42%
+Health Steal
+20%
+Defense Penetration
+0%
+Physical Offense
+Damage
+6,346
+Critical Chance
+81.96%
+Armor Penetration
+205
+Accuracy
+0%
+Physical Survivability
+Armor
+48.4%
+Dodge Rating
+2%
+Critical Avoidance
+0%
+Special Offense
+Damage
+5,661
+Critical Chance
+28.42%
+Resistance Penetration
+0
+Accuracy
+0%
+Special Survivability
+Resistance
+37%
+Deflection Rating
+2%
+Critical Avoidance
+0%
+
+Leader
+Droid
+Separatist
+Fleet Commander 
+Dark Side
+Attacker
+
+Furious Assault
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy and inflict Healing Immunity for 2 turns. This attack can't be evaded or countered. If the target was already debuffed deal 30% more damage. Grievous' attacks deal damage based on his Max Health instead of his Physical damage.
+Damage: 20% ± 5% of max health Won't trigger counter attack
+
+Grievous Wounds
+Level 8 (Special) • 4 turn cooldown
+Ability Material Omega
+Deal Physical damage to all enemies (based on Grievous' Max Health), inflict Target Lock for 2 turns, and remove 30% Turn Meter from them. This attack can't be evaded.
+Damage: 16% ± 5% of max health
+
+Skittering Horror
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Gain Health Steal Up for 2 turns, then deal Physical damage (based on Grievous' Max Health) to target enemy and Stun them for 1 turn. If the target was already debuffed they lose 10% of their Max Health (excludes raid bosses and Galactic Legends), which can't be resisted, and Grievous gains 10% Max Health for the rest of the encounter. This attack can't be evaded.
+Damage: 30% ± 5% of max health
+
+Daunting Presence
+Level 8 (Leader)
+Ability Material Zeta
+All enemies have -40% Critical Avoidance and -50% Defense. Whenever a Dark Side Droid ally is resisted, that Droid gains 10% Potency (stacking) for the rest of the encounter. Target Locked enemies can't counter attack.
+When a Target Locked enemy is damaged, each Droid and each Separatist ally gains 2% Turn Meter, doubled for Grievous. When damaged by an attack, Dark Side enemies lose 5% Turn Meter, and Light Side enemies lose 2% Potency (stacking).
+
+Metalloid Monstrosity
+Level 8 (Unique)
+Ability Material Zeta
+At the start of Grievous' turn, all other Droid allies take damage equal to 8% of his Max Health, doubled for Light Side Droids and he gains 5% Max Health and Potency for each other Droid ally for the rest of the encounter. This damage cannot defeat characters.
+At the start of every character's turn, if Grievous is below 100% Health, he dispels all debuffs on himself and inflicts Marked on the other healthiest Droid ally until the end of the turn. Whenever a Droid or Separatist ally is defeated, Grievous dispels all debuffs on himself, resets all ability cooldowns, and gains 1 bonus turn.

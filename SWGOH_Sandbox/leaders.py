@@ -1,4 +1,5 @@
 import others
+import debuffs
 
 class Leader:
     def __init__(self, name, handlers):
@@ -51,7 +52,7 @@ def general_of_the_501st():
             owner.remove_other(others.Cover)
             owner.remove_other(others.Advance)
             owner.speed = owner.base_speed
-            owner.complete_turn(owner, game)
+            owner.complete_turn(game)
     
     def on_after_attacked(owner, targets, allies, **kw):
         if targets is owner and owner.protection == 0 and len([ally for ally in allies if not ally.dead and "501st" in ally.tags])>=1:
@@ -77,5 +78,90 @@ def general_of_the_501st():
         "on_death"                  : on_death,
         "on_after_attacked"         : on_after_attacked,
         "on_gain_buff"              : on_gain_buff
+
     })
 
+def daunting_presence():
+    
+    def on_leader_start_of_battle(owner, leader, allies, enemies, **kw):
+        if leader is owner:
+             for enemy in enemies:
+                 enemy.physical_critical_avoidance -= 0.40
+                 enemy.special_critical_avoidance  -= 0.40
+                 enemy.physical_armor             *= 0.50
+                 enemy.special_resistance         *= 0.50
+             print(f"Enemies lost Defense and Crit Avoidance due to {owner.name}.")
+
+    def on_gain_debuff(owner, targets, **kw):
+        if targets.side != owner.side and targets.has_debuff(debuffs.Target_Lock):
+             targets.cant_counter = True
+
+    def on_lose_debuff(owner, targets, **kw):
+        if targets.side != owner.side and not targets.has_debuff(debuffs.Target_Lock):
+             targets.cant_counter = False
+
+    def on_resist(owner, targets, attacker, **kw):
+        if attacker.side == owner.side and "droid" in attacker.tags and "dark_side" in attacker.side:
+             attacker.potency += 0.10
+             print(f"{attacker.name} gains 10% Potency (Stacking) due to {owner.name}.")
+
+    def on_damage_taken(owner, targets, attacker, damage, type, game, **kw):
+        if targets.side != owner.side: 
+            if targets.has_debuff(debuffs.Target_Lock):
+                 tm_gain = 0.02
+                 teams = owner.get_teams(game.defending_team, game.attacking_team)
+                 allies = list(teams["allies"])
+                 if owner not in allies:
+                     allies.append(owner)
+                 for ally in allies:
+                     if "droid" in ally.tags or "separatist" in ally.tags:
+                         mult = 2 if ally is owner else 1
+                         ally.manipulate_turn_meter(tm_gain * mult)
+                 print(f"Allies gained TM due to damaged Target Locked enemy (Leader: {owner.name}).")
+
+            if "dark_side" in targets.side:
+                targets.manipulate_turn_meter(-0.05)
+                print(f"{targets.name} lost 5% TM due to {owner.name}.")
+            if "light_side" in targets.side:
+                targets.potency -= 0.02
+                print(f"{targets.name} lost 2% Potency due to {owner.name}.")
+
+    return Leader("Daunting Presence", {
+        "on_leader_start_of_battle": on_leader_start_of_battle,
+        "on_gain_debuff": on_gain_debuff,
+        "on_lose_debuff": on_lose_debuff,
+        "on_resist": on_resist,
+        "on_damage_taken": on_damage_taken
+    })
+
+def jedi_protector():
+    def on_leader_start_of_battle(owner, leader, allies, enemies, **kw):
+        if leader is owner:
+             # Apply to leader(owner) and allies
+             team = allies + [owner]
+             for unit in team:
+                 unit.tenacity += 0.25
+                 if "jedi" in unit.tags:
+                     # Add 45 Flat Defense to Physical Armor
+                     # Formula: flat = (pct * 637.5) / (1 - pct)
+                     # pct = flat / (flat + 637.5)
+                     
+                     # Physical
+                     current_pct = unit.physical_armor
+                     if current_pct < 1.0:
+                         flat = (current_pct * 637.5) / (1.0 - current_pct)
+                         flat += 45
+                         unit.physical_armor = flat / (flat + 637.5)
+                     
+                     # Special
+                     current_pct = unit.special_resistance
+                     if current_pct < 1.0:
+                         flat = (current_pct * 637.5) / (1.0 - current_pct)
+                         flat += 45
+                         unit.special_resistance = flat / (flat + 637.5)
+             
+             print(f"Allies gained Tenacity and Defense due to {owner.name}.")
+
+    return Leader("Jedi Protector", {
+        "on_leader_start_of_battle": on_leader_start_of_battle
+    })

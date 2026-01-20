@@ -1,4 +1,5 @@
 import random
+import copy
 import moves
 import buffs
 import others
@@ -63,7 +64,8 @@ class Unit :
         self.tags           = tags
         self.role           = role
         self.side           = side
-        self.moves          = moves if moves is not None else []
+        self.side           = side
+        self.moves          = copy.deepcopy(moves) if moves is not None else []
         self.buffs          = buffs if buffs is not None else []
         self.debuffs        = debuffs if debuffs is not None else []
         self.others         = others if others is not None else []
@@ -80,7 +82,9 @@ class Unit :
         self.is_revivable               = is_revivable
         self.hp_lock                    = False
         self.untargetable               = False
+        self.untargetable               = False
         self.cant_be_crit               = False
+        self.cant_counter               = False
         self.dead                       = False
 
     def __str__(self):
@@ -194,8 +198,9 @@ class Unit :
         self.debuffs = []
 
     def on_turn_start(self, game):
-        game.trigger_event("on_turn_start", targets=self, allies=self.get_teams(game.attacking_team, game.defending_team)["allies"])
+        game.trigger_event("on_turn_start", targets=self, allies=self.get_teams(game.attacking_team, game.defending_team)["allies"], game=game)
         self.in_his_turn                = True
+        self.has_used_ability_this_turn = False
         return not self.has_debuff(debuffs.Stun)
 
     def on_turn_end(self, game):
@@ -264,44 +269,60 @@ class Unit :
                     return random.random() <= chance
                
     def apply_effect(self, game, effect, attacking_unit, attacking_move, total_damage=0):
-        defending_team, attacking_team = game.get_teams(self)
-        effect["targets"] = self.replace_target(effect["targets"], attacking_unit, defending_team, attacking_team)
+        # Create a shallow copy of the effect to avoid modifying the original move definition
+        temp_effect = effect.copy()
+        
+        # Manually copy mutable sub-structures we intend to modify (like conditions)
+        # But PRESERVE references to objects we want to mutate (like Moves for cooldowns)
         if "conditions" in effect:
-                for condition in effect["conditions"]:
+            temp_effect["conditions"] = [c.copy() for c in effect["conditions"]]
+
+        defending_team, attacking_team = game.get_teams(self)
+        temp_effect["targets"] = self.replace_target(temp_effect["targets"], attacking_unit, attacking_team, defending_team)
+        
+        if "conditions" in temp_effect:
+                for condition in temp_effect["conditions"]:
                     if "targets" in condition:
-                        condition["targets"] = self.replace_target(condition["targets"], attacking_unit, defending_team, attacking_team)
+                        condition["targets"] = self.replace_target(condition["targets"], attacking_unit, attacking_team, defending_team)
                 # if conditions are not met, effect is not applied
-                if not(self.check_conditions(effect["conditions"], attacking_unit)):
+                if not(self.check_conditions(temp_effect["conditions"], attacking_unit)):
                     return
 
         teams = attacking_unit.get_teams(game.attacking_team, game.defending_team)
 
-        match (effect["type"]):
+        match (temp_effect["type"]):
             case "debuff":
-                if self.debuff_inflicted(attacking_unit, effect):
-                    for _ in range(effect.get("stacks", 1)):
-                        self.add_debuff(effect["kind"].copy(duration=effect["kind"].duration))
-                else:
-                    print(f"{self.name} resisted the " + str(effect["kind"]) + " !")
+                for target in temp_effect["targets"]:
+                    if target.debuff_inflicted(attacking_unit, temp_effect):
+                        for _ in range(temp_effect.get("stacks", 1)):
+                            target.add_debuff(temp_effect["kind"].copy(duration=temp_effect["kind"].duration))
+                    else:
+                        print(f"{target.name} resisted the " + str(temp_effect["kind"]) + " !")
+                        game.trigger_event("on_resist", targets=target, attacker=attacking_unit)
             case "buff":
-                if not self.has_debuff(debuffs.Buff_Immunity) and not self.has_other(others.Cover):
-                    for _ in range(effect.get("stacks", 1)):
-                        game.trigger_event("on_gain_buff", targets=self, enemies=teams["enemies"], allies=teams["allies"])
-                        self.add_buff(effect["kind"].copy(duration=effect["kind"].duration))
+                for target in temp_effect["targets"]:
+                    if not target.has_debuff(debuffs.Buff_Immunity) and not target.has_other(others.Cover):
+                        for _ in range(temp_effect.get("stacks", 1)):
+                            # Resolve teams for event trigger?
+                            teams = attacking_unit.get_teams(game.attacking_team, game.defending_team)
+                            game.trigger_event("on_gain_buff", targets=target, enemies=teams["enemies"], allies=teams["allies"])
+                            target.add_buff(temp_effect["kind"].copy(duration=temp_effect["kind"].duration))
             case "other":
-                for _ in range(effect.get("stacks", 1)):
-                    self.add_other(effect["kind"].copy(duration=effect["kind"].duration))
+                for target in temp_effect["targets"]:
+                    for _ in range(temp_effect.get("stacks", 1)):
+                        target.add_other(temp_effect["kind"].copy(duration=temp_effect["kind"].duration))
             case "call":
                 if not attacking_unit.has_debuff(debuffs.Daze):
-                    for move in effect["moves"]:
-                        if "self" in effect:
+                    for move in temp_effect["moves"]:
+                        if "self" in temp_effect:
                             ## TODO implement calling move on another unit
                             pass
                         else:
                             # /!\ I MADE THE ASSUMPTION THAT IF THE MOVE CALLED HAS NO UNIT TAGGED WITH, IT MUST BE BECAUSE IT IS THE SAME UNIT CALLING IT /!\
                             self.apply_ability(game, attacking_unit, move)
             case "bonus":
-                match (effect):
+                print("bonus")
+                match (temp_effect):
                     case {"defense_penetration_multiplier": defense_penetration_multiplier}:
                         attacking_move.defense_penetration *= defense_penetration_multiplier
                         print("x" + str(defense_penetration_multiplier) + " defense_penetration_multiplier has been applied (" + str(attacking_move.defense_penetration) + ")")
@@ -315,18 +336,19 @@ class Unit :
                         self.manipulate_max_health(max_health)
                         print(str(max_health*100) + "% max_health has been applied to " + str(self.name))
             case "cooldowns":
-                for move in effect["moves"]:
-                    move.cooldown = max(0, move.cooldown + effect["turns_number"])
-                print("Cooldowns have been modified by " + str(effect["turns_number"]) + " turn(s)")
+                for move in temp_effect["moves"]:
+                    move.cooldown = max(0, move.cooldown + temp_effect["turns_number"])
+                print("Cooldowns have been modified by " + str(temp_effect["turns_number"]) + " turn(s)")
             case "turn_meter":
-                if (effect["turn_meter_number"] > 0 and not self.has_debuff(debuffs.Daze)) or (effect["turn_meter_number"] < 0 and self.debuff_inflicted(attacking_unit, effect)) :
-                    self.manipulate_turn_meter(effect["turn_meter_number"])
-                    print(f"{self.name}'s turn meter changed by {effect['turn_meter_number']*100}%")
-                else:
-                    print(f"{self.name} resisted turn meter removal !")
+                for target in temp_effect["targets"]:
+                    if (temp_effect["turn_meter_number"] > 0 and not target.has_debuff(debuffs.Daze)) or (temp_effect["turn_meter_number"] < 0 and target.debuff_inflicted(attacking_unit, temp_effect)) :
+                        target.manipulate_turn_meter(temp_effect["turn_meter_number"])
+                        print(f"{target.name}'s turn meter changed by {temp_effect['turn_meter_number']*100}%")
+                    else:
+                        print(f"{target.name} resisted turn meter removal !")
             case "healing":
-                if "healing_from_damage_percent" in effect:
-                    healing_amount = round(total_damage * effect["healing_from_damage_percent"])
+                if "healing_from_damage_percent" in temp_effect:
+                    healing_amount = round(total_damage * temp_effect["healing_from_damage_percent"])
                     attacking_unit.apply_healing(healing_amount)
             case "ignore_defense":
                 attacking_move.ignore_defense = True
@@ -336,7 +358,7 @@ class Unit :
                 
     def apply_before_effects(self, game, attacking_unit, main_target, attacking_move):
         game.trigger_event("on_before_attack", attacker=attacking_unit, targets=self, allies=attacking_unit.get_teams(game.attacking_team, game.defending_team)["allies"])
-        game.trigger_event("on_before_attacked", attacker=attacking_unit, move=attacking_move)
+        game.trigger_event("on_before_attacked", attacker=attacking_unit, move=attacking_move, targets=self, allies=self.get_teams(game.defending_team, game.attacking_team)["allies"])
         for effect in attacking_move.before_effects:
                 self.apply_effect(game, effect, attacking_unit, attacking_move)
 
@@ -436,6 +458,7 @@ class Unit :
             self.health = max(0, self.health + protection_overflow)
         print(self.name + " - " + str(total) + " !")
         print(self)
+        game.trigger_event("on_damage_taken", game=game, targets=self, attacker=attacking_unit, damage=total, type=effect["type"])
         attacking_move.reset_temporary_modifiers()
         return total
 
@@ -450,14 +473,14 @@ class Unit :
         print(attacking_unit.name + " used " + attacking_move.name)
         
         evaded = False
-        attacking_unit.has_used_ability_this_turn = False
+        # attacking_unit.has_used_ability_this_turn = False
         total_ability_damage = 0
 
         for effect in attacking_move.effects:
             attacking_unit.update_scaling_for_moves(effect)
             if effect in per_target_effects and effect in before_hit_effects:
                 print(effect)
-                self.apply_effect(game, effect, self, attacking_move)
+                self.apply_effect(game, effect, attacking_unit, attacking_move)
             if effect in per_target_effects and effect in on_hit_effects:
                 print(effect)
                 if effect["type"] in ["physical", "special"] and not (self.has_buff(buffs.Damage_Immunity) or self.has_other(others.Cover)):
@@ -472,22 +495,24 @@ class Unit :
                         total_ability_damage += self.apply_damage(game, attacking_unit, attacking_move, effect)
                         if self.health <= 0:
                             self.dead = True
+                            self.dead = True
                             game.trigger_event("on_death", game=game, targets=self, allies=self.get_teams(game.attacking_team, game.defending_team)["allies"])
-                        elif random.random() <= self.counter_chance and ("cant_be" in effect and not "countered" in effect["cant_be"]) and not self.has_debuff(debuffs.Daze) and attacking_unit.in_his_turn:
+                        elif random.random() <= self.counter_chance and ("cant_be" in effect and not "countered" in effect["cant_be"]) and not self.has_debuff(debuffs.Daze) and not self.cant_counter and attacking_unit.in_his_turn:
                             selected_enemy = game.choose_targets(game.attacking_team, attacking_unit)
                             selected_enemy.apply_ability(game, self, self.moves[0])
-                elif effect["type"] == "healing" and not self.has_debuff(debuffs.Healing_Immunity):
-                    healing_amount = round(effect["scaling"] * effect["damage_base"])
-                    self.apply_healing(healing_amount)
-                else:
-                    raise Exception("Effect must have physical, special or healing type to be in on hit phase")
+                elif effect["type"] == "healing":
+                    if not self.has_debuff(debuffs.Healing_Immunity):
+                        scaling = effect["scaling"][1] if isinstance(effect["scaling"], tuple) else effect["scaling"]
+                        healing_amount = round(scaling * effect["damage_base"])
+                        self.apply_healing(healing_amount)
             if effect in per_target_effects and effect in after_hit_effects and total_ability_damage > 0:
                 print(effect)
-                self.apply_effect(game, effect, self, attacking_move, total_ability_damage)
+                self.apply_effect(game, effect, attacking_unit, attacking_move, total_ability_damage)
             if effect in per_target_effects and effect in after_ability_effects:
                 print(effect)
+                print(effect)
+                self.apply_effect(game, effect, attacking_unit, attacking_move)
                 attacking_unit.has_used_ability_this_turn = True
-                self.apply_effect(game, effect, self, attacking_move)
 
         attacking_move.cooldown = attacking_move.max_cooldown
 
@@ -512,27 +537,32 @@ class Unit :
 
     def complete_turn (self, game, selected_move=None) :
         print(self.name + " is taking a turn. Select an ennemy to attack:")
-        selected_move  = game.choose_move(self)
+        if selected_move is None:
+            selected_move  = game.choose_move(self)
 
         per_cast_effects      = [effect for effect in selected_move.effects if effect["scope"]=="per_cast"]
         before_hit_effects    = [effect for effect in selected_move.effects if effect["phase"]=="before_hit"]
         after_ability_effects = [effect for effect in selected_move.effects if effect["phase"]=="after_ability"]
         on_hit_effects        = [effect for effect in selected_move.effects if effect["phase"]=="on_hit"]
 
-        targets, main_target = self.resolve_targets(game, on_hit_effects[0])
+        if len(on_hit_effects) > 0:
+            targets, main_target = self.resolve_targets(game, on_hit_effects[0])
+        else:
+             targets = []
+             main_target = None
 
         for effect in selected_move.effects:
             if effect in per_cast_effects and effect in before_hit_effects:
-                print(effect)
-                for unit in targets:
-                    unit.apply_effect(game, effect, self, selected_move)
+                # Per cast effects are applied by the caster (self) once, apply_effect handles targeting
+                self.apply_effect(game, effect, self, selected_move)
+        
         for target in targets:
-            target.apply_ability(game, self, selected_move, unit is main_target)
+            target.apply_ability(game, self, selected_move, target is main_target)
+            
         for effect in selected_move.effects:
             if effect in per_cast_effects and effect in after_ability_effects:
                 print(effect)
-                for unit in targets:
-                    unit.apply_effect(game, effect, self, selected_move)
+                self.apply_effect(game, effect, self, selected_move)
 
     def take_a_turn(self, game):
         game.swap_teams_if_needed(self)
@@ -560,5 +590,9 @@ Jedi_Consular     = Unit("Jedi Consular",      8, 72323, 35447, 139, 1.50, 0.13,
 Jedi_Consular.add_move(moves.Saber_Strike, Jedi_Consular.physical_damage)
 Jedi_Consular.add_move(moves.Jedi_Healing, Jedi_Consular.max_health)
 Jedi_Consular.add_move(moves.Attack_As_Defense, Jedi_Consular.special_damage)
-Jedi_Consular.add_debuff(debuffs.Healing_Immunity.copy(duration=2))
 
+Kit_Fisto = Unit("Kit Fisto", 8, 75528, 43510, 159, 1.50, 0.445, 0.48, 0.35, 0.0, 6828, 0.6912, 420, 0.00, 0.514, 0.02, 0.00, 6609, 0.1042, 125, 0.00, 0.294, 0.02, 0.00, ["jedi", "galactic_republic", "jedi_vanguard", "order_66_raid", "leader"], "attacker", "light_side")
+Kit_Fisto.add_move(moves.Lightsaber_Mastery, Kit_Fisto.physical_damage)
+Kit_Fisto.add_move(moves.Turn_the_Tide, Kit_Fisto.physical_damage)
+Kit_Fisto.leader = leaders.jedi_protector()
+Kit_Fisto.uniques.append(uniques.superior_bladework())

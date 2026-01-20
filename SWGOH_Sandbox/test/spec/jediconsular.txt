@@ -1,0 +1,72 @@
+Health
+72,323
+Protection
+35,447
+Speed
+139
+Critical Damage
+150%
+Potency
+13%
+Tenacity
+45%
+Health Steal
+15%
+Defense Penetration
+0%
+Physical Offense
+Damage
+4,797
+Critical Chance
+50.62%
+Armor Penetration
+46
+Accuracy
+0%
+Physical Survivability
+Armor
+50.3%
+Dodge Rating
+2%
+Critical Avoidance
+18%
+Special Offense
+Damage
+7,382
+Critical Chance
+17.5%
+Resistance Penetration
+142
+Accuracy
+0%
+Special Survivability
+Resistance
+44.5%
+Deflection Rating
+2%
+Critical Avoidance
+18%
+
+Galactic Republic
+Jedi
+Jedi Vanguard
+Order 66 Raid
+Light Side
+Healer
+
+Saber Strike
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy with a 50% chance to reduce Jedi Consular's Cooldowns by 1.
+Damage: 216.7% ± 5% of Physical Damage
+
+Jedi Healing
+Level 8 (Special) • 5 turn cooldown
+Ability Material Omega
+Each ally recovers Health equal to 40% of Jedi Consular's Max Health, with a 50% chance of granting Jedi Consular 25% Turn Meter.
+
+Attack as Defense
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Deal Special damage to target enemy and recover Health equal to 30% of the damage dealt. This attack has a 50% chance to ignore the target's Armor.
+Damage: 142.4% ± 5% of Special Damage

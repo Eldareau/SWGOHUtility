@@ -1,0 +1,78 @@
+Health
+54,989
+Protection
+44,768
+Speed
+140
+Critical Damage
+150%
+Potency
+26%
+Tenacity
+43%
+Health Steal
+10%
+Defense Penetration
+0%
+Physical Offense
+Damage
+6,828
+Critical Chance
+69.12%
+Armor Penetration
+420
+Accuracy
+18%
+Physical Survivability
+Armor
+51.4%
+Dodge Rating
+2%
+Critical Avoidance
+0%
+Special Offense
+Damage
+6,609
+Critical Chance
+10.42%
+Resistance Penetration
+125
+Accuracy
+18%
+Special Survivability
+Resistance
+29.4%
+Deflection Rating
+2%
+Critical Avoidance
+0%
+
+Leader
+Galactic Republic
+Jedi
+Jedi Vanguard
+Order 66 Raid
+Light Side
+Attacker
+
+Lightsaber Mastery
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy with a 30% chance to attack again. Kit Fisto has a 50% chance to gain 15% Turn Meter with each attack.
+Damage: 146.8 ± 5% of physical damage
+
+Turn the Tide
+Level 8 (Special) • 4 turn cooldown
+Ability Material Omega
+Deal Physical damage to all enemies and grant all allies Potency Up for 3 turns.
+Damage: 129% ± 5% of physical damage
+
+Jedi Protector
+Level 8 (Leader)
+Ability Material Omega
+All allies gain 25% Tenacity and Jedi allies gain 45 Defense.
+
+Superior Bladework
+Level 7 (Unique)
+Ability Material Mk III
+Kit Fisto has 35% Counter Chance and +20% Offense.

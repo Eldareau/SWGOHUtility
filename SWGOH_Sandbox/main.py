@@ -52,7 +52,7 @@ class Game :
         if attacking_leader.leader is not None:
             print("Registering attacking leader:", attacking_leader.leader.name)
             attacking_leader.register_leader(self)
-            self.trigger_event("on_leader_start_of_battle", leader=attacking_leader, allies=[u for u in self.attacking_team if u is not attacking_leader], enemies=self.attacking_team)
+            self.trigger_event("on_leader_start_of_battle", leader=attacking_leader, allies=[u for u in self.attacking_team if u is not attacking_leader], enemies=self.defending_team)
 
         defending_leader = self.defending_team[0]
         if defending_leader.leader is not None:
@@ -66,14 +66,14 @@ class Game :
                 for effect in move.effects:
                     if "scaling" in effect:
                         match(effect["scaling"]):
-                            case "self_physical_damage":
+                            case "self_physical_damage" | ("self_physical_damage", _):
                                 effect["scaling"] = ("self_physical_damage", unit.physical_damage)
-                            case "self_special_damage":
+                            case "self_special_damage" | ("self_special_damage", _):
                                 effect["scaling"] = ("self_special_damage", unit.special_damage)
-                            case "self_max_health":
+                            case "self_max_health" | ("self_max_health", _):
                                 effect["scaling"] = ("self_max_health", unit.max_health)
                             case _:
-                                raise Exception("Effect scaling isn't implmented yet. (" + effect +")")
+                                raise Exception("Effect scaling isn't implmented yet. (" + str(effect) +")")
 
     def match_init(self):
 # Base stats are determined by level, rarity, and current gear level of the unit.
@@ -176,21 +176,22 @@ class Game :
             print("All enemy units have been defeated. Combat over.")
             self.game_over = True
 
-print("Combat Start")
+if __name__ == "__main__":
+    print("Combat Start")
 
-game = Game(ally_units, enemy_units)
-game.match_init()
+    game = Game(ally_units, enemy_units)
+    game.match_init()
 
-while (not(game.game_over)):
-    # compute which units have enough turn meter to take a turn
-    units_to_take_a_turn = game.compute_turn_meter()
-    for unit_i in range(len(units_to_take_a_turn)):
-        if game.game_over:
-            break
-        # choose the unit with the highest turn meter to take a turn
-        selected_unit = max(units_to_take_a_turn, key=lambda x: x.turn_meter)
-        selected_unit.take_a_turn(game)
-        del units_to_take_a_turn[units_to_take_a_turn.index(selected_unit)]
+    while (not(game.game_over)):
+        # compute which units have enough turn meter to take a turn
+        units_to_take_a_turn = game.compute_turn_meter()
+        for unit_i in range(len(units_to_take_a_turn)):
+            if game.game_over:
+                break
+            # choose the unit with the highest turn meter to take a turn
+            selected_unit = max(units_to_take_a_turn, key=lambda x: x.turn_meter)
+            selected_unit.take_a_turn(game)
+            del units_to_take_a_turn[units_to_take_a_turn.index(selected_unit)]
         
 
         

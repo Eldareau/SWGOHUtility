@@ -1,0 +1,118 @@
+Health
+67,264
+Protection
+64,188
+Speed
+157
+Critical Damage
+150%
+Potency
+65%
+Tenacity
+63%
+Health Steal
+30%
+Defense Penetration
+0%
+Physical Offense
+Damage
+7,038
+Critical Chance
+64.67%
+Armor Penetration
+316
+Accuracy
+18%
+Physical Survivability
+Armor
+53.9%
+Dodge Rating
+2%
+Critical Avoidance
+0%
+Special Offense
+Damage
+6,086
+Critical Chance
+10%
+Resistance Penetration
+120
+Accuracy
+18%
+Special Survivability
+Resistance
+29.7%
+Deflection Rating
+2%
+Critical Avoidance
+0%
+
+Leader
+501st
+Galactic Republic
+Jedi
+Light Side
+Attacker
+
+Furious Slash
+Level 8 (Basic)
+Ability Material Zeta
+Deal Physical damage to target enemy. This attack can't be evaded and has +65% Defense Penetration, tripled if all allies are 501st.
+If this is the first ability General Skywalker uses during his turn, he immediately uses the Special ability Telekinesis, if able.
+Telekinesis: Deal Physical damage to target enemy. If possible, this attack will critically hit enemies with Armor Shred. If the target enemy is Dazed, reduce General Skywalker's ability cooldowns by 1.
+Damage: 220% ± 5% of physical damage
+
+Telekinesis
+Granted
+Deal Physical damage to target enemy. If possible, this attack will critically hit enemies with Armor Shred. If the target enemy is Dazed, reduce General Skywalker's ability cooldowns by 1.
+Damage: 280% ± 5% of physical damage
+
+Sundering Strike
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Deal Physical damage to target enemy and inflict Armor Shred. If they are Dazed, this attack deals double damage.
+If this is the first ability General Skywalker uses during his turn, reset Force Grip's cooldown and use it if possible.
+Damage: 350% ± 5% of physical damage
+
+Force Grip
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Deal Physical damage to all enemies and Daze them for 2 turns. If possible, this attack will critically hit enemies with Armor Shred.
+If this is the first ability General Skywalker uses during his turn, reset Sundering Strike's cooldown and use it if possible.
+Damage: 300% ± 5% of physical damage
+
+General of the 501st
+Level 8 (Leader)
+Ability Material Zeta
+All units can't be revived.
+All 501st allies have +50% Critical Damage.
+When an enemy gains a buff, all 501st allies gain 2% Offense (stacking) until the end of the encounter.
+While there are other active 501st allies, General Skywalker:
+- Can't drop below 100% Health
+- Advances if he has 100% Protection and takes Cover if he has 0% Protection at the end of every turn
+- Removes all other status effects when he takes Cover
+- Leaves Cover, recovers 100% Protection, and takes a bonus turn when all other 501st allies are defeated
+Advance:
+- Taunt, which can't be dispelled or prevented
+- Other 501st allies can't lose Health
+Cover:
+- Can't be targeted
+- Immune to damage and status effects
+- Speed set to 0
+- Recover 10% Protection and Turn Meter at the end of every turn, doubled for allied 501st turns, which can't be prevented
+
+The Chosen One
+Level 8 (Unique)
+Ability Material Zeta
+General Skywalker uses an additional ability during his turn.
+Whenever General Skywalker critically hits an enemy during his turn, increase their cooldowns by 1 (excluding raid bosses and Galactic Legends), which can't be resisted.
+If he is critically hit, General Skywalker dispels all debuffs on himself. Enemies attacking out of turn can't critically hit.
+If the target enemy has no Protection when General Skywalker uses an ability, reduce their current Max Health by 20% for rest of the battle (stacking, excluding raid bosses and Galactic Legends), which can't be resisted.
+
+Hero with no Fear
+Level 8 (Unique)
+Ability Material Zeta
+At the start of battle, General Skywalker gains 25% Defense, 15% Max Protection, and 25% Tenacity for each other 501st ally until all other 501st allies are defeated.
+If all allies are 501st at the start of battle, General Skywalker gains the following:
+- 100% counter chance and 50% Critical Chance
+- When all other allies are defeated, General Skywalker can't be critically hit and gains 35% Turn Meter after every enemy turn
