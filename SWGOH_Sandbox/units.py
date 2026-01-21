@@ -602,3 +602,8 @@ Eeth_Koth.add_move(moves.Breaching_Strike, Eeth_Koth.physical_damage)
 Eeth_Koth.add_move(moves.Force_Push, Eeth_Koth.special_damage)
 Eeth_Koth.leader = leaders.stalwart_jedi_defender()
 Eeth_Koth.uniques.append(uniques.anti_droid_specialist())
+
+Jedi_Knight_Guardian = Unit("Jedi Knight Guardian", 8, 59792, 59126, 117, 1.50, 0.65, 0.50, 0.29, 0.0, 5345, 0.5829, 220, 0.0, 0.567, 0.02, 0.0, 4593, 0.10, 0, 0, 0.466, 0.02, 0, ["galactic_republic", "jedi", "jedi_vanguard", "order_66_raid"], "tank", "light_side")
+Jedi_Knight_Guardian.add_move(moves.Saber_Sweep, Jedi_Knight_Guardian.physical_damage)
+Jedi_Knight_Guardian.add_move(moves.Saber_Throw, Jedi_Knight_Guardian.physical_damage)
+Jedi_Knight_Guardian.uniques.append(uniques.defend_the_order())

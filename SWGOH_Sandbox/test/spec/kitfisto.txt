@@ -59,7 +59,7 @@ Lightsaber Mastery
 Level 8 (Basic)
 Ability Material Omega
 Deal Physical damage to target enemy with a 30% chance to attack again. Kit Fisto has a 50% chance to gain 15% Turn Meter with each attack.
-Damage: 146.8 ± 5% of physical damage
+Damage: 146.8% ± 5% of physical damage
 
 Turn the Tide
 Level 8 (Special) • 4 turn cooldown

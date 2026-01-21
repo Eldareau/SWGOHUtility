@@ -159,3 +159,17 @@ Force_Push        = Move("Force Push", 3,
                             {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Stun.copy(duration=1), "conditions":[{"chance":0.75}]},
                             {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=3), "conditions":[{"targets":"enemy_target", "tags":["droid"]}]}
                         ])
+
+# Jedi_Knight_Guardian
+Saber_Sweep = Move("Saber Sweep", 0,
+                    effects=[
+                        {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"enemy_target", "scaling":"self_physical_damage", "damage_base":1.72, "damage_variance":0.05},
+                        {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Offense_Down.copy(duration=2), "conditions":[{"chance":0.55}]}
+                    ])
+
+Saber_Throw = Move("Saber Throw", 4,
+                    effects=[
+                        {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"all_enemies", "scaling":"self_physical_damage", "damage_base":0.991, "damage_variance":0.05},
+                        {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=1), "conditions":[{"chance":0.55}]},
+                        {"phase":"after_ability", "scope":"per_cast", "type":"buff", "targets":"self", "kind":buffs.Defense_Up.copy(duration=2)}
+                    ])

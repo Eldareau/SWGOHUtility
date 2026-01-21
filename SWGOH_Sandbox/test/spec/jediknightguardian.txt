@@ -1,0 +1,72 @@
+Health
+59,792
+Protection
+59,126
+Speed
+117
+Critical Damage
+150%
+Potency
+65%
+Tenacity
+50%
+Health Steal
+29%
+Defense Penetration
+0%
+Physical Offense
+Damage
+5,345
+Critical Chance
+58.29%
+Armor Penetration
+220
+Accuracy
+0%
+Physical Survivability
+Armor
+56.7%
+Dodge Rating
+2%
+Critical Avoidance
+0%
+Special Offense
+Damage
+4,593
+Critical Chance
+10%
+Resistance Penetration
+0
+Accuracy
+0%
+Special Survivability
+Resistance
+46.6%
+Deflection Rating
+2%
+Critical Avoidance
+0%
+
+Light Side
+Tank
+Galactic Republic
+Jedi
+Jedi Vanguard
+Order 66 Raid
+
+Saber Sweep
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy with a 55% chance of inflicting Offense Down for 2 turns.
+Damage: 172% ± 5% of Physical Damage
+
+Saber Throw
+Level 8 (Special) • 4 turn cooldown
+Ability Material Omega
+Deal Physical damage to all enemies with a 55% chance to inflict Ability Block for 1 turn. This chance is increased to 100% on a Critical Hit. In addition, Jedi Knight Guardian gains Defense Up for 2 turns.
+Damage: 99.1% ± 5% of Physical Damage
+
+Defend the Order
+Level 8 (Unique)
+Ability Material Omega
+While below 50% Health, Jedi Knight Guardian has +30% Tenacity and recovers 15% of her Max Health at the start of each of her turns.

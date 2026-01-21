@@ -182,3 +182,40 @@ def anti_droid_specialist():
         "on_before_attack": on_before_attack,
         "on_after_attack" : on_after_attack
     })
+
+def defend_the_order():
+    def check_health_threshold(owner):
+        # Attribute to track if bonus is active
+        is_active = getattr(owner, 'jkg_tenacity_bonus_active', False)
+        should_be_active = owner.health <= owner.max_health * 0.5
+        
+        if should_be_active and not is_active:
+            owner.tenacity += 0.30
+            owner.jkg_tenacity_bonus_active = True
+            print(f"{owner.name} gains +30% Tenacity (Defend the Order).")
+        elif not should_be_active and is_active:
+            owner.tenacity -= 0.30
+            owner.jkg_tenacity_bonus_active = False
+            print(f"{owner.name} loses +30% Tenacity (Defend the Order).")
+
+    def on_turn_start(owner, **kw):
+        # Heal check (15% Max Health if below 50%)
+        if owner.health <= owner.max_health * 0.5:
+             healing_amount = round(owner.max_health * 0.15)
+             owner.apply_healing(healing_amount)
+             print(f"{owner.name} recovers {healing_amount} health (Defend the Order).")
+        
+        # Stat check
+        check_health_threshold(owner)
+
+    def on_damage_taken_unique(owner, **kw):
+        check_health_threshold(owner)
+        
+    def on_before_attacked_unique(owner, **kw):
+        check_health_threshold(owner)
+
+    return Unique("Defend the Order", {
+        "on_turn_start": on_turn_start,
+        "on_damage_taken": on_damage_taken_unique,
+        "on_before_attacked": on_before_attacked_unique
+    })
