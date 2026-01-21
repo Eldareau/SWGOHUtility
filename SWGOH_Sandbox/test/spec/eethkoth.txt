@@ -1,0 +1,79 @@
+Health
+50,833
+Protection
+38,865
+Speed
+164
+Critical Damage
+150%
+Potency
+55%
+Tenacity
+37%
+Health Steal
+15%
+Defense Penetration
+0%
+Physical Offense
+Damage
+5,453
+Critical Chance
+42.29%
+Armor Penetration
+192
+Accuracy
+18%
+Physical Survivability
+Armor
+39.8%
+Dodge Rating
+2%
+Critical Avoidance
+18%
+Special Offense
+Damage
+8,631
+Critical Chance
+20%
+Resistance Penetration
+227
+Accuracy
+18%
+Special Survivability
+Resistance
+40.1%
+Deflection Rating
+2%
+Critical Avoidance
+18%
+
+Leader
+Galactic Republic
+Jedi
+Jedi Vanguard
+Order 66 Raid
+Light Side
+Support
+
+
+Breaching Strike
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy with a 50% chance to inflict Defense Down for 3 turns. If the target is a Droid, this attack has a 100% chance.
+Damage: 153.9% ± 5% of Physical Damage
+
+Force Push
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Deal Special damage to target enemy with a 75% chance to Stun for 1 turn and a 100% chance to inflict Ability Block for 3 turns if the target is a Droid.
+Damage: 139.1% ± 5% of Special Damage
+
+Stalwart Jedi Defender
+Level 7 (Leader)
+Ability Material Mk III
+Jedi allies gain 60 Defense.
+
+Anti-Droid Specialist
+Level 8 (Unique)
+Ability Material Omega
+Eeth Koth has +35% Critical Chance and +20% Critical Damage when attacking Droids.

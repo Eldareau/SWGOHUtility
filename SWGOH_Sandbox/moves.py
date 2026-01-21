@@ -144,3 +144,18 @@ Lightsaber_Mastery.effects[2]["moves"] = [Lightsaber_Mastery]
 Turn_the_Tide     = Move("Turn the Tide", 4,
                          effects=[{"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"all_enemies", "scaling":"self_physical_damage", "damage_base":1.29, "damage_variance":0.05},
                                   {"phase":"after_ability", "scope":"per_cast", "type":"buff", "targets":"all_allies", "kind":buffs.Potency_Up.copy(duration=3)}])
+
+# Eeth_Koth
+Breaching_Strike = Move("Breaching Strike", 0,
+                        effects=[
+                            {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"enemy_target", "scaling":"self_physical_damage", "damage_base":1.539, "damage_variance":0.05},
+                            {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Defense_Down.copy(duration=3), "conditions":[{"chance":0.5}]},
+                            {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Defense_Down.copy(duration=3), "conditions":[{"targets":"enemy_target", "tags":["droid"]}]}
+                        ])
+
+Force_Push        = Move("Force Push", 3,
+                        effects=[
+                            {"phase":"on_hit", "scope":"per_target", "type":"special", "targets":"enemy_target", "scaling":"self_special_damage", "damage_base":1.391, "damage_variance":0.05},
+                            {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Stun.copy(duration=1), "conditions":[{"chance":0.75}]},
+                            {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=3), "conditions":[{"targets":"enemy_target", "tags":["droid"]}]}
+                        ])

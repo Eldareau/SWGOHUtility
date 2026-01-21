@@ -63,24 +63,22 @@ class TestKitFisto(unittest.TestCase):
     @patch('main.Game.choose_targets')
     @patch('units.random.random')
     def test_basic_attack_mechanics(self, mock_random, mock_targets):
-        """Test Lightsaber Mastery: Damage, TM Gain, Bonus Attack."""
+        """
+        Test Lightsaber Mastery
+        Spec Check:
+        - Deal Physical damage to target enemy.
+        - Has a 30% chance to attack again.
+        - Gain 15% Turn Meter (per hit).
+        """
         mock_targets.return_value = self.enemy
         
-        # Sequence logic:
-        # Attack 1:
-        # 1. Evade Check (expect Fail -> >0.02)
-        # 2. Crit Check (expect Fail -> >0)
-        # 3. TM Gain Condition (Chance 0.5) -> Pass (<=0.5)
-        # 4. Bonus Check (Chance 0.3) -> Pass (<=0.3)
-        # Bonus Attack (Attack 2):
-        # 5. Evade Check
-        # 6. Crit Check
-        # 7. TM Gain Condition -> Pass
-        # 8. Bonus Check -> Fail (>0.3)
+        # Sequence logic simulation:
+        # Attack 1: Evade(Fail), Crit(Fail), TM Gain(Pass), Bonus Attack Check(Pass)
+        # Attack 2: Evade(Fail), Crit(Fail), TM Gain(Pass), Bonus Attack Check(Fail)
         
         mock_random.side_effect = [
-            1.0, 1.0, 0.1, 0.1,  # Attack 1: Evade, Crit, TM, Bonus
-            1.0, 1.0, 0.1, 0.9   # Attack 2: Evade, Crit, TM, Bonus
+            1.0, 1.0, 0.1, 0.1,  # Attack 1
+            1.0, 1.0, 0.1, 0.9   # Attack 2
         ]
         
         self.kit.physical_critical_chance = 0
@@ -90,7 +88,8 @@ class TestKitFisto(unittest.TestCase):
         
         self.kit.complete_turn(self.game, selected_move=move)
         
-        self.assertEqual(self.kit.turn_meter, 300)
+        # 15% TM per hit * 2 hits = 30% Turn Meter
+        self.assertEqual(self.kit.turn_meter, 300, "Should gain 300 Turn Meter (150*2)")
         
         initial_hp = 100000 + 100000
         damage_dealt = initial_hp - (self.enemy.health + self.enemy.protection)
@@ -98,19 +97,20 @@ class TestKitFisto(unittest.TestCase):
 
     @patch('main.Game.choose_targets')
     def test_special_ability(self, mock_targets):
-        """Test Turn the Tide: AOE, Potency Up."""
-        # For AOE, it selects all enemies. 'game.choose_targets' might still be called for "all_enemies" case?
-        # units.py L523: case "all_enemies": target = game.choose_targets(game.defending_team). 
-        # Wait, if target type is "all_enemies", why choose targets? Ah, maybe to return "primary" target?
-        # Yes, returns (team, target).
+        """
+        Test Turn the Tide
+        Spec Check:
+        - Deal Physical damage to all enemies.
+        - Grant Potency Up to all allies for 3 turns.
+        """
         mock_targets.return_value = self.enemy
         
         move = self.kit.moves[1]
         
         self.kit.complete_turn(self.game, selected_move=move)
         
-        self.assertTrue(self.kit.has_buff(buffs.Potency_Up))
-        self.assertTrue(self.ally.has_buff(buffs.Potency_Up))
+        self.assertTrue(self.kit.has_buff(buffs.Potency_Up), "Kit Fisto should gain Potency Up")
+        self.assertTrue(self.ally.has_buff(buffs.Potency_Up), "Allies should gain Potency Up")
 
 
 if __name__ == '__main__':

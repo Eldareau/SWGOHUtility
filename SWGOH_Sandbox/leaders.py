@@ -165,3 +165,32 @@ def jedi_protector():
     return Leader("Jedi Protector", {
         "on_leader_start_of_battle": on_leader_start_of_battle
     })
+
+def stalwart_jedi_defender():
+    def on_leader_start_of_battle(owner, leader, allies, enemies, **kw):
+        if leader is owner:
+             # Apply to leader(owner) and allies
+             team = allies + [owner]
+             for unit in team:
+                 if "jedi" in unit.tags:
+                     # Add 60 Flat Defense to Physical Armor and Special Resistance
+                     
+                     # Physical
+                     current_pct = unit.physical_armor
+                     if current_pct < 1.0:
+                         flat = (current_pct * 637.5) / (1.0 - current_pct)
+                         flat += 60
+                         unit.physical_armor = flat / (flat + 637.5)
+                     
+                     # Special
+                     current_pct = unit.special_resistance
+                     if current_pct < 1.0:
+                         flat = (current_pct * 637.5) / (1.0 - current_pct)
+                         flat += 60
+                         unit.special_resistance = flat / (flat + 637.5)
+             
+             print(f"Jedi allies gained 60 Defense due to {owner.name}.")
+
+    return Leader("Stalwart Jedi Defender", {
+        "on_leader_start_of_battle": on_leader_start_of_battle
+    })

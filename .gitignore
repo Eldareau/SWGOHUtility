@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*$py.class
+SWGOH_Sandbox/test/__pycache__

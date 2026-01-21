@@ -156,3 +156,29 @@ def superior_bladework():
     return Unique("Superior Bladework", {
         "on_unique_start_of_battle": on_unique_start_of_battle
     })
+
+def anti_droid_specialist():
+    
+    def on_before_attack(owner, attacker, targets, **kw):
+        if attacker is owner and ("droid" in targets.tags or "droid" in targets.tags): 
+            owner.eeth_koth_bonus_applied = True
+            owner.original_crit_chance = owner.physical_critical_chance 
+            owner.original_crit_dmg = owner.critical_damage
+            
+            owner.physical_critical_chance += 0.35
+            owner.special_critical_chance  += 0.35
+            owner.critical_damage          += 0.20
+            print(f"{owner.name} gains 35% Crit Chance and 20% Crit Damage vs Droid.")
+
+    def on_after_attack(owner, attacker, targets, **kw):
+        if attacker is owner and getattr(owner, 'eeth_koth_bonus_applied', False):
+            owner.physical_critical_chance -= 0.35
+            owner.special_critical_chance  -= 0.35
+            owner.critical_damage          -= 0.20
+            owner.eeth_koth_bonus_applied = False
+            print(f"{owner.name} resets stats after attack.")
+
+    return Unique("Anti-Droid Specialist", {
+        "on_before_attack": on_before_attack,
+        "on_after_attack" : on_after_attack
+    })
