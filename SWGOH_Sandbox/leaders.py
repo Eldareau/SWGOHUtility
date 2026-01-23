@@ -194,3 +194,35 @@ def stalwart_jedi_defender():
     return Leader("Stalwart Jedi Defender", {
         "on_leader_start_of_battle": on_leader_start_of_battle
     })
+
+def jedi_strategist():
+    def on_leader_start_of_battle(owner, leader, allies, enemies, **kw):
+        if leader is owner:
+            # Apply to all allies: 30 Defense
+            # Apply to Jedi allies: 35% Counter Chance, 25% Counter Damage
+            team = allies + [owner]
+            for unit in team:
+                # 30 Defense for ALL allies
+                # Physical
+                current_pct = unit.physical_armor
+                if current_pct < 1.0:
+                    flat = (current_pct * 637.5) / (1.0 - current_pct)
+                    flat += 30
+                    unit.physical_armor = flat / (flat + 637.5)
+                
+                # Special
+                current_pct = unit.special_resistance
+                if current_pct < 1.0:
+                    flat = (current_pct * 637.5) / (1.0 - current_pct)
+                    flat += 30
+                    unit.special_resistance = flat / (flat + 637.5)
+
+                if "jedi" in unit.tags:
+                     unit.counter_chance += 0.35
+                     unit.counter_damage += 0.25
+        
+            print(f"Allies gained 30 Defense. Jedi allies gained 35% Counter Chance and 25% Counter Damage due to {owner.name}.")
+
+    return Leader("Jedi Strategist", {
+        "on_leader_start_of_battle": on_leader_start_of_battle
+    })

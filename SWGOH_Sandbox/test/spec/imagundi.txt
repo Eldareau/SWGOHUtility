@@ -1,0 +1,79 @@
+Health
+60,617
+Protection
+51,200
+Speed
+145
+Critical Damage
+150%
+Potency
+29%
+Tenacity
+30%
+Health Steal
+29%
+Defense Penetration
+0%
+Physical Offense
+Damage
+5,162
+Critical Chance
+68.42%
+Armor Penetration
+326
+Accuracy
+18%
+Physical Survivability
+Armor
+51.4%
+Dodge Rating
+2%
+Critical Avoidance
+0%
+Special Offense
+Damage
+4,951
+Critical Chance
+11.04%
+Resistance Penetration
+149
+Accuracy
+18%
+Special Survivability
+Resistance
+29.5%
+Deflection Rating
+2%
+Critical Avoidance
+0%
+
+Light Side
+Support
+Leader
+Galactic Republic
+Jedi
+Jedi Vanguard
+Order 66 Raid
+
+
+Sunder
+Level 8 (Basic)
+Ability Material Omega
+Deal Physical damage to target enemy with a 50% chance to inflict Defense Down for 2 turns. If the target is a Droid, this attack deals 100% more damage and has a 100% chance to inflict Defense Down.
+Damage: 189.9% ± 5% of physical damage
+
+Rebuke
+Level 8 (Special) • 3 turn cooldown
+Ability Material Omega
+Deal Physical damage to target enemy and grant all allies Defense Up for 3 turns.
+Damage: 304.5% ± 5% of physical damage
+
+Jedi Strategist
+Level 8 (Leader)
+Ability Material Omega
+All allies gain 30 Defense and Jedi allies gain 35% Counter Chance and 25% Counter Damage.
+
+Last Stand
+Level 7 (Unique)
+Ability Material Mk III
+Ima-Gun Di recovers 15% of his Max Health each turn for 3 turns whenever he suffers a Critical Hit.

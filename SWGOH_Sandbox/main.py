@@ -127,9 +127,9 @@ class Game :
                     print(f"{i} : {unit}")
 
         if countered_enemy in valid_targets:
-            return team_to_attack.index(countered_enemy)
+            return countered_enemy
         elif not countered_enemy == None:
-            return team_to_attack.index(random.choice(team_to_attack))
+            return random.choice(team_to_attack)
         else:
             while True:
                 try :

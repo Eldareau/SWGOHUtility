@@ -75,6 +75,7 @@ class Unit :
         self.health         = max_health
         self.protection     = max_protection
         self.counter_chance = 0.0
+        self.counter_damage = 0.0
 
         self.has_used_ability_this_turn = False
         self.in_his_turn                = False
@@ -462,7 +463,7 @@ class Unit :
         attacking_move.reset_temporary_modifiers()
         return total
 
-    def apply_ability(self, game, attacking_unit, attacking_move, main_target = False):
+    def apply_ability(self, game, attacking_unit, attacking_move, main_target = False, is_counter = False):
         
         per_target_effects    = [effect for effect in attacking_move.effects if effect["scope"]=="per_target"]
         before_hit_effects    = [effect for effect in attacking_move.effects if effect["phase"]=="before_hit"]
@@ -475,6 +476,9 @@ class Unit :
         evaded = False
         # attacking_unit.has_used_ability_this_turn = False
         total_ability_damage = 0
+
+        if is_counter:
+            attacking_move.damage_multiplier += attacking_unit.counter_damage
 
         for effect in attacking_move.effects:
             attacking_unit.update_scaling_for_moves(effect)
@@ -499,7 +503,7 @@ class Unit :
                             game.trigger_event("on_death", game=game, targets=self, allies=self.get_teams(game.attacking_team, game.defending_team)["allies"])
                         elif random.random() <= self.counter_chance and ("cant_be" in effect and not "countered" in effect["cant_be"]) and not self.has_debuff(debuffs.Daze) and not self.cant_counter and attacking_unit.in_his_turn:
                             selected_enemy = game.choose_targets(game.attacking_team, attacking_unit)
-                            selected_enemy.apply_ability(game, self, self.moves[0])
+                            selected_enemy.apply_ability(game, self, self.moves[0], is_counter=True)
                 elif effect["type"] == "healing":
                     if not self.has_debuff(debuffs.Healing_Immunity):
                         scaling = effect["scaling"][1] if isinstance(effect["scaling"], tuple) else effect["scaling"]
@@ -557,7 +561,7 @@ class Unit :
                 self.apply_effect(game, effect, self, selected_move)
         
         for target in targets:
-            target.apply_ability(game, self, selected_move, target is main_target)
+            target.apply_ability(game, self, selected_move, target is main_target, is_counter=False)
             
         for effect in selected_move.effects:
             if effect in per_cast_effects and effect in after_ability_effects:
@@ -607,3 +611,9 @@ Jedi_Knight_Guardian = Unit("Jedi Knight Guardian", 8, 59792, 59126, 117, 1.50, 
 Jedi_Knight_Guardian.add_move(moves.Saber_Sweep, Jedi_Knight_Guardian.physical_damage)
 Jedi_Knight_Guardian.add_move(moves.Saber_Throw, Jedi_Knight_Guardian.physical_damage)
 Jedi_Knight_Guardian.uniques.append(uniques.defend_the_order())
+
+Ima_Gun_Di = Unit("Ima-Gun Di", 8, 60617, 51200, 145, 1.50, 0.29, 0.30, 0.29, 0.0, 5162, 0.6842, 326, 0.18, 0.514, 0.02, 0.0, 4951, 0.1104, 149, 0.18, 0.295, 0.02, 0.0, ["galactic_republic", "jedi", "jedi_vanguard", "order_66_raid"], "support", "light_side")
+Ima_Gun_Di.add_move(moves.Sunder, Ima_Gun_Di.physical_damage)
+Ima_Gun_Di.add_move(moves.Rebuke, Ima_Gun_Di.physical_damage)
+Ima_Gun_Di.leader = leaders.jedi_strategist()
+Ima_Gun_Di.uniques.append(uniques.last_stand())

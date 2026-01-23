@@ -173,3 +173,24 @@ Saber_Throw = Move("Saber Throw", 4,
                         {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=1), "conditions":[{"chance":0.55}]},
                         {"phase":"after_ability", "scope":"per_cast", "type":"buff", "targets":"self", "kind":buffs.Defense_Up.copy(duration=2)}
                     ])
+
+# Ima-Gun Di
+Sunder = Move("Sunder", 0, 
+    effects=[
+        {"phase": "before_hit", "scope": "per_target", "type": "bonus", "targets": "enemy_target", "bonus_damage_multiplier": 1.0, "conditions": [{"targets": "enemy_target", "tags": ["droid"]}]},
+        {"phase": "on_hit", "scope": "per_target", "type": "physical", "targets": "enemy_target", "scaling": "self_physical_damage", "damage_base": 1.899, "damage_variance": 0.05},
+        # Defense Down: 100% vs Droids, 50% vs others.
+        # Implemented as two mutually exclusive conditions to avoid double application (though double app might just stack or be redundant, cleaner to split).
+        # Actually simplest is: Apply if Droid. Apply if !Droid and chance 0.5.
+        {"phase": "after_hit", "scope": "per_target", "type": "debuff", "targets": "enemy_target", "kind": debuffs.Defense_Down.copy(duration=2), "conditions": [{"targets": "enemy_target", "tags": ["droid"]}]},
+        {"phase": "after_hit", "scope": "per_target", "type": "debuff", "targets": "enemy_target", "kind": debuffs.Defense_Down.copy(duration=2), "conditions": [{"targets": "enemy_target", "tags": ["!droid"]}, {"chance": 0.50}]}
+    ]
+)
+
+Rebuke = Move("Rebuke", 3, 
+    effects=[
+        {"phase": "on_hit", "scope": "per_target", "type": "physical", "targets": "enemy_target", "scaling": "self_physical_damage", "damage_base": 3.045, "damage_variance": 0.05},
+        {"phase": "after_ability", "scope": "per_cast", "type": "buff", "kind": buffs.Defense_Up.copy(duration=3), "targets": "all_allies"}
+    ]
+)
+

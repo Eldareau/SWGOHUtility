@@ -183,6 +183,78 @@ def anti_droid_specialist():
         "on_after_attack" : on_after_attack
     })
 
+def last_stand():
+    # Use a custom 'Other' class to track standard turn-based effects?
+    # Or just track it on the unit object directly using a custom attribute list?
+    # `units.py` has `others` list which expects objects with `duration` attribute.
+    # I can define a lightweight class here or use a dummy object if duck-typing works.
+    # But `units.py` `effects_to_keep` checks `effect.duration`.
+    # Let's create a local class `CustomHealTracker` inside the unique factory?
+    # No, `units.py` imports `uniques`.
+    
+    class CustomHealTracker:
+        def __init__(self, duration, amount, name="HealTracker"):
+            self.duration = duration
+            self.amount = amount
+            self.kind = self # Hack to make it compatible with `add_other`/`remove_other` checks if needed, but `others` just iterates.
+            # `units.py` line 183: `if other.kind == new_other.kind:`
+            # So `kind` must be comparable.
+            self.name = name
+            self.cant_be = [] # Required for checks? `has_other` usually checks type/kind.
+        def copy(self, duration=None):
+             return CustomHealTracker(duration if duration else self.duration, self.amount)
+        def __eq__(self, other):
+             return isinstance(other, CustomHealTracker) and self.name == other.name
+
+    def on_crited_unique(targets, **kw):
+        owner = targets # The unit being crit
+        # "whenever he suffers a Critical Hit"
+        # Recover 15% Max Health each turn for 3 turns.
+        # Create a tracker.
+        heal_amount = round(owner.max_health * 0.15)
+        tracker = CustomHealTracker(3, heal_amount, name="LastStandHeal")
+        
+        # We need to add this to `owner.others`.
+        # `units.py` `add_other` handles duration updates if same kind.
+        # Typically HoTs stack. If I get crit twice, do I heal 30%?
+        # "Whenever... recovers... for 3 turns". Usually this implies gaining a new instance (Stacking).
+        # But `add_other` in `units.py` (line 181) merges durations if `stackable` is in `cant_be`?
+        # Wait, `add_other` logic:
+        # if other.kind == new_other.kind:
+        #    if "stackable" in new_other.cant_be: update duration.
+        #    else: append? No, logic in `add_other` is:
+        #    if kind matches:
+        #         if stackable: update duration, RETURN.
+        #         else: (implied continue to append? No loops doesn't break if match found unless return)
+        #         Actually line 189 `self.others.append(new_other)` is outside the loop.
+        #         So if it finds a match and merges, it returns.
+        #         If it finds a match and NOT stackable... it continues loop?
+        #         And then appends.
+        #         So default behavior is STACKING (multiple instances) unless `stackable` (merge duration).
+        #         Wait, `cant_be` "stackable" usually means "Unique, refresh duration".
+        #         Standard HoTs are STACKING.
+        #         So my `CustomHealTracker` should NOT have "stackable" in `cant_be` if I want multiple instances.
+        
+        owner.others.append(tracker)
+        print(f"{owner.name} gains Last Stand healing (3 turns) due to Critical Hit.")
+
+    def on_turn_start(game, targets, **kw):
+        owner = targets
+        # Check for trackers in others
+        # We need to iterate a copy because `others` might change? No, we are just reading.
+        # But we manipulate `others` in `units.py` `on_turn_end`.
+        # Here we just trigger healing.
+        
+        for effect in owner.others:
+            if hasattr(effect, "name") and effect.name == "LastStandHeal":
+                owner.apply_healing(effect.amount)
+                print(f"{owner.name} recovers {effect.amount} health from Last Stand.")
+
+    return Unique("Last Stand", {
+        "on_crited": on_crited_unique,
+        "on_turn_start": on_turn_start
+    })
+
 def defend_the_order():
     def check_health_threshold(owner):
         # Attribute to track if bonus is active
