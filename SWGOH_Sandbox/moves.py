@@ -82,7 +82,7 @@ Skittering_Horror = Move("Skittering Horror", 3,
 
 #General_Skywalker
 Telekinesis      = Move("Telekinesis",  0, ignore_defense=True,
-                        effects=[{"phase":"before_hit", "scope":"per_cast", "type":"bonus", "targets":"self", "conditions":[{"targets":"enemy_target", "status":others.Armor_Shred}], "critical_hit":True},
+                        effects=[{"phase":"before_hit", "scope":"per_cast", "type":"bonus", "targets":"self", "conditions":[{"targets":"enemy_target", "status":others.Armor_Shred}], "critical_chance":2.0},
                                  {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"enemy_target", "scaling":"self_physical_damage", "damage_base":2.8,"damage_variance":0.05}, 
                                  {"phase":"after_hit", "scope":"per_cast", "type":"bonus", "targets":"self", "moves":[], "conditions":[{"targets":"enemy_target", "status":debuffs.Daze}], "turns_number":-1}])
 
@@ -99,7 +99,7 @@ Sundering_Strike = Move("Sundering Strike", 3,
                                  {"phase":"after_ability", "scope":"per_cast", "type":"call", "targets":"enemy_target", "moves":[], "conditions":[{"has_used_ability_this_turn":False}]}])
 
 Force_Grip       = Move("Force Grip", 3,
-                        effects=[{"phase":"before_hit", "scope":"per_cast", "type":"bonus", "targets":"self", "conditions":[{"targets":"enemy_target", "status":others.Armor_Shred}], "critical_hit":True},
+                        effects=[{"phase":"before_hit", "scope":"per_cast", "type":"bonus", "targets":"self", "conditions":[{"targets":"enemy_target", "status":others.Armor_Shred}], "critical_chance":2.0},
                                  {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"all_enemies", "scaling":"self_physical_damage", "damage_base":3.0,"damage_variance":0.05},
                                  {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"all_enemies", "kind":debuffs.Daze.copy(duration=2)},
                                  {"phase":"before_hit", "scope":"per_cast", "type":"cooldowns", "targets":"self", "moves":[], "turns_number":-10},
@@ -170,7 +170,8 @@ Saber_Sweep = Move("Saber Sweep", 0,
 Saber_Throw = Move("Saber Throw", 4,
                     effects=[
                         {"phase":"on_hit", "scope":"per_target", "type":"physical", "targets":"all_enemies", "scaling":"self_physical_damage", "damage_base":0.991, "damage_variance":0.05},
-                        {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=1), "conditions":[{"chance":0.55}]},
+                        {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=1), "conditions":[{"chance":0.55, "critical_hit": False}]},
+                        {"phase":"after_hit", "scope":"per_target", "type":"debuff", "targets":"enemy_target", "kind":debuffs.Ability_Block.copy(duration=1), "conditions":[{"critical_hit": True}]},
                         {"phase":"after_ability", "scope":"per_cast", "type":"buff", "targets":"self", "kind":buffs.Defense_Up.copy(duration=2)}
                     ])
 

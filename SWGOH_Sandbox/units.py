@@ -255,21 +255,27 @@ class Unit :
             return False
         return True
 
-    def check_conditions(self, conditions, attacking_unit):
+    def check_conditions(self, conditions, attacking_unit, is_critical=False):
         for cond in conditions:
+            met = True
             match(cond):
                 case {"targets": targets, "tags" : tags}:
-                    return self.check_tag_conditions(targets, tags)
+                    met = self.check_tag_conditions(targets, tags)
                 case {"targets":targets, "status" : status}:
-                    return self.check_status_conditions(targets, status)
+                    met = self.check_status_conditions(targets, status)
                 case {"has_used_ability_this_turn": has_used_ability_this_turn}:
-                    return attacking_unit.has_used_ability_this_turn == has_used_ability_this_turn
+                    met = attacking_unit.has_used_ability_this_turn == has_used_ability_this_turn
                 case {"in_his_turn": in_his_turn}:
-                    return attacking_unit.in_his_turn == in_his_turn
+                    met = attacking_unit.in_his_turn == in_his_turn
                 case {"chance": chance}:
-                    return random.random() <= chance
+                    met = random.random() <= chance
+                case {"critical_hit": needed_crit}:
+                    met = is_critical == needed_crit
+            if not met:
+                return False
+        return True
                
-    def apply_effect(self, game, effect, attacking_unit, attacking_move, total_damage=0):
+    def apply_effect(self, game, effect, attacking_unit, attacking_move, total_damage=0, is_critical=False):
         # Create a shallow copy of the effect to avoid modifying the original move definition
         temp_effect = effect.copy()
         
@@ -440,8 +446,10 @@ class Unit :
             final_defense        = percent_defense_to_flat(defense) - percent_defense_to_flat(attacker_penetration)
             total = max(1, total * (1 - (max(0, flat_defense_to_percent(final_defense)))))
         
+        is_crit = False
         if not self.has_buff(buffs.Critical_Hit_Immunity) and not self.cant_be_crit:
             if attacking_unit.has_buff(buffs.Advantage) or self.has_debuff(debuffs.Vulnerable) or random.random() <= max(0, (critical_chance + attacking_move.critical_chance) - crit_avoidance):
+                is_crit = True
                 total *= attacking_unit.critical_damage
                 print("Critical hit ! (x" + str(attacking_unit.critical_damage) + ")")
                 game.trigger_event("on_crit", attacker=attacking_unit, targets=self)
@@ -461,7 +469,7 @@ class Unit :
         print(self)
         game.trigger_event("on_damage_taken", game=game, targets=self, attacker=attacking_unit, damage=total, type=effect["type"])
         attacking_move.reset_temporary_modifiers()
-        return total
+        return total, is_crit
 
     def apply_ability(self, game, attacking_unit, attacking_move, main_target = False, is_counter = False):
         
@@ -476,6 +484,7 @@ class Unit :
         evaded = False
         # attacking_unit.has_used_ability_this_turn = False
         total_ability_damage = 0
+        is_crit = False
 
         if is_counter:
             attacking_move.damage_multiplier += attacking_unit.counter_damage
@@ -496,7 +505,8 @@ class Unit :
                             evaded |= effect["type"] == "Physical" and random.random() <= max(0.02, self.physical_dodge_rating - attacking_unit.physical_accuracy)
                             evaded |= effect["type"] == "Special" and random.random() <= max(0.02, self.special_deflection_rating - attacking_unit.special_accuracy)
                     if not evaded:
-                        total_ability_damage += self.apply_damage(game, attacking_unit, attacking_move, effect)
+                        dmg, is_crit = self.apply_damage(game, attacking_unit, attacking_move, effect)
+                        total_ability_damage += dmg
                         if self.health <= 0:
                             self.dead = True
                             self.dead = True
@@ -511,7 +521,7 @@ class Unit :
                         self.apply_healing(healing_amount)
             if effect in per_target_effects and effect in after_hit_effects and total_ability_damage > 0:
                 print(effect)
-                self.apply_effect(game, effect, attacking_unit, attacking_move, total_ability_damage)
+                self.apply_effect(game, effect, attacking_unit, attacking_move, total_ability_damage, is_critical=is_crit)
             if effect in per_target_effects and effect in after_ability_effects:
                 print(effect)
                 print(effect)
